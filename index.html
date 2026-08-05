@@ -130,7 +130,7 @@
         .featured-text .tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--plum); margin-bottom: 1.2rem; }
         .featured-text h3 { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.2rem; color: var(--black); }
         .featured-text p { color: var(--charcoal); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem; }
-        .featured-text .read { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--black); text-decoration: none; display: inline-flex; align-items: center; gap: 0.6rem; transition: all 0.3s; }
+        .featured-text .read { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--black); text-decoration: none; display: inline-flex; align-items: center; gap: 0.6rem; transition: all 0.3s; cursor: pointer; pointer-events: none; }
         .featured-text .read:hover { gap: 1.2rem; color: var(--gold); }
 
         .post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
@@ -167,9 +167,11 @@
         .footer-nav { display: flex; gap: 2.5rem; flex-wrap: wrap; justify-content: center; }
         .footer-nav a { color: var(--white); text-decoration: none; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.3s; padding: 0.3rem 0; }
         .footer-nav a:hover { color: var(--gold); }
-        .footer-social { display: flex; gap: 1.5rem; align-items: center; }
-        .footer-social a { color: var(--white); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.3s; display: flex; align-items: center; gap: 0.4rem; }
-        .footer-social a:hover { color: var(--blush); transform: translateY(-2px); }
+        .footer-social { display: flex; gap: 2.5rem; align-items: center; justify-content: center; }
+        .footer-social a { color: var(--white); text-decoration: none; transition: all 0.3s; display: flex; align-items: center; }
+        .footer-social a svg { transition: all 0.3s; }
+        .footer-social a:hover svg { color: var(--gold); transform: translateY(-3px) scale(1.1); }
+        .footer-social a:hover { color: var(--gold); }
         .footer-contact { color: var(--gold); font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: color 0.3s; }
         .footer-contact:hover { color: var(--blush); }
         .footer-bottom { max-width: 1400px; margin: 2rem auto 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
@@ -219,6 +221,7 @@
             <li><a href="#travel">Travel</a><div class="dropdown"><a href="#travel">Thailand</a><a href="#travel">Cape Town</a><a href="#travel">Switzerland</a></div></li>
             <li><a href="#tools">Tools</a><div class="dropdown"><a href="#tools">AI Companion</a><a href="#tools">Digital Rituals</a></div></li>
             <li><a href="#books">Books</a><div class="dropdown"><a href="#books">Finding Your Voice</a><a href="#books">Seil Review</a><a href="#books">Jet Li</a></div></li>
+            <li><a href="#about">About</a></li>
         </ul>
         <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
     </div>
@@ -228,7 +231,6 @@
     <div class="hero-bg"><img src="https://images.pexels.com/photos/7682625/pexels-photo-7682625.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Woman in vibrant red dress standing in lush green forest"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content fade-in">
-        <span class="hero-tag">Tea with Ree</span>
         <h1>A space for <em>slow reading</em> and wide curiosities</h1>
         <p>A quiet corner away from algorithmic noise where writing wanders through ecology, inner work, wellbeing, and travel.</p>
     </div>
@@ -239,7 +241,7 @@
     <div class="section-header fade-in"><h2>Ecology</h2><a href="#">View All →</a></div>
     <article class="featured fade-in" onclick="openPost('eco1')">
         <div class="featured-img"><img src="https://images.pexels.com/photos/15130939/pexels-photo-15130939.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Woman forest bathing by a serene lakeside"></div>
-        <div class="featured-text"><span class="tag">Ecology</span><h3>Rescue Stories That Restore Hope</h3><p>From shelters to sanctuaries, these stories show how compassion reshapes the future of animals. When we choose to notice the lives around us, we choose to become part of their healing.</p><span class="read">Read Article →</span></div>
+        <div class="featured-text"><span class="tag">Ecology</span><h3>Rescue Stories That Restore Hope</h3><span class="read">Read Article →</span></div>
     </article>
     <div class="post-grid">
         <article class="post fade-in fade-in-delay-1" onclick="openPost('eco2')"><div class="post-img"><img src="https://images.pexels.com/photos/16465591/pexels-photo-16465591.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rescue dog in shelter"></div><span class="post-tag">Ecology</span><h4>From Shelter to Sanctuary: One Dog's Journey</h4><p class="meta">July 28, 2026</p></article>
@@ -253,7 +255,7 @@
         <div class="section-header fade-in"><h2>Inner Work</h2><a href="#">View All →</a></div>
         <article class="featured fade-in" onclick="openPost('inner1')">
             <div class="featured-img"><img src="https://images.pexels.com/photos/5201524/pexels-photo-5201524.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Woman practicing yoga on rocky beach at sunrise"></div>
-            <div class="featured-text" style="background: var(--white);"><span class="tag">Inner Work</span><h3>Confidence After 40: A Quiet Revolution</h3><p>Ageing brings clarity, not limits. A reflection on self-belief and the power of stillness. The most radical act of confidence is learning to occupy your own skin without apology.</p><span class="read">Read Article →</span></div>
+            <div class="featured-text" style="background: var(--white);"><span class="tag">Inner Work</span><h3>Confidence After 40: A Quiet Revolution</h3><span class="read">Read Article →</span></div>
         </article>
         <div class="post-grid">
             <article class="post fade-in fade-in-delay-1" onclick="openPost('inner2')"><div class="post-img"><img src="https://images.pexels.com/photos/5473391/pexels-photo-5473391.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Confident senior woman smiling"></div><span class="post-tag">Inner Work</span><h4>The Discipline of Noticing Small Joys</h4><p class="meta">July 22, 2026</p></article>
@@ -267,7 +269,7 @@
     <div class="section-header fade-in"><h2>Wellbeing</h2><a href="#">View All →</a></div>
     <article class="featured fade-in" onclick="openPost('well1')">
         <div class="featured-img"><img src="https://images.pexels.com/photos/8436718/pexels-photo-8436718.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Women practicing seated wellness indoors"></div>
-        <div class="featured-text"><span class="tag">Wellbeing</span><h3>Do Wellness Trackers Really Work?</h3><p>From Oura Rings to sauna rituals, we test what actually resets energy and wellbeing. The data tells one story. The body tells another. The truth lives somewhere in between.</p><span class="read">Read Article →</span></div>
+        <div class="featured-text"><span class="tag">Wellbeing</span><h3>Do Wellness Trackers Really Work?</h3><span class="read">Read Article →</span></div>
     </article>
     <div class="post-grid">
         <article class="post fade-in fade-in-delay-1" onclick="openPost('well2')"><div class="post-img"><img src="https://images.pexels.com/photos/4370366/pexels-photo-4370366.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Smartwatch on wrist tracking wellness"></div><span class="post-tag">Wellbeing</span><h4>Inside the Sauna: A Case Study</h4><p class="meta">July 25, 2026</p></article>
@@ -287,7 +289,7 @@
         <div class="section-header fade-in"><h2>Travel</h2><a href="#">View All →</a></div>
         <article class="featured fade-in" onclick="openPost('travel1')">
             <div class="featured-img"><img src="https://images.pexels.com/photos/28388887/pexels-photo-28388887.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Vivid Thai Buddhist temple with intricate golden details"></div>
-            <div class="featured-text" style="background: var(--white);"><span class="tag">Travel</span><h3>Thailand: A Journey Beyond the Beaches</h3><p>Temples, street food, and cultural encounters that redefine what travel can mean. Thailand does not whisper. It sings in gold and incense and the clatter of woks at midnight.</p><span class="read">Read Article →</span></div>
+            <div class="featured-text" style="background: var(--white);"><span class="tag">Travel</span><h3>Thailand: A Journey Beyond the Beaches</h3><span class="read">Read Article →</span></div>
         </article>
         <div class="post-grid">
             <article class="post fade-in fade-in-delay-1" onclick="openPost('travel2')"><div class="post-img"><img src="https://images.pexels.com/photos/36326756/pexels-photo-36326756.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cape Town beach at sunset"></div><span class="post-tag">Travel</span><h4>Cape Town: A Photo Essay on Culture</h4><p class="meta">July 20, 2026</p></article>
@@ -301,7 +303,7 @@
     <div class="section-header fade-in"><h2>Modern Tools</h2><a href="#">View All →</a></div>
     <article class="featured fade-in" onclick="openPost('tools1')">
         <div class="featured-img"><img src="https://images.pexels.com/photos/18069813/pexels-photo-18069813.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Vibrant digital abstract AI illustration"></div>
-        <div class="featured-text"><span class="tag">Modern Tools</span><h3>AI as a Creative Companion</h3><p>Experiments with digital tools that spark imagination and reshape daily rituals. The best technology does not replace thought. It removes friction so thought can flow faster.</p><span class="read">Read Article →</span></div>
+        <div class="featured-text"><span class="tag">Modern Tools</span><h3>AI as a Creative Companion</h3><span class="read">Read Article →</span></div>
     </article>
     <div class="post-grid">
         <article class="post fade-in fade-in-delay-1" onclick="openPost('tools2')"><div class="post-img"><img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Phone and laptop digital workspace"></div><span class="post-tag">Modern Tools</span><h4>The Rise of Digital Rituals</h4><p class="meta">July 28, 2026</p></article>
@@ -315,7 +317,7 @@
         <div class="section-header fade-in"><h2>Books</h2><a href="#">View All →</a></div>
         <article class="featured fade-in" onclick="openPost('books1')">
             <div class="featured-img"><img src="https://images.pexels.com/photos/3059748/pexels-photo-3059748.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Woman speaking confidently"></div>
-            <div class="featured-text" style="background: var(--white);"><span class="tag">Books</span><h3>Finding Your Voice: Breaking Free from Fear</h3><p>A personal essay on courage, vulnerability, and rediscovering strength. The voice you have been waiting to hear has been inside you all along. It just needed permission to speak.</p><span class="read">Read Article →</span></div>
+            <div class="featured-text" style="background: var(--white);"><span class="tag">Books</span><h3>Finding Your Voice: Breaking Free from Fear</h3><span class="read">Read Article →</span></div>
         </article>
         <div class="post-grid">
             <article class="post fade-in fade-in-delay-1" onclick="openPost('books2')"><div class="post-img"><img src="https://images.pexels.com/photos/19670/pexels-photo-19670.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stack of books in warm light"></div><span class="post-tag">Books</span><h4>Seil: When the Game Refuses to End</h4><p class="meta">July 25, 2026</p></article>
@@ -333,22 +335,22 @@
 </div>
 
 <footer id="contact">
-    <div class="footer-inner">
-        <div class="footer-brand"><h3>Tea with Ree</h3><p>A space for slow reading and wide curiosities.</p></div>
-        <div class="footer-nav">
-            <a href="#ecology">Ecology</a><a href="#inner-work">Inner Work</a><a href="#wellbeing">Wellbeing</a>
-            <a href="#travel">Travel</a><a href="#tools">Tools</a><a href="#books">Books</a><a href="#about">About</a>
-        </div>
-        <div class="footer-social">
-            <a href="https://www.instagram.com/teawith_ree" target="_blank">Instagram</a>
-            <a href="https://www.tiktok.com/@TeawithRee" target="_blank">TikTok</a>
-            <a href="https://www.facebook.com/Rehana.Rutti" target="_blank">Facebook</a>
-            <a href="mailto:teawithree7@gmail.com" class="footer-contact">Contact</a>
+    <div class="footer-inner" style="border-bottom: none; padding-bottom: 2rem; justify-content: center;">
+        <div class="footer-social" style="gap: 2.5rem;">
+            <a href="https://www.instagram.com/teawith_ree" target="_blank" aria-label="Instagram">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.tiktok.com/@TeawithRee" target="_blank" aria-label="TikTok">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.2 0 .39.02.58.06V9.4a6.37 6.37 0 0 0-.58-.03A6.34 6.34 0 0 0 3.14 15.7a6.34 6.34 0 0 0 6.33 6.34 6.34 6.34 0 0 0 6.33-6.34V8.83a8.23 8.23 0 0 0 4.8 1.54V6.93a4.85 4.85 0 0 1-1.01-.24z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/Rehana.Rutti" target="_blank" aria-label="Facebook">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="mailto:teawithree7@gmail.com" class="footer-contact" style="font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;">Contact</a>
         </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom" style="justify-content: center; text-align: center;">
         <p>© 2026 Tea with Ree — Rehana Rutti. Made with patience and a good cup of tea.</p>
-        <p style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">All images sourced from Pexels.</p>
     </div>
 </footer>
 
