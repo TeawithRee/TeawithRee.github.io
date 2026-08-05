@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea with Ree — Ruttirehana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --white: #FFFFFF;
+            --cream: #FAF8F5;
+            --black: #0F0F0F;
+            --charcoal: #2D2D2D;
+            --gray: #8A8A8A;
+            --light-gray: #E8E4E0;
+            --blush: #D4A5A5;
+            --blush-soft: #F5E6E6;
+            --gold: #C9A96E;
+            --gold-soft: #F5EFE0;
+            --plum: #8B6B8B;
+            --plum-soft: #F0E8F0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection { background: var(--blush); color: var(--white); }
+
+        img { max-width: 100%; display: block; }
+
+        /* ===== NAV ===== */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent);
+            mix-blend-mode: difference;
+        }
+
+        nav .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+
+        nav .menu {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        nav .menu a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            transition: opacity 0.3s;
+        }
+
+        nav .menu a:hover { opacity: 0.6; }
+
+        .mobile-toggle {
+            display: none;
+            color: var(--white);
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            width: 100%;
+            height: 100vh;
+            min-height: 700px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 0 4% 6rem;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 800px;
+            color: var(--white);
+        }
+
+        .hero-tag {
+            display: inline-block;
+            padding: 0.4rem 1.2rem;
+            background: var(--blush);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 6vw, 5.5rem);
+            font-weight: 500;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 500px;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .scroll-line {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 60px;
+            background: linear-gradient(to bottom, white, transparent);
+            z-index: 3;
+            animation: scrollPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        /* ===== EDITORIAL ===== */
+        .editorial {
+            padding: 5rem 4%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .section-header a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .section-header a:hover { color: var(--blush); }
+
+        /* ===== FEATURED POST ===== */
+        .featured {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 0;
+            margin-bottom: 5rem;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .featured:hover { opacity: 0.95; }
+
+        .featured-img {
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            background: var(--cream);
+        }
+
+        .featured-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .featured:hover .featured-img img {
+            transform: scale(1.03);
+        }
+
+        .featured-text {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--cream);
+        }
+
+        .featured-text .tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--blush);
+            margin-bottom: 1rem;
+        }
+
+        .featured-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .featured-text p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .featured-text .read {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--black);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+        }
+
+        .featured-text .read:hover { gap: 1rem; color: var(--blush); }
+
+        /* ===== POST GRID ===== */
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .post {
+            cursor: pointer;
+            transition: transform 0.4s;
+        }
+
+        .post:hover { transform: translateY(-8px); }
+
+        .post-img {
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            margin-bottom: 1.2rem;
+            background: var(--cream);
+            position: relative;
+        }
+
+        .post-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .post:hover .post-img img {
+            transform: scale(1.05);
+        }
+
+        .post-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.2), transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .post:hover .post-img::after { opacity: 1; }
+
+        .post-tag {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--blush);
+            margin-bottom: 0.6rem;
+        }
+
+        .post h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.25;
+            margin-bottom: 0.5rem;
+        }
+
+        .post .meta {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        /* ===== FULL WIDTH BREAK ===== */
+        .break {
+            width: 100%;
+            padding: 8rem 4%;
+            text-align: center;
+            background: var(--black);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .break-bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.4;
+        }
+
+        .break-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .break-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .break-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .break h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 500;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+        }
+
+        .break h2 em {
+            font-style: italic;
+            color: var(--blush);
+        }
+
+        .break p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        /* ===== ABOUT STRIP ===== */
+        .about-strip {
+            padding: 6rem 4%;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-strip h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-strip h2 em {
+            font-style: italic;
+            color: var(--blush);
+        }
+
+        .about-strip p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            line-height: 1.9;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* ===== TOPICS BAR ===== */
+        .topics-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 2rem 4%;
+            border-top: 1px solid var(--light-gray);
+            border-bottom: 1px solid var(--light-gray);
+            flex-wrap: wrap;
+        }
+
+        .topics-bar a {
+            text-decoration: none;
+            color: var(--black);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .topics-bar a:hover {
+            border-bottom-color: var(--blush);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 5rem 4% 3rem;
+        }
+
+        .footer-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--white);
+            text-decoration: none;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover { color: var(--blush); }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-bottom p {
+            color: var(--gray);
+            font-size: 0.8rem;
+        }
+
+        .footer-bottom .socials {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-bottom .socials a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom .socials a:hover { color: var(--blush); }
+
+        /* ===== MODAL ===== */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: var(--white);
+            z-index: 5000;
+            overflow-y: auto;
+        }
+
+        .modal-close {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--black);
+            color: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 5001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .modal-close:hover { background: var(--blush); }
+
+        .modal-inner {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .modal-hero {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+        .modal-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--blush);
+            margin-bottom: 1rem;
+        }
+
+        .modal-inner h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 1.15;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-inner .meta {
+            color: var(--gray);
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .modal-inner p {
+            font-size: 1.05rem;
+            color: #444;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-inner h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            font-weight: 500;
+        }
+
+        .modal-inner blockquote {
+            border-left: 3px solid var(--blush);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        .modal-inner .caption {
+            font-size: 0.85rem;
+            color: var(--gray);
+            text-align: center;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 900px) {
+            .post-grid { grid-template-columns: 1fr; }
+            .featured { grid-template-columns: 1fr; }
+            .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+            nav .menu { display: none; }
+            .mobile-toggle { display: block; }
+            .hero { min-height: 500px; }
+            .modal-hero { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">Tea with Ree</a>
+        <div class="menu">
+            <a href="#journal">Journal</a>
+            <a href="#about">About</a>
+            <a href="#topics">Topics</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/18817614/pexels-photo-18817614.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Tea ritual in soft morning light">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Tea with Ree</span>
+            <h1>A space for <em>slow reading</em> and wide curiosities</h1>
+            <p>A quiet corner away from algorithmic noise where writing wanders through ecology and inner work and wellbeing and travel.</p>
+        </div>
+        <div class="scroll-line"></div>
+    </header>
+
+    <!-- EDITORIAL SECTION -->
+    <div class="editorial" id="journal">
+        <div class="section-header">
+            <h2>The Journal</h2>
+            <a href="#">View All →</a>
+        </div>
+
+        <!-- FEATURED -->
+        <article class="featured" onclick="openPost(1)">
+            <div class="featured-img">
+                <img src="https://images.pexels.com/photos/13176067/pexels-photo-13176067.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Forest bathing">
+            </div>
+            <div class="featured-text">
+                <span class="tag">Ecology</span>
+                <h3>Why Forest Bathing Changed How I See Green Spaces</h3>
+                <p>I used to think a walk in the park was just exercise. Then I tried shinrin-yoku and everything changed. The Japanese practice of forest bathing is not about hiking. It is about being.</p>
+                <span class="read">Read Article →</span>
+            </div>
+        </article>
+
+        <!-- GRID -->
+        <div class="post-grid">
+            <article class="post" onclick="openPost(2)">
+                <div class="post-img">
+                    <img src="https://images.pexels.com/photos/4998903/pexels-photo-4998903.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Yoga studio">
+                </div>
+                <span class="post-tag">Wellbeing</span>
+                <h4>Small Rituals for a More Grounded Day</h4>
+                <p class="meta">July 20, 2026</p>
+            </article>
+            <article class="post" onclick="openPost(3)">
+                <div class="post-img">
+                    <img src="https://images.pexels.com/photos/20111905/pexels-photo-20111905.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lisbon tiles">
+                </div>
+                <span class="post-tag">Travel</span>
+                <h4>Notes from Lisbon</h4>
+                <p class="meta">June 28, 2026</p>
+            </article>
+            <article class="post" onclick="openPost(4)">
+                <div class="post-img">
+                    <img src="https://images.pexels.com/photos/23496597/pexels-photo-23496597.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creative workspace">
+                </div>
+                <span class="post-tag">Tools</span>
+                <h4>AI as a Companion, Not a Replacement</h4>
+                <p class="meta">June 15, 2026</p>
+            </article>
+            <article class="post" onclick="openPost(5)">
+                <div class="post-img">
+                    <img src="https://images.pexels.com/photos/16313515/pexels-photo-16313515.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Books and reading">
+                </div>
+                <span class="post-tag">Books</span>
+                <h4>What I Am Reading This Summer</h4>
+                <p class="meta">July 1, 2026</p>
+            </article>
+            <article class="post" onclick="openPost(6)">
+                <div class="post-img">
+                    <img src="https://images.pexels.com/photos/8436718/pexels-photo-8436718.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wellness practice">
+                </div>
+                <span class="post-tag">Wellbeing</span>
+                <h4>The Science Behind Sauna and Recovery</h4>
+                <p class="meta">July 12, 2026</p>
+            </article>
+            <article class="post" onclick="openPost(7)">
+                <div class="post-img">
+                    <img src="https://images.pexels.com/photos/36326756/pexels-photo-36326756.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cape Town sunset">
+                </div>
+                <span class="post-tag">Travel</span>
+                <h4>Journeys from Cape Town to the World</h4>
+                <p class="meta">May 30, 2026</p>
+            </article>
+        </div>
+    </div>
+
+    <!-- FULL WIDTH BREAK -->
+    <div class="break">
+        <div class="break-bg">
+            <img src="https://images.pexels.com/photos/7682625/pexels-photo-7682625.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Woman in forest">
+        </div>
+        <div class="break-overlay"></div>
+        <div class="break-content">
+            <h2>On <em>stillness</em> and movement</h2>
+            <p>Inner work is breath and thought and silence flowing together. There is no finish line. Some days it is meditation at dawn. Other days it is admitting you were wrong. Both count.</p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-strip" id="about">
+        <h2>About <em>Rehana</em></h2>
+        <p>Advocacy and passion and sustainability guide my work. I am Rehana Rutti. Advocacy and passion and sustainability guide my work. I explore how AI and modern tools enrich life grounded in compassion and humour and resilience.</p>
+        <p>This space invites wandering through ideas and stories that keep life bright. I grew up between worlds and learned early that the best conversations happen over tea.</p>
+    </div>
+
+    <!-- TOPICS -->
+    <div class="topics-bar" id="topics">
+        <a href="#">Ecology</a>
+        <a href="#">Inner Work</a>
+        <a href="#">Wellbeing</a>
+        <a href="#">Travel</a>
+        <a href="#">Modern Tools</a>
+        <a href="#">Books</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>Tea with Ree</h3>
+                <p>A space for slow reading and wide curiosities. Tea with Ree is a quiet corner on the internet.</p>
+                <p style="margin-top: 1rem; color: var(--blush);">teawithree7@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="#journal">Journal</a>
+                <a href="#about">About</a>
+                <a href="#topics">Topics</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="https://www.instagram.com/teawith_ree" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@TeawithRee" target="_blank">TikTok</a>
+                <a href="https://www.facebook.com/Rehana.Rutti" target="_blank">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> 2026 Tea with Ree. Made with patience and a good cup of tea.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal" id="postModal">
+        <button class="modal-close" onclick="closePost()">×</button>
+        <div class="modal-inner" id="modalContent"></div>
+    </div>
+
+    <script>
+        const posts = {
+            1: {
+                tag: 'Ecology',
+                title: 'Why Forest Bathing Changed How I See Green Spaces',
+                meta: 'July 5, 2026',
+                image: 'https://images.pexels.com/photos/13176067/pexels-photo-13176067.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                caption: 'A woman enjoys a peaceful walk on a forest path surrounded by lush green trees in summer.',
+                body: `
+                    <p>I used to think a walk in the park was just exercise. Then I tried shinrin-yoku or forest bathing and everything changed.</p>
+                    <p>The Japanese practice is simple. You go into a forest. You walk slowly. You breathe. You notice. You do not check your phone. You do not set a step goal. You just exist among trees.</p>
+                    <blockquote>The forest does not rush and yet everything gets done. We could learn from that.</blockquote>
+                    <h3>The Science Behind It</h3>
+                    <p>Phytoncides are the essential oils trees release. Breathing them in boosts natural killer cells in your immune system. It is medicine without pills. After twenty minutes my heart rate dropped. My shoulders softened. I noticed moss growing on bark I would have walked past a hundred times before.</p>
+                    <p>Last spring I helped rescue three injured pigeons from a city rooftop. Watching them recover and fly again reminded me that ecology is not just about grand landscapes. It is about noticing the small lives around us and choosing to care.</p>
+                    <p>Sustainability is not a trend. It is a way of finding balance. Listening to the earth and finding rhythm in living. When we protect green spaces we protect the part of ourselves that still remembers how to be still.</p>
+                `
+            },
+            2: {
+                tag: 'Wellbeing',
+                title: 'Small Rituals for a More Grounded Day',
+                meta: 'July 20, 2026',
+                image: 'https://images.pexels.com/photos/4998903/pexels-photo-4998903.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                caption: 'Woman practicing aerial yoga in a brightly lit studio, showcasing strength and flexibility.',
+                body: `
+                    <p>We often think of rituals as elaborate ceremonies. But the most powerful ones are the smallest. The ones that happen in the margins of an ordinary Tuesday.</p>
+                    <p>The morning cup of tea brewed slowly rather than microwaved. The walk without headphones where you actually hear the birds. The pause before checking your phone where you ask yourself what you actually need right now.</p>
+                    <blockquote>You do not need a meditation app or a wellness retreat. You need three minutes of deliberate slowness repeated daily.</blockquote>
+                    <h3>My Morning Practice</h3>
+                    <p>I wake at six. I boil water. I choose a tea based on what my body is asking for. Green for clarity. Chamomile for calm. Rooibos for comfort. While it steeps I sit by the window and watch the light change. No phone. No agenda. Just the steam and the silence.</p>
+                    <p>This is not productivity. This is presence. And presence is the foundation everything else builds on.</p>
+                    <h3>Why Rituals Matter</h3>
+                    <p>In a world designed to fragment our attention rituals are an act of resistance. They say this moment matters enough to be witnessed fully. They say you matter enough to be witnessed fully.</p>
+                `
+            },
+            3: {
+                tag: 'Travel',
+                title: 'Notes from Lisbon',
+                meta: 'June 28, 2026',
+                image: 'https://images.pexels.com/photos/20111905/pexels-photo-20111905.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                caption: 'Classic Lisbon facade featuring traditional azulejos tiles and street signs.',
+                body: `
+                    <p>There is something about Lisbon that insists you slow down. The tiles and the trams and the light that falls differently there. It is a city that whispers rather than shouts.</p>
+                    <p>I learned that fado music sounds different when you understand saudade. It is not just sadness. It is a longing for something you love while still having it. A nostalgia for the present moment. Only the Portuguese could create a word for that.</p>
+                    <blockquote>Travel is not about collecting places. It is about letting places collect you.</blockquote>
+                    <h3>The Best Corners</h3>
+                    <p>Alfama in the early morning before the tourists arrive. The viewpoint at Miradouro da Senhora do Monte at sunset. A tiny tasca where the owner remembers your name and pours you wine without asking.</p>
+                    <p>In Tokyo I learned that silence can be a conversation. In the Karoo I learned that nothingness can fill you completely. In Lisbon I learned that nostalgia can be a form of joy.</p>
+                    <p>Travel is rhythm in motion. Landscapes and languages and shared humanity. From Cape Town to the world each place teaches something the others cannot.</p>
+                `
+            },
+            4: {
+                tag: 'Tools',
+                title: 'AI as a Companion, Not a Replacement',
+                meta: 'June 15, 2026',
+                image: 'https://images.pexels.com/photos/23496597/pexels-photo-23496597.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                caption: 'Two women working together on a laptop in a creative office space.',
+                body: `
+                    <p>I believe technology should feel like an extension of intention not a replacement for it. The best tools are the ones that get out of your way and let you think more clearly and create more freely.</p>
+                    <p>ChatGPT helps me draft when I am stuck. Notion holds my scattered thoughts. Canva turns my ideas into visuals without me needing a design degree. CapCut makes TikTok editing feel like play rather than work.</p>
+                    <blockquote>The tool is never the point. The point is what you make with it. AI does not replace creativity. It removes the friction so creativity can flow.</blockquote>
+                    <h3>What I Have Learned</h3>
+                    <p>Exploring AI and digital tools as companions in creativity and advocacy has changed how I work. I use Oura rings and Garmin trackers to understand my body. I use Notion to plan content across Facebook and TikTok and Pinterest and Instagram.</p>
+                    <p>But the tool is never the point. The point is what you make with it. AI does not replace creativity. It removes the friction so creativity can flow. Technology should feel like an extension of intention.</p>
+                `
+            },
+            5: {
+                tag: 'Books',
+                title: 'What I Am Reading This Summer',
+                meta: 'July 1, 2026',
+                image: 'https://images.pexels.com/photos/16313515/pexels-photo-16313515.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                caption: 'Woman editing photos on laptop with a digital tablet at a desk. Creative workspace environment.',
+                body: `
+                    <p>My bedside table is always crowded. Currently reading about quantum physics and poetry and how they might be saying the same thing in different languages. Reading is reflection and discovery and joy.</p>
+                    <h3>The Overstory by Richard Powers</h3>
+                    <p>A novel about trees and the people who love them. It changed how I look at every tree I pass. Powers weaves together nine lives connected by forests and makes you feel the ancient intelligence of wood and root.</p>
+                    <h3>Braiding Sweetgrass by Robin Wall Kimmerer</h3>
+                    <p>Indigenous wisdom and scientific knowledge woven together. A masterclass in seeing the world with both eyes. Kimmerer teaches that plants are not objects but subjects. They have agency and memory and relationship.</p>
+                    <blockquote>My bedside table is always crowded because I am always hungry for the next conversation between pages.</blockquote>
+                    <h3>The Body Keeps the Score by Bessel van der Kolk</h3>
+                    <p>Essential reading for anyone interested in trauma and healing and the mind-body connection. Leadership and personal growth and esoteric traditions all find their way to my stack. Reading is reflection and joy.</p>
+                `
+            },
+            6: {
+                tag: 'Wellbeing',
+                title: 'The Science Behind Sauna and Recovery',
+                meta: 'July 12, 2026',
+                image: 'https://images.pexels.com/photos/8436718/pexels-photo-8436718.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                caption: 'A group of women practicing seated yoga indoors, focusing on relaxation and wellness.',
+                body: `
+                    <p>Heat therapy is not new. Cultures around the world have used sweat lodges and saunas and hammams for centuries. But modern science is finally catching up to what our ancestors knew intuitively.</p>
+                    <p>Regular sauna use is linked to reduced risk of cardiovascular disease and dementia and all-cause mortality. The heat triggers heat shock proteins that repair damaged cells. It is cellular maintenance at its finest.</p>
+                    <h3>My Practice</h3>
+                    <p>I sauna three times a week for twenty minutes at eighty degrees celsius. I follow it with a cold plunge. The contrast is where the magic lives. The shock of cold after deep heat wakes something primal and clarifying.</p>
+                    <blockquote>Women's health and fasting and sauna and yoga and pilates. Reiki and crystals and energy work. Wellness consulting and speaking. This is not a trend. This is a way of being.</blockquote>
+                    <p>I also track sleep and recovery with Oura rings and Garmin. Biometric tracking helps me understand patterns I would otherwise miss. When did my resting heart rate drop? What did I eat that day? How did I move?</p>
+                    <p>Wellness is not about perfection. It is about paying attention.</p>
+                `
+            },
+            7: {
+                tag: 'Travel',
+                title: 'Journeys from Cape Town to the World',
+                meta: 'May 30, 2026',
+                image: 'https://images.pexels.com/photos/36326756/pexels-photo-36326756.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                caption: 'Photographer silhouetted against a stunning sunset on a Cape Town beach, capturing the ocean's serene beauty.',
+                body: `
+                    <p>Cape Town taught me that beauty and complexity can coexist. The mountain and the ocean and the history all layered on top of each other. It is a city that holds contradiction gracefully.</p>
+                    <p>From there I have wandered to Tokyo and Lisbon and the English countryside. Each place teaches something the others cannot. In Tokyo I learned that silence can be a conversation. In the Karoo I learned that nothingness can fill you completely.</p>
+                    <blockquote>Cape Town taught me that beauty and complexity can coexist. The mountain and the ocean and the history all layered on top of each other.</blockquote>
+                    <h3>What Travel Teaches</h3>
+                    <p>Travel is rhythm in motion. Landscapes and languages and shared humanity. When you stand on a beach at sunset and watch the light dissolve into the Atlantic you understand that the world is both enormous and intimate.</p>
+                    <p>I travel with a small bag and a good book and the intention to walk until my thoughts quieten. The best journeys are the ones where you leave room for surprise.</p>
+                `
+            }
+        };
+
+        function openPost(id) {
+            const post = posts[id];
+            if (!post) return;
+            document.getElementById('modalContent').innerHTML = `
+                <div class="modal-hero">
+                    <img src="${post.image}" alt="${post.title}">
+                </div>
+                <p class="caption">${post.caption}</p>
+                <span class="modal-tag">${post.tag}</span>
+                <h2>${post.title}</h2>
+                <p class="meta">${post.meta}</p>
+                ${post.body}
+            `;
+            document.getElementById('postModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePost() {
+            document.getElementById('postModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            menu.style.position = 'absolute';
+            menu.style.top = '70px';
+            menu.style.left = '0';
+            menu.style.right = '0';
+            menu.style.flexDirection = 'column';
+            menu.style.background = 'var(--black)';
+            menu.style.padding = '2rem';
+            menu.style.gap = '1.5rem';
+            menu.style.textAlign = 'center';
+            menu.style.zIndex = '999';
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closePost(); });
+    </script>
+</body>
+</html>
