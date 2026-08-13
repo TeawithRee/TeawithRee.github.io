@@ -14,7 +14,8 @@ nav.solid{padding:.55rem 1.5rem .45rem}
 .navlinks a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--accent);transition:width .35s}
 .navlinks a:hover{opacity:1}.navlinks a:hover::after{width:100%}
 .masthead{text-align:center;margin-bottom:.2rem}
-.navrow{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:1.5rem;padding:.35rem 0}
+.navrow{display:flex;justify-content:center;align-items:center;flex-wrap:nowrap;gap:1.5rem;padding:.35rem .2rem;overflow-x:auto;scrollbar-width:none}
+.navrow::-webkit-scrollbar{display:none}
 .cover{position:relative;height:100vh;min-height:560px;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
 .cover-bg{position:absolute;inset:0;background-size:cover;background-position:center 35%;transform:scale(1.06);animation:zoom 14s ease-out forwards}
 .cover-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,13,9,.4),rgba(20,13,9,.66))}
