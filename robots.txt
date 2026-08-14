@@ -49,4 +49,4 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
-Sitemap: https://teawithree.github.io/sitemap.xml
+Sitemap: https://teawithree.com/sitemap.xml
