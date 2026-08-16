@@ -197,7 +197,6 @@ footer{background:var(--cream);padding:5rem 2.4rem 3.6rem;text-align:center;bord
 
 @media(max-width:520px){.brand{font-size:2rem}.cover-inner{padding:0 1.1rem}.cover-inner h1{font-size:clamp(2.25rem,11vw,3.25rem);line-height:1.02}.cover-inner p{font-size:.92rem;line-height:1.55}.navrow{gap:1.15rem;padding-left:1rem;padding-right:1rem}.navrow::after{display:none}.intro{padding:2.4rem 1.3rem .5rem}.intro p{font-size:1.18rem}}
 
-to{opacity:1;transform:translateY(0)}}
 @media(max-width:820px){}
 @media(prefers-reduced-motion:reduce){}
 
