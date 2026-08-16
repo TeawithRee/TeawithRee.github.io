@@ -201,6 +201,10 @@ to{opacity:1;transform:translateY(0)}}
 @media(max-width:820px){}
 @media(prefers-reduced-motion:reduce){}
 
+/* Quiet the visual edges without changing the article reading experience. */
+.socials a{background:transparent!important;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 48%,transparent);box-shadow:none}
+.hero::after{background:linear-gradient(to top,rgba(18,13,10,.84),rgba(18,13,10,.42) 55%,rgba(18,13,10,.12))}
+
 .about-lede{max-width:650px;margin:1.1rem auto 2rem;text-align:center;font-family:'Playfair Display',serif;font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.55;color:var(--soft);font-style:italic}
 @media(max-width:700px){.about-lede{padding:0 1.2rem}}
 
@@ -208,7 +212,7 @@ to{opacity:1;transform:translateY(0)}}
 
 
 
-@media(max-width:520px){.navitem>a{min-height:44px;display:flex;align-items:center}}
+@media(max-width:520px){.navitem>a{min-height:44px;display:flex;align-items:center}.news form{display:grid;grid-template-columns:1fr}.news button{border-left:0;border-top:1px solid var(--line);padding:.86rem 1rem;white-space:nowrap}.navrow{scroll-snap-type:x mandatory;scroll-padding-inline:1rem}.navitem{scroll-snap-align:start}}
 
 /* Intentional Tea with Ree card browsing: preserve horizontal swipe on touch screens. */
 @media(max-width:820px){.artgrid{display:flex;grid-template-columns:none;overflow-x:auto;overflow-y:hidden;gap:1.35rem;scroll-snap-type:x proximity;overscroll-behavior-x:contain;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;touch-action:pan-x;padding:0 0 .8rem}.artgrid>.story{flex:0 0 min(84%,340px);min-width:0;scroll-snap-align:start}.secpage{padding:7rem 1.3rem 3rem}}
