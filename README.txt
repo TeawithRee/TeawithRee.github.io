@@ -1,35 +1,35 @@
-Tea with Ree: CONTENT-ONLY UPLOAD PACKAGE
+Tea with Ree image and section correction package
 
-STATUS: Prepared for upload after Rehana’s final review.
+STATUS: STAGING FOR REVIEW. DO NOT UPLOAD UNTIL REHANA APPROVES.
 
-This package contains only:
-- 7 corrected article HTML pages
-- 7 matching image assets
-- ecology.html with 3 new article cards
-- wellbeing.html with 4 new article cards
-- sitemap.xml with 7 new article URLs
-- this README
+This package corrects six existing article pages without changing their URLs. It uses the live Tea with Ree article template and shared stylesheet architecture.
 
-Do not upload the entire website. Do not upload the private article bank. Do not upload the 9 drafts without images.
+Included article pages:
+- ecology-eco-tips.html
+- ecology-what-a-city-reveals-when-you-walk-slowly.html
+- ecology-what-sustainable-living-means-now.html
+- wellbeing-a-day-without-eating.html
+- wellbeing-the-run-i-hadnt-trained-for.html
+- wellbeing-what-glp-1-actually-means.html
 
-EXACT UPLOAD MAP
-All files in this package go in the repository root, alongside the existing files. Replace the existing ecology.html and wellbeing.html with the versions in this package. Add the 7 new HTML files and 7 image files. Replace sitemap.xml with the version in this package. Do not replace style.css, index.html, the navigation files, the CNAME file or unrelated pages.
+Included section updates:
+- ecology.html: removes the city-walking card and refreshes the Eco-Tips and sustainable-living images.
+- travel.html: adds the city-walking card and dropdown link under International.
+- wellbeing.html: refreshes the five affected Wellbeing card images.
 
-FILES TO ADD
-- ecology-blue-and-blaze.html + blue-and-blaze.jpg
-- ecology-what-a-city-reveals-when-you-walk-slowly.html + cape-town-table-mountain.jpg
-- ecology-what-sustainable-living-means-now.html + balcony-succulents-1.jpg
-- wellbeing-a-day-without-eating.html + fasting-plate.jpg
-- wellbeing-the-run-i-hadnt-trained-for.html + treadmill-run.jpg
-- wellbeing-fifth-place-and-fine-with-it.html + garmin-step-challenge-hero.jpg
-- wellbeing-what-glp-1-actually-means.html + glp1-sugar-hero.jpg
+Images are stored in the images/ directory and the article and card paths point to those exact files. The sitemap is deliberately not included because all six article URLs already exist and remain stable.
 
-FILES TO REPLACE
-- ecology.html
-- wellbeing.html
+Important editorial corrections:
+- The city-walking article is now labelled and linked as Travel while retaining its existing URL to avoid breaking existing links.
+- The running article now says the five-kilometre challenge took place on a treadmill and that the Garmin recorded the challenge.
+- The GLP-1 image is deliberately neutral and does not imply medication use or medical treatment. Its factual claims still require source review.
+
+Files deliberately excluded:
+- index.html
+- style.css
+- CNAME
 - sitemap.xml
+- private writing bank
+- unrelated articles
 
-FINAL CHECK BEFORE COMMITTING
-Open the seven new article pages, click each section card, test the Back to section link, verify each image, confirm the mobile heading and swipe behaviour and check that the sitemap contains the new URLs. The GLP-1 article contains a medical topic and must be checked against the linked Cleveland Clinic source before publication. The movement article includes a linked CNN research reference and must be checked for accurate wording and date.
-
-This package does not modify DNS, HTTPS, global CSS, navigation or the homepage. It is a content-only update.
+Upload only after visual review, source review and explicit approval. After upload, check every corrected article, image, section card, homepage Latest Stories area, HTTPS and www redirect on the live site.
