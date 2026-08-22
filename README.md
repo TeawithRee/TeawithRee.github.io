@@ -1,9 +1,30 @@
-# Tea with Ree five-section move package
+Tea with Ree
 
-Status: staged, not uploaded.
+Tea with Ree is Rehana Rutti’s quiet editorial journal of ecology, inner work, wellbeing, modern tools and Tea Notes.
 
-This package removes Books and Travel from the top navigation, adds Tea Notes, preserves the old Books and Travel URLs and archives, moves selected cards into Inner Work, Ecology and Wellbeing and changes section archives to vertical mobile scrolling.
+The site is a static GitHub Pages publication at teawithree.com. It brings together reflective writing, careful curiosity and a slower way of noticing the world.
 
-Protected from content replacement: CNAME, robots.txt, private article bank and unrelated article bodies. `index.html` is included only for the deliberate navigation change. `style.css` is included only for the approved archive scrolling change.
+Sections
 
-Do not upload until the exact package has been reviewed. After upload, check the public homepage, all five navigation items, every moved card, every original Books and Travel URL, image URLs and mobile vertical flow.
+•
+Ecology
+
+•
+Inner Work
+
+•
+Wellbeing
+
+•
+Modern Tools
+
+•
+Tea Notes
+
+•
+About Rehana Rutti
+
+Tea Notes is a separate coaching space and is currently enquiry-led. Its website form is intentionally inactive while the privacy and contact arrangements are being finalised.
+
+Copyright © 2026 Tea with Ree · Rehana Rutti. All rights reserved.
+
