@@ -219,3 +219,10 @@ footer{background:var(--cream);padding:5rem 2.4rem 3.6rem;text-align:center;bord
 
 /* Tea Notes visual rhythm and responsive image containment */
 .tn-visual{margin:2.5rem 0;overflow:hidden}.tn-visual img{display:block;width:100%;max-width:100%;height:auto;border-radius:4px}.tn-visual figcaption{margin-top:.7rem;color:var(--muted);font-size:.85rem}
+
+
+/* v5 correction: one contained archive flow and the established Tea with Ree components. */
+.reveal{opacity:1;transform:none}
+.home-return{max-width:1200px;margin:0 auto;padding:1.2rem 2.4rem 2rem;text-align:left}.home-return .back{margin-top:0}
+.tn-page{max-width:1000px;margin:0 auto;padding:8.5rem 2.4rem 2.5rem;overflow:hidden}.tn-page .secpage-head{max-width:760px;margin:0 auto 2.2rem}.tn-page .secpage-head h1{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.05;overflow-wrap:anywhere}.tn-page .secpage-head p{max-width:650px;margin-left:auto;margin-right:auto}.tn-page .secpage-head .read{margin-top:.4rem}.tn-visual{max-width:900px;margin:2rem auto 3rem;overflow:hidden}.tn-visual img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:4px}.tn-programmes{max-width:900px;margin:0 auto;padding:0 0 1rem}.tn-programme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}.tn-programme{border-top:1px solid var(--line);padding:1.2rem 1rem 1.4rem}.tn-programme h2{font-family:'Playfair Display',serif;font-weight:700;font-size:1.45rem;line-height:1.1;margin-bottom:.55rem}.tn-programme p{color:var(--muted);font-size:.92rem;line-height:1.55}.tn-page .quote{margin:3.5rem auto 1.5rem}
+@media(max-width:700px){.home-return{padding:1rem 1.3rem 1.8rem}.tn-page{padding:8.5rem 1.3rem 2rem}.tn-programme-grid{grid-template-columns:1fr;gap:.3rem}.tn-programme{padding:1rem 0}.tn-page .quote{margin:2.8rem 0 1rem;padding:0 1.1rem}.tn-page .quote p{font-size:clamp(1.25rem,6vw,1.65rem)}}
