@@ -5,19 +5,19 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Tea Notes | Start a conversation with Rehana Rutti</title>
-<meta content="Tea Notes is a thoughtful coaching space with Rehana Rutti for making room for change, finding clarity and moving towards what comes next." name="description"/>
+<meta content="Tea Notes with Rehana Rutti. Start a conversation about what comes next." name="description"/>
 <meta content="Rehana Rutti" name="author"/>
 <link href="https://teawithree.com/tea-notes.html" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="Tea Notes | Transformational coaching with Rehana Rutti" property="og:title"/>
-<meta content="Start a thoughtful conversation about change, clarity and what comes next with Tea Notes." property="og:description"/>
+<meta content="Tea Notes with Rehana Rutti. Start a conversation about what comes next." property="og:description"/>
 <meta content="https://teawithree.com/tea-notes.html" property="og:url"/>
 <meta content="Tea with Ree" property="og:site_name"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="/style.css" rel="stylesheet"/>
-<meta content="Start a thoughtful conversation about change, clarity and what comes next with Tea Notes." name="twitter:description"/></head>
+<meta content="Tea Notes with Rehana Rutti. Start a conversation about what comes next." name="twitter:description"/></head>
 <body class="tea-notes">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header id="nav">
@@ -34,43 +34,27 @@
 </header>
 <main id="main-content">
 <section class="secpage">
-<div class="secpage-head"><span class="kicker">Tea Notes · private coaching with Rehana Rutti</span><h1>Start a conversation about what comes <em>next</em>.</h1><p>Tea Notes is a thoughtful coaching space for making room for change, finding clarity and moving towards a life that feels more like your own.</p><div class="tn-actions"><a class="tn-button primary" href="mailto:teawithree7@gmail.com?subject=Tea%20Notes%20conversation">Start a Conversation</a></div></div>
-
-<figure class="tn-visual tn-visual-wide"><img alt="A sunlit writing table with an open notebook, a cup of tea and a small branch beside a window." decoding="async" height="1200" loading="eager" src="/tea-notes-coaching.jpg" width="1800"/><figcaption>A little space to hear yourself think.</figcaption></figure>
-
+<div class="secpage-head"><h1>Start a conversation about what comes <em>next</em>.</h1><p class="tn-intro">Tea Notes is a gentle space to notice what matters and carry it forward. It offers private coaching conversations shaped around Reset, Renewal and Becoming.</p><p>Every conversation begins with a cup of tea and a little room to think. For more information, <a href="mailto:teawithree7@gmail.com?subject=Tea%20Notes%20information">click here</a></p></div>
+<figure class="tn-visual tn-visual-wide"><img alt="A sunlit writing table with an open notebook, a cup of tea and a small branch beside a window." decoding="async" height="1200" loading="eager" src="/tea-notes-coaching.jpg" width="1800"/></figure>
 </section>
 <section aria-labelledby="programme-heading" class="tn-programmes" id="programmes">
-<div class="rule"><span class="cat" id="programme-heading">Three ways to begin</span><span class="line"></span></div>
 <div class="tn-programme-grid">
 <article class="tn-programme">
-<span class="kicker">Reset</span>
 <h2>Reset</h2>
 <p>A place to pause, clear some space and begin again.</p>
-
-
 </article>
 <article class="tn-programme">
-<span class="kicker">Renewal</span>
 <h2>Renewal</h2>
 <p>A steadier way to give meaningful change room to take root.</p>
-
-
 </article>
 <article class="tn-programme">
-<span class="kicker">Becoming</span>
 <h2>Becoming</h2>
 <p>Support for the chapter that is asking to become something new.</p>
-
-
 </article>
 </div>
-</section><p class="tn-closing">Every conversation begins with a cup of tea and a little room to think.</p><p class="tn-boundary">Tea Notes is coaching, not therapy or medical care.</p>
-
-
-
-</main>
+</section>
+<p class="footer-quote">“The best moments in life are the ones we slow down to notice.”</p></main>
 <footer>
-<p class="footer-quote">“The best moments in life are the ones we slow down to notice.”</p>
 <div class="socials">
 <a aria-label="LinkedIn" href="https://www.linkedin.com/in/rehanarutti/">in</a>
 <a aria-label="Email" href="mailto:teawithree7@gmail.com">@</a>
@@ -78,38 +62,5 @@
 <p class="fcontact">teawithree7@gmail.com</p>
 <p class="copy">© 2026 Tea with Ree · Rehana Rutti. All rights reserved.</p>
 </footer>
-<script>
-    (() => {
-      const form = document.getElementById('tea-notes-form');
-      const status = document.getElementById('form-status');
-      const programme = document.getElementById('programme');
-      document.querySelectorAll('[data-programme]').forEach((link) => link.addEventListener('click', () => { programme.value = link.dataset.programme || ''; }));
-      form.addEventListener('submit', async (event) => {
-        event.preventDefault();
-        status.className = 'tn-status';
-        status.textContent = '';
-        if (form.website.value) return;
-        if (!form.checkValidity()) { form.reportValidity(); status.classList.add('error'); status.textContent = 'Please complete the required fields.'; return; }
-        const endpoint = form.dataset.endpoint.trim();
-        if (!endpoint) {
-          status.classList.add('error');
-          status.textContent = 'The secure submission connection is not active yet. Please email Rehana to arrange a private conversation.';
-          return;
-        }
-        const submit = form.querySelector('button[type="submit"]');
-        submit.disabled = true;
-        try {
-          const response = await fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' }, credentials: 'omit' });
-          if (!response.ok) throw new Error('Submission failed');
-          form.reset();
-          status.classList.add('success');
-          status.textContent = 'Thank you. Your application has been sent for review.';
-        } catch (error) {
-          status.classList.add('error');
-          status.textContent = 'We could not send this safely. Please email teawithree7@gmail.com without sensitive details.';
-        } finally { submit.disabled = false; }
-      });
-    })();
-  </script>
 </body>
 </html>
