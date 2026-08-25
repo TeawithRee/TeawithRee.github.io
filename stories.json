@@ -4,19 +4,36 @@
       "url": "/inner-work-a-softer-monday.html",
       "title": "A Softer Monday",
       "image": "/softer-monday.jpg",
-      "alt": "A white alarm clock above a sign reading Monday, on pale blue."
+      "alt": "A white alarm clock above a sign reading Monday, on pale blue.",
+      "desc": "A small argument for beginning the week with a little more kindness and a little less rush."
     },
     {
       "url": "/ecology-in-praise-of-small-joys.html",
       "title": "In Praise of Small Joys",
       "image": "/small-joys.jpg",
-      "alt": "A child gently holding a duckling, forehead to forehead."
+      "alt": "A child gently holding a duckling, forehead to forehead.",
+      "desc": "A duckling, a daisy, a warm cup, and the small moments we often remember most."
     },
     {
       "url": "/inner-work-the-day-the-light-stepped-aside.html",
       "title": "The Day the Light Stepped Aside",
       "image": "/inner-work-eclipse.jpg",
-      "alt": "A total solar eclipse, the sun's light escaping at one edge."
+      "alt": "A total solar eclipse, the sun's light escaping at one edge.",
+      "desc": "What an eclipse can teach us about attention, interruption, and seeing the familiar differently."
+    },
+    {
+      "url": "/ecology-blue-and-blaze-care.html",
+      "title": "When Love for One Dog Becomes Care for Many",
+      "image": "/rescue-dog-human-connection-unsplash.jpg",
+      "alt": "A rescue dog resting close to a person who is gently holding its face.",
+      "desc": "Blue and Blaze have taught me that loving our own animals can open our eyes to every animal still waiting for care."
+    },
+    {
+      "url": "/tools-responsible-ai-ordinary-day.html",
+      "title": "What Responsible AI Means on an Ordinary Day",
+      "image": "/tools-human-technology.jpg",
+      "alt": "A close view of a person using technology while considering its human impact.",
+      "desc": "The questions I ask about AI are ordinary ones: privacy, trust, responsibility, and whether a useful tool gives us time back."
     }
   ]
 }
