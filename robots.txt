@@ -53,3 +53,6 @@ User-agent: Twitterbot
 Allow: /
 
 Sitemap: https://teawithree.com/sitemap.xml
+
+# Plain-language summary for AI crawlers
+# https://teawithree.com/llms.txt

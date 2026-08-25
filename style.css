@@ -226,3 +226,118 @@ footer{background:var(--cream);padding:3.2rem 2.4rem 1.8rem;text-align:center;bo
 .home-page .quote{margin:3.6rem auto 2rem}.home-page .news{padding-top:2.8rem;padding-bottom:2.8rem}.about-page main.art{padding-bottom:1.5rem}.about-page .news{padding-top:2.8rem;padding-bottom:2.8rem}.home-return{max-width:1200px;margin:0 auto;padding:1.2rem 2.4rem 2rem;text-align:left}.home-return .back{margin-top:0}
 .tn-page{max-width:1000px;margin:0 auto;padding:8.5rem 2.4rem 2.5rem;overflow:hidden}.tn-page .secpage-head{max-width:760px;margin:0 auto 2.2rem}.tn-page .secpage-head h1{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.05;overflow-wrap:anywhere}.tn-page .secpage-head p{max-width:650px;margin-left:auto;margin-right:auto}.tn-page .secpage-head .read{margin-top:.4rem}.tn-visual{max-width:900px;margin:2rem auto 3rem;overflow:hidden}.tn-visual img{display:block;width:auto;max-width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border-radius:4px;margin:0 auto}.tn-programmes{max-width:900px;margin:0 auto;padding:0 0 1rem}.tn-programme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}.tn-programme{border-top:1px solid var(--line);padding:1.2rem 1rem 1.4rem}.tn-programme h2{font-family:'Playfair Display',serif;font-weight:700;font-size:1.45rem;line-height:1.1;margin-bottom:.55rem}.tn-programme p{color:var(--muted);font-size:.92rem;line-height:1.55}.tn-page .quote{margin:3.5rem auto 1.5rem}
 @media(max-width:700px){.home-return{padding:1rem 1.3rem 1.8rem}.tn-page{padding:8.5rem 1.3rem 2rem}.tn-programme-grid{grid-template-columns:1fr;gap:.3rem}.tn-programme{padding:1rem 0}.tn-page .quote{margin:2.8rem 0 1rem;padding:0 1.1rem}.tn-page .quote p{font-size:clamp(1.25rem,6vw,1.65rem)}}
+
+/* --- lines out, space separates --- */
+.rule .line{display:none}
+.rule{justify-content:flex-start;margin-bottom:2.6rem}
+.news{border-top:0;border-bottom:0}
+footer{border-top:0}
+.share{border-top:0;border-bottom:0}
+.iol{border-top:0}
+.quote{border-left:0;padding-left:0}
+.body blockquote{border-left:0;padding-left:0}
+.tn-programme{border-top:0}
+.frame{border:0;padding:0}
+.frame::before{display:none}
+
+/* --- light, not gloom --- */
+.cover-scrim{background:
+  radial-gradient(ellipse 60% 42% at 50% 46%, rgba(0,0,0,.50), rgba(0,0,0,0) 70%),
+  linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.24))}
+.cover-inner{max-width:1040px}
+.cover-inner h1{font-weight:700;letter-spacing:-.015em;font-size:clamp(2.15rem,5.1vw,4.15rem);line-height:1.06;margin-bottom:1.6rem;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+.cover-inner p{font-size:1.02rem;line-height:1.75;max-width:540px;letter-spacing:.012em;opacity:.96;text-shadow:0 1px 16px rgba(0,0,0,.6)}
+.cover-tag{position:relative;margin:2.6rem auto 0;padding-top:1.7rem;font-family:'Inter',sans-serif;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:#fff;opacity:.88;text-shadow:0 1px 16px rgba(0,0,0,.6)}
+.cover-tag::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:44px;height:1px;background:rgba(255,255,255,.5)}
+.feed{padding-top:4.4rem}
+
+/* every picture is 3:2 now */
+.story-media>div{aspect-ratio:3/2;background-size:cover;background-position:center}
+
+/* footer gap */
+footer{padding:2rem 2.4rem 1.6rem}
+.socials{margin-bottom:1rem}
+.copy{margin-top:.6rem}
+.home-return{padding:.5rem 2.4rem .7rem}
+@media(max-width:700px){.home-return{padding:.5rem 1.3rem .7rem}}
+@media(max-width:560px){.cover-inner h1{font-size:clamp(2rem,9vw,2.7rem)}.cover-tag{letter-spacing:.2em;font-size:.62rem;margin-top:2rem;padding-top:1.3rem}}
+
+/* ---------- About ---------- */
+
+
+
+
+
+
+
+
+@media(max-width:860px){
+  
+  
+  
+  
+}
+
+
+
+
+/* ---------- newsletter, one shape everywhere ---------- */
+.news{padding:4.6rem 1.3rem 4.8rem;text-align:center}
+.news .kicker{display:block;margin-bottom:1rem;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);opacity:.9}
+.news h2{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(1.5rem,3vw,2.05rem);line-height:1.3;max-width:22ch;margin:0 auto 2.1rem}
+.news form{max-width:430px;margin:0 auto}
+
+/* ---------- Tea Notes ---------- */
+.tn-visual{max-width:980px;margin:2.6rem auto 3.4rem}
+.tn-visual img{width:100%;max-width:980px;height:auto;display:block;margin:0 auto;border-radius:2px}
+.tn-programme-grid{gap:3rem}
+.tn-programme h3{font-family:'Playfair Display',serif;font-weight:500}
+
+/* ---------- About, centred and uniform ---------- */
+.aboutpage{max-width:900px;margin:0 auto;padding:9.5rem 1.6rem 1rem;text-align:center}
+.about-head .kicker{display:block;margin-bottom:1rem;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);opacity:.9}
+.about-head h1{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.08;margin:0 0 2.4rem;text-align:center}
+.about-portrait{margin:0 auto 3rem;max-width:440px}
+.about-portrait img{width:100%;height:auto;display:block;border-radius:2px;box-shadow:0 18px 50px rgba(20,13,9,.10)}
+.about-words{max-width:64ch;margin:0 auto;text-align:left}
+.about-words p{font-size:1.04rem;line-height:1.85;margin-bottom:1.15rem;color:var(--soft)}
+.about-words p:first-of-type{font-size:1.2rem;line-height:1.7;color:var(--ink);text-align:center;max-width:52ch;margin:0 auto 2rem}
+@media(max-width:700px){
+  .aboutpage{padding:7.5rem 1.3rem 1rem}
+  .about-portrait{max-width:330px;margin-bottom:2.2rem}
+  .about-words p:first-of-type{font-size:1.1rem}
+}
+
+/* About: force the centring, figure has its own default margins */
+.aboutpage .about-portrait{margin-left:auto!important;margin-right:auto!important;max-width:420px;width:100%}
+.aboutpage .about-words{margin-left:auto;margin-right:auto}
+.aboutpage .home-return{text-align:center;padding-left:0;padding-right:0;margin-top:2.4rem}
+.aboutpage .home-return .back{display:inline-block}
+/* Tea Notes: same centring for its Back to Home */
+.tn-page .home-return,.secpage .home-return{text-align:center}
+
+/* the one quote: centred, no panel, no bar */
+.quote{background:transparent;border:0;max-width:760px;margin:4.6rem auto 4.2rem;padding:0 1.3rem;text-align:center}
+.quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.35rem,3vw,2rem);line-height:1.45;color:var(--accent);margin:0 auto 1rem;max-width:24ch}
+.quote .by{display:block;font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.quote::before,.quote .mark{display:none}
+/* back links centred everywhere, so every page ends the same way */
+.home-return{text-align:center}
+
+.quote .mk{display:none}
+.quote p{max-width:30ch}
+
+/* the section label is an h2 now, keep it looking the same */
+h2.cat{font-family:'Inter',sans-serif;font-size:.66rem;font-weight:500;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--accent);margin:0}
+
+/* 2. tap targets: these were 19px and 14px tall on a phone */
+.back,.home-return .back{display:inline-block;padding:.7rem 1rem;min-height:44px;line-height:1.9}
+.fcontact{display:inline-block;padding:.6rem .8rem;min-height:44px;line-height:2}
+.socials a{min-width:44px;min-height:44px}
+
+/* 3. the hero words sit over a busy photograph, give them more to sit on */
+.cover-scrim{background:
+  radial-gradient(ellipse 66% 46% at 50% 46%, rgba(0,0,0,.62), rgba(0,0,0,0) 72%),
+  linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.30))}
+.cover-inner p{opacity:1}
