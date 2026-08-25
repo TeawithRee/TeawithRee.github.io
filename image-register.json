@@ -98,6 +98,18 @@
       ]
     },
     {
+      "page": "ecology-trees-give-us.html",
+      "title": "What Trees Give Us Before We Notice",
+      "image": "ecology-tree-canopy.webp",
+      "alt": "Sunlight filtering through the leaves of a large green tree.",
+      "caption": "Sunlight filtering through the leaves of a large green tree.",
+      "width": "1800",
+      "height": "1201",
+      "duplicate_pages": [
+        "ecology-trees-give-us.html"
+      ]
+    },
+    {
       "page": "ecology-what-sustainable-living-means-now.html",
       "title": "What Sustainable Living Means When the Forecast Is a Warning",
       "image": "pexels-sustainable-living-plants.webp",
@@ -287,6 +299,18 @@
       "height": "1067",
       "duplicate_pages": [
         "tools-digital-rituals.html"
+      ]
+    },
+    {
+      "page": "tools-human-collaboration.html",
+      "title": "The Future Should Still Have Room for People",
+      "image": "tools-human-collaboration.webp",
+      "alt": "People working together around a table with laptops and notes.",
+      "caption": "People working together around a table with laptops and notes.",
+      "width": "1800",
+      "height": "1201",
+      "duplicate_pages": [
+        "tools-human-collaboration.html"
       ]
     },
     {
