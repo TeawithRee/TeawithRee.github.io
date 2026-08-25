@@ -1,0 +1,473 @@
+{
+  "generated_note": "Use this register before assigning a new story image. Repeats must be deliberate and recorded.",
+  "stories": [
+    {
+      "page": "about.html",
+      "title": "I am Rehana Rutti",
+      "image": "rehana-about-personal.webp",
+      "alt": "Rehana Rutti in a pink floral top, photographed in a car.",
+      "caption": "",
+      "width": "1400",
+      "height": "1867",
+      "duplicate_pages": [
+        "about.html"
+      ]
+    },
+    {
+      "page": "ecology-blue-and-blaze-care.html",
+      "title": "When Love for One Dog Becomes Care for Many",
+      "image": "rescue-dog-human-connection-unsplash.jpg",
+      "alt": "A rescue dog resting close to a person who is gently holding its face.",
+      "caption": "Love for one dog can open the heart to many.",
+      "width": "3000",
+      "height": "2004",
+      "duplicate_pages": [
+        "ecology-blue-and-blaze-care.html"
+      ]
+    },
+    {
+      "page": "ecology-blue-and-blaze.html",
+      "title": "What Blue and Blaze Have Taught Me About Time",
+      "image": "blue-and-blaze.jpg",
+      "alt": "Blue and Blaze resting together in the afternoon sun.",
+      "caption": "Blue and Blaze resting together in the afternoon sun.",
+      "width": "3264",
+      "height": "2448",
+      "duplicate_pages": [
+        "ecology-blue-and-blaze.html"
+      ]
+    },
+    {
+      "page": "ecology-eco-tips.html",
+      "title": "Eco-Tips for Everyday Living",
+      "image": "pexels-eco-tips-recycling.webp",
+      "alt": "A simple recycling guide held in a bright room.",
+      "caption": "A practical guide to the materials we use and discard every day.",
+      "width": "1151",
+      "height": "2048",
+      "duplicate_pages": [
+        "ecology-eco-tips.html"
+      ]
+    },
+    {
+      "page": "ecology-in-praise-of-small-joys.html",
+      "title": "In Praise of Small Joys",
+      "image": "small-joys.jpg",
+      "alt": "A child gently holding a duckling, forehead to forehead.",
+      "caption": "A child gently holding a duckling, forehead to forehead.",
+      "width": "4000",
+      "height": "6000",
+      "duplicate_pages": [
+        "ecology-in-praise-of-small-joys.html"
+      ]
+    },
+    {
+      "page": "ecology-oceans-in-focus.html",
+      "title": "Oceans in Focus: A Visual Essay",
+      "image": "ecology-oceans-in-focus.jpg",
+      "alt": "A sea turtle gliding through vivid blue ocean waters, embodying marine grace.",
+      "caption": "A sea turtle gliding through vivid blue ocean waters, embodying marine grace.",
+      "width": "1600",
+      "height": "1200",
+      "duplicate_pages": [
+        "ecology-oceans-in-focus.html"
+      ]
+    },
+    {
+      "page": "ecology-rescue-stories.html",
+      "title": "Rescue Stories That Restore Hope",
+      "image": "rescue.jpg",
+      "alt": "A volunteer gently supports a rescue dog.",
+      "caption": "A volunteer gently supporting a rescue dog.",
+      "width": "6000",
+      "height": "4000",
+      "duplicate_pages": [
+        "ecology-rescue-stories.html"
+      ]
+    },
+    {
+      "page": "ecology-shelter-to-sanctuary.html",
+      "title": "From Shelter to Sanctuary: One Dog's Journey",
+      "image": "rescue-care.jpg",
+      "alt": "A black-and-white rescue dog standing in a bright shelter yard.",
+      "caption": "A rescue dog standing in a bright shelter yard.",
+      "width": "6240",
+      "height": "4160",
+      "duplicate_pages": [
+        "ecology-shelter-to-sanctuary.html"
+      ]
+    },
+    {
+      "page": "ecology-what-sustainable-living-means-now.html",
+      "title": "What Sustainable Living Means When the Forecast Is a Warning",
+      "image": "pexels-sustainable-living-plants.webp",
+      "alt": "A houseplant being cared for at home.",
+      "caption": "A houseplant being cared for at home, one small choice at a time.",
+      "width": "1600",
+      "height": "900",
+      "duplicate_pages": [
+        "ecology-what-sustainable-living-means-now.html"
+      ]
+    },
+    {
+      "page": "inner-work-a-softer-monday.html",
+      "title": "A Softer Monday",
+      "image": "softer-monday.jpg",
+      "alt": "A notebook lettered with the word Monday, beside yellow calla lilies.",
+      "caption": "A small flower, held out with both hands.",
+      "width": "1920",
+      "height": "1280",
+      "duplicate_pages": [
+        "inner-work-a-softer-monday.html"
+      ]
+    },
+    {
+      "page": "inner-work-affirmations-and-self-belief.html",
+      "title": "Affirmations, Self-Belief and the Stories We Repeat",
+      "image": "inner-work-affirmations-you-make-a-choice.webp",
+      "alt": "Colourful letters on a pink background spelling “You make a choice”.",
+      "caption": "Colourful letters on a pink background spelling “You make a choice”.",
+      "width": "1365",
+      "height": "2048",
+      "duplicate_pages": [
+        "inner-work-affirmations-and-self-belief.html"
+      ]
+    },
+    {
+      "page": "inner-work-confidence-after-40.html",
+      "title": "Confidence After 40: A Quiet Revolution",
+      "image": "confidence.jpg",
+      "alt": "At ease in one's own body.",
+      "caption": "At ease in one's own body.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "inner-work-confidence-after-40.html"
+      ]
+    },
+    {
+      "page": "inner-work-discipline-of-noticing.html",
+      "title": "The Discipline of Noticing Small Joys",
+      "image": "crystals.jpg",
+      "alt": "Clear quartz cradled in open hands.",
+      "caption": "Clear quartz cradled in open hands.",
+      "width": "899",
+      "height": "1600",
+      "duplicate_pages": [
+        "inner-work-discipline-of-noticing.html"
+      ]
+    },
+    {
+      "page": "inner-work-journaling-prompts.html",
+      "title": "Journaling Prompts for Stillness",
+      "image": "inner-mirror.jpg",
+      "alt": "A figure turned toward its own reflection.",
+      "caption": "A figure turned toward its own reflection.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "inner-work-journaling-prompts.html"
+      ]
+    },
+    {
+      "page": "inner-work-learning-to-fail.html",
+      "title": "Learning to Fail Without Becoming Smaller",
+      "image": "learning-to-fail-without-becoming-smaller.jpg",
+      "alt": "A woman reading quietly outdoors among tall grass and trees.",
+      "caption": "A quiet place to begin again. Photograph via Pexels, Chu Chup Hinh.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "inner-work-learning-to-fail.html"
+      ]
+    },
+    {
+      "page": "inner-work-morning-meditations.html",
+      "title": "Three-Minute Morning Meditations",
+      "image": "ritual.jpg",
+      "alt": "A healing ritual of crystals, sage and intention.",
+      "caption": "A healing ritual of crystals, sage and intention.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "inner-work-morning-meditations.html"
+      ]
+    },
+    {
+      "page": "inner-work-the-day-the-light-stepped-aside.html",
+      "title": "The Day the Light Stepped Aside",
+      "image": "inner-work-eclipse.jpg",
+      "alt": "A total solar eclipse crosses southern Europe on 12 August 2026.",
+      "caption": "A total solar eclipse crosses southern Europe on 12 August 2026.",
+      "width": "2761",
+      "height": "1840",
+      "duplicate_pages": [
+        "inner-work-the-day-the-light-stepped-aside.html"
+      ]
+    },
+    {
+      "page": "inner-work-the-path-less-travelled.html",
+      "title": "The Path Less Travelled",
+      "image": "road-less-travelled.jpg",
+      "alt": "A quiet road disappearing into the morning mist.",
+      "caption": "A quiet road disappearing into the morning mist.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "inner-work-the-path-less-travelled.html"
+      ]
+    },
+    {
+      "page": "inner-work-what-mentoring-has-taught-me-about-advice.html",
+      "title": "What Mentoring Has Taught Me About Advice",
+      "image": "inner-work-what-mentoring-has-taught-me-about-advice.jpg",
+      "alt": "Two people holding warm drinks across a table during a conversation.",
+      "caption": "Good advice often begins by making room for another person’s question. Photograph via Pexels.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "inner-work-what-mentoring-has-taught-me-about-advice.html"
+      ]
+    },
+    {
+      "page": "tea-notes.html",
+      "title": "Tea Notes",
+      "image": "tea-notes-roses-book.webp",
+      "alt": "A teacup beside fresh roses and an open book in warm afternoon light.",
+      "caption": "",
+      "width": "1080",
+      "height": "794",
+      "duplicate_pages": [
+        "tea-notes.html"
+      ]
+    },
+    {
+      "page": "tools-abstract-tech.html",
+      "title": "Abstract Tech: Visual Language of the Future",
+      "image": "tools-abstract-tech.jpg",
+      "alt": "Abstract neon tech patterns creating a futuristic visual language.",
+      "caption": "Abstract neon tech patterns creating a futuristic visual language.",
+      "width": "1600",
+      "height": "1066",
+      "duplicate_pages": [
+        "tools-abstract-tech.html"
+      ]
+    },
+    {
+      "page": "tools-ai-creative-companion.html",
+      "title": "AI as a Creative Companion",
+      "image": "modern-tools-light-workspace.jpg",
+      "alt": "A bright creative workspace with a leafy plant, camera, monitor and soft afternoon light.",
+      "caption": "A bright creative workspace where ideas can take shape alongside technology.",
+      "width": "1600",
+      "height": "2400",
+      "duplicate_pages": [
+        "tools-ai-creative-companion.html"
+      ]
+    },
+    {
+      "page": "tools-ai-has-to-say-so-now.html",
+      "title": "The Machines Have to Say So Now",
+      "image": "modern-tools-human.jpg",
+      "alt": "New rules across Europe mean a machine now has to tell you it is a machine.",
+      "caption": "New rules across Europe mean a machine now has to tell you it is a machine.",
+      "width": "1800",
+      "height": "1200",
+      "duplicate_pages": [
+        "tools-ai-has-to-say-so-now.html"
+      ]
+    },
+    {
+      "page": "tools-digital-rituals.html",
+      "title": "The Rise of Digital Rituals",
+      "image": "tools-digital-rituals.jpg",
+      "alt": "Phone and laptop arranged in a clean digital workspace.",
+      "caption": "Phone and laptop arranged in a clean digital workspace.",
+      "width": "1600",
+      "height": "1067",
+      "duplicate_pages": [
+        "tools-digital-rituals.html"
+      ]
+    },
+    {
+      "page": "tools-responsible-ai-ordinary-day.html",
+      "title": "What Responsible AI Means on an Ordinary Day",
+      "image": "modern-tools-yellow-laptop-phone.jpg",
+      "alt": "A close view of a person using technology while considering its human impact.",
+      "caption": "Technology matters most when we ask what it means for real people.",
+      "width": "1600",
+      "height": "1200",
+      "duplicate_pages": [
+        "tools-responsible-ai-ordinary-day.html"
+      ]
+    },
+    {
+      "page": "tools-second-brain.html",
+      "title": "Building a Second Brain",
+      "image": "modern-tools-orange-office-flatlay.jpg",
+      "alt": "Creative coding and digital design workspace with multiple screens.",
+      "caption": "Creative coding and digital design workspace with multiple screens.",
+      "width": "1600",
+      "height": "1175",
+      "duplicate_pages": [
+        "tools-second-brain.html"
+      ]
+    },
+    {
+      "page": "tools-the-difference-between-assistance-and-dependence.html",
+      "title": "The Difference Between Assistance and Dependence",
+      "image": "modern-tools-yellow-phone-plant.jpg",
+      "alt": "A laptop, notebook and cup of tea on a working table.",
+      "caption": "The point is not to reject tools but to remain present while using them. Photograph supplied by Rehana from Pexels.",
+      "width": "1600",
+      "height": "2400",
+      "duplicate_pages": [
+        "tools-the-difference-between-assistance-and-dependence.html"
+      ]
+    },
+    {
+      "page": "tools-what-ai-can-give-back-to-a-human-day.html",
+      "title": "What AI Can Give Back to a Human Day",
+      "image": "modern-tools-pink-phone-notebook.jpg",
+      "alt": "A laptop with handwritten notes and a quiet workspace.",
+      "caption": "A working space for deciding what technology can give back. Photograph supplied by Rehana from Pexels.",
+      "width": "1600",
+      "height": "1067",
+      "duplicate_pages": [
+        "tools-what-ai-can-give-back-to-a-human-day.html"
+      ]
+    },
+    {
+      "page": "wellbeing-a-day-without-eating.html",
+      "title": "A Day Without Eating",
+      "image": "pexels-fasting-table.webp",
+      "alt": "Fresh vegetables arranged around an empty plate.",
+      "caption": "Fresh vegetables arranged around an empty plate.",
+      "width": "2048",
+      "height": "1365",
+      "duplicate_pages": [
+        "wellbeing-a-day-without-eating.html"
+      ]
+    },
+    {
+      "page": "wellbeing-fifth-place-and-fine-with-it.html",
+      "title": "Fifth Place and Fine With It",
+      "image": "garmin-step-challenge-hero.jpg",
+      "alt": "Fifth place on the board, names of others kept private.",
+      "caption": "Fifth place on the board, names of others kept private.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "wellbeing-fifth-place-and-fine-with-it.html"
+      ]
+    },
+    {
+      "page": "wellbeing-inside-the-sauna.html",
+      "title": "Inside the Sauna: A Case Study",
+      "image": "approved-wellbeing-space.jpg",
+      "alt": "The still heat of a wooden sauna.",
+      "caption": "The still heat of a wooden sauna.",
+      "width": "1200",
+      "height": "1800",
+      "duplicate_pages": [
+        "wellbeing-inside-the-sauna.html"
+      ]
+    },
+    {
+      "page": "wellbeing-movement-as-medicine.html",
+      "title": "Movement as Medicine",
+      "image": "movement-morning.jpg",
+      "alt": "A woman stretching in the morning light.",
+      "caption": "A woman stretching in the morning light.",
+      "width": "6000",
+      "height": "4741",
+      "duplicate_pages": [
+        "wellbeing-movement-as-medicine.html"
+      ]
+    },
+    {
+      "page": "wellbeing-nervous-system-reset.html",
+      "title": "What a Nervous System Reset Really Means",
+      "image": "wellbeing-nervous-system-reset.webp",
+      "alt": "A man standing beside a window with his hand resting against his face.",
+      "caption": "A man standing beside a window with his hand resting against his face.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "wellbeing-nervous-system-reset.html"
+      ]
+    },
+    {
+      "page": "wellbeing-reiki-conversations.html",
+      "title": "Conversations with a Reiki Practitioner",
+      "image": "reiki.jpg",
+      "alt": "Hands held just above the body in a reiki session.",
+      "caption": "Hands held just above the body in a reiki session.",
+      "width": "1068",
+      "height": "1600",
+      "duplicate_pages": [
+        "wellbeing-reiki-conversations.html"
+      ]
+    },
+    {
+      "page": "wellbeing-the-quiet-work-of-continuing.html",
+      "title": "The Quiet Work of Continuing",
+      "image": "the-quiet-work-of-continuing.jpg",
+      "alt": "A woman reading a book outdoors beside a quiet stretch of water.",
+      "caption": "A quiet moment of reading outdoors. Photograph via Pexels, cottonbro studio.",
+      "width": "2304",
+      "height": "1536",
+      "duplicate_pages": [
+        "wellbeing-the-quiet-work-of-continuing.html"
+      ]
+    },
+    {
+      "page": "wellbeing-the-run-i-hadnt-trained-for.html",
+      "title": "The Run I Hadn't Trained For",
+      "image": "pexels-treadmill-five-kilometre.webp",
+      "alt": "A runner's shoes on a treadmill during a five-kilometre challenge.",
+      "caption": "The moment before the shins had their say.",
+      "width": "2048",
+      "height": "1365",
+      "duplicate_pages": [
+        "wellbeing-the-run-i-hadnt-trained-for.html"
+      ]
+    },
+    {
+      "page": "wellbeing-wellness-trackers.html",
+      "title": "Do Wellness Trackers Really Work?",
+      "image": "oura-ring-approved-pexels.jpeg",
+      "alt": "A black Oura ring standing on a soft grey textured surface.",
+      "caption": "A black Oura ring standing on a soft grey textured surface.",
+      "width": "1920",
+      "height": "1440",
+      "duplicate_pages": [
+        "wellbeing-wellness-trackers.html"
+      ]
+    },
+    {
+      "page": "wellbeing-what-glp-1-actually-means.html",
+      "title": "What GLP-1 Actually Means, and What My Own Sugar Habit Taught Me",
+      "image": "pexels-glp1-neutral-consultation.webp",
+      "alt": "A neutral nutrition consultation with fruit and notes on a desk.",
+      "caption": "A neutral conversation about food, health and the questions we bring to the table.",
+      "width": "1600",
+      "height": "1126",
+      "duplicate_pages": [
+        "wellbeing-what-glp-1-actually-means.html"
+      ]
+    },
+    {
+      "page": "wellbeing-what-my-oura-ring-taught-me-about-sleep.html",
+      "title": "What My Oura Ring Taught Me About Sleep",
+      "image": "sleep-smartphone.jpg",
+      "alt": "A woman sleeping beside a smartphone in soft morning light.",
+      "caption": "A woman sleeping beside a smartphone in soft morning light.",
+      "width": "6000",
+      "height": "4000",
+      "duplicate_pages": [
+        "wellbeing-what-my-oura-ring-taught-me-about-sleep.html"
+      ]
+    }
+  ]
+}
