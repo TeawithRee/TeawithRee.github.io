@@ -230,6 +230,18 @@
       ]
     },
     {
+      "page": "inner-work-the-voice-you-use-with-yourself.html",
+      "title": "The Voice You Use With Yourself",
+      "image": "finding-your-voice.jpg",
+      "alt": "A woman writing in a notebook in soft natural light.",
+      "caption": "A woman writing in a notebook in soft natural light.",
+      "width": "1600",
+      "height": "1067",
+      "duplicate_pages": [
+        "inner-work-the-voice-you-use-with-yourself.html"
+      ]
+    },
+    {
       "page": "inner-work-what-mentoring-has-taught-me-about-advice.html",
       "title": "What Mentoring Has Taught Me About Advice",
       "image": "inner-work-what-mentoring-has-taught-me-about-advice.jpg",
@@ -431,6 +443,18 @@
       "height": "1600",
       "duplicate_pages": [
         "wellbeing-reiki-conversations.html"
+      ]
+    },
+    {
+      "page": "wellbeing-the-body-is-not-a-project.html",
+      "title": "The Body Is Not a Project",
+      "image": "treadmill-run.jpg",
+      "alt": "A woman moving on a treadmill in a bright gym.",
+      "caption": "A woman moving on a treadmill in a bright gym.",
+      "width": "1600",
+      "height": "1067",
+      "duplicate_pages": [
+        "wellbeing-the-body-is-not-a-project.html"
       ]
     },
     {
