@@ -218,6 +218,18 @@
       ]
     },
     {
+      "page": "inner-work-the-life-you-keep-beginning.html",
+      "title": "The Life You Keep Beginning",
+      "image": "inner-work-reading-meadow.webp",
+      "alt": "A person reading an open book in a sunlit meadow filled with small yellow flowers.",
+      "caption": "A person reading an open book in a sunlit meadow filled with small yellow flowers.",
+      "width": "1600",
+      "height": "2400",
+      "duplicate_pages": [
+        "inner-work-the-life-you-keep-beginning.html"
+      ]
+    },
+    {
       "page": "inner-work-the-path-less-travelled.html",
       "title": "The Path Less Travelled",
       "image": "road-less-travelled.jpg",
