@@ -47,7 +47,7 @@ a{color:inherit;text-decoration:none}
  .dropdown{display:none}
  #nav.solid .navrow{display:flex}
 }
-.read{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);border-bottom:1.5px solid var(--accent);padding-bottom:.4rem;width:fit-content;transition:gap .3s}
+.read{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:none;color:var(--ink);border-bottom:1.5px solid var(--accent);padding-bottom:.4rem;width:fit-content;transition:gap .3s}
 .read span{transition:transform .3s}.read:hover span{transform:translateX(5px)}
 .hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.06);animation:zoom 14s ease-out forwards}
@@ -432,4 +432,31 @@ footer .fcontact,footer .copy,footer .credit{color:#cfc0b5}
   #nav .masthead{order:1;flex:1;min-width:0}
   #nav .menu-toggle{order:2}
   #nav #site-menu{order:3;flex-basis:100%}
+}
+
+
+/* About page: warm, intimate and personal, in the spirit of Tea Notes */
+.aboutpage{
+  max-width:1080px;
+  padding:8.5rem 2.4rem 3.5rem;
+  text-align:left;
+  background:linear-gradient(135deg,rgba(255,249,246,.96),rgba(255,255,255,.98) 58%,rgba(249,241,239,.9));
+}
+.aboutpage .about-head{grid-column:1 / -1;max-width:700px;margin:0 auto 1rem;text-align:center}
+.aboutpage .about-head h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:500;letter-spacing:-.025em;margin-bottom:0}
+.aboutpage .about-head .kicker{letter-spacing:.16em}
+.aboutpage .about-portrait{grid-column:1;align-self:start;max-width:440px;margin:1rem auto 0!important}
+.aboutpage .about-portrait img{border-radius:18px;box-shadow:0 22px 55px rgba(132,77,73,.16)}
+.aboutpage .about-words{grid-column:2;align-self:center;max-width:54ch;padding:0 1rem}
+.aboutpage .about-words p{font-size:1.02rem;line-height:1.85;color:var(--soft);margin-bottom:1.25rem}
+.aboutpage .about-words p:first-of-type{font-family:'Playfair Display',serif;font-size:1.42rem;line-height:1.5;text-align:left;color:var(--ink);max-width:none;margin-bottom:1.7rem}
+.aboutpage .home-return{grid-column:1 / -1;margin-top:2rem}
+@media(min-width:701px){.aboutpage{display:grid;grid-template-columns:minmax(280px,440px) minmax(0,1fr);column-gap:5rem;row-gap:1rem}}
+@media(max-width:700px){
+  .aboutpage{padding:7.5rem 1.3rem 2.5rem;text-align:left}
+  .aboutpage .about-head{margin-bottom:1.2rem;text-align:center}
+  .aboutpage .about-head h1{font-size:clamp(2.35rem,12vw,3.5rem)}
+  .aboutpage .about-portrait{max-width:340px;margin:0 auto 2.2rem!important}
+  .aboutpage .about-words{padding:0;max-width:none}
+  .aboutpage .about-words p:first-of-type{font-size:1.3rem;line-height:1.55}
 }
