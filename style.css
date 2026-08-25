@@ -344,3 +344,92 @@ h2.cat{font-family:'Inter',sans-serif;font-size:.66rem;font-weight:500;letter-sp
 
 /* no picture may ever be wider than the screen */
 img{max-width:100%;height:auto}
+
+
+/* Tea with Ree v6 — mobile-first living space system */
+:root{
+  --cream:#f7f4ef;
+  --paper:#fbfaf7;
+  --ink:#24201d;
+  --soft:#514943;
+  --muted:#766d65;
+  --accent:#b76045;
+  --accent-soft:#e6b08f;
+  --line:rgba(71,52,42,.15);
+  --shadow:0 20px 60px rgba(55,39,30,.10);
+  --radius:18px;
+}
+html{background:var(--cream);scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'Manrope','Inter',sans-serif;line-height:1.75}
+h1,h2,h3,.brand,.quote p,.intro p{font-family:'Cormorant Garamond','Playfair Display',Georgia,serif}
+.brand{font-weight:600;letter-spacing:.015em;color:var(--ink)}
+#nav{background:rgba(247,244,239,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(71,52,42,.11);padding:.75rem 1rem .55rem}
+#nav.solid{background:rgba(247,244,239,.96);padding:.55rem 1rem .45rem}
+.navrow{gap:1.25rem}
+.navitem>a,.navlinks a{font-family:'Manrope','Inter',sans-serif;font-size:.69rem;letter-spacing:.12em;color:var(--soft)}
+.cover{min-height:clamp(590px,88svh,920px);background:var(--ink)}
+.cover-bg{transform:scale(1.03);animation:softZoom 18s ease-out forwards}
+.cover-scrim{background:linear-gradient(180deg,rgba(28,22,18,.08),rgba(28,22,18,.58) 78%,rgba(28,22,18,.72))}
+.cover-inner{max-width:38rem;padding:0 1.25rem 4.6rem;text-align:left;margin-right:auto;margin-left:auto}
+.cover-inner h1{font-size:clamp(3.25rem,13vw,6rem);font-weight:500;letter-spacing:-.025em;line-height:.88;text-shadow:0 8px 36px rgba(0,0,0,.25)}
+.cover-inner p{font-size:clamp(.98rem,3.8vw,1.18rem);line-height:1.65;max-width:29rem;color:#fff8f0}
+.cover-tag{margin:1.6rem 0 0;padding-top:1rem;letter-spacing:.18em;font-size:.62rem;color:var(--accent-soft);text-align:left}
+.cover-tag::before{left:0;transform:none;background:var(--accent-soft)}
+.feed,.sec,.seccards,.aboutpage,.tn-page,.art,.secpage{max-width:78rem}
+.feed{padding:4.4rem 1rem 2rem}
+.rule{margin-bottom:1.7rem}
+.rule .cat{font-size:.65rem;letter-spacing:.23em;color:var(--accent)}
+.artgrid{gap:1rem}
+.story-media{border-radius:var(--radius);box-shadow:var(--shadow);background:#ded1c3}
+.story-media div{transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .8s}
+.story h3{font-size:clamp(1.55rem,6vw,2.1rem);font-weight:500;line-height:.98;letter-spacing:-.01em}
+.story p{font-size:.88rem;color:var(--muted)}
+.story h3 a:hover{color:var(--accent);opacity:1}
+.quote{margin:4.5rem auto 3.5rem;padding:0 1.3rem}
+.quote p{font-weight:500;color:var(--accent);font-size:clamp(1.9rem,7vw,3.4rem);line-height:1.02;max-width:16ch}
+.quote .by{font-family:'Manrope','Inter',sans-serif;letter-spacing:.18em;color:var(--muted)}
+.news{background:linear-gradient(135deg,#efe0d1,#f8f4ed 65%);padding:4rem 1.25rem;border:0}
+.news h2{font-size:clamp(2rem,7vw,3.25rem);font-weight:500;line-height:.98;max-width:17ch}
+.news form{border:0;border-bottom:1px solid var(--ink);border-radius:0;background:transparent;max-width:29rem}
+.news input{padding:1rem .1rem;font-family:'Manrope','Inter',sans-serif}
+.news button{padding:0 .2rem 0 1rem;color:var(--accent);border-left:0}
+footer{background:var(--ink);color:#f7f1e9;padding:3.8rem 1.25rem 2rem}
+footer .fcontact,footer .copy,footer .credit{color:#cfc0b5}
+.socials{gap:.8rem}
+.socials a{color:var(--accent-soft);border-color:rgba(230,176,143,.55)}
+.menu-toggle{display:none}
+@keyframes softZoom{from{transform:scale(1.03)}to{transform:scale(1)}}
+@media(min-width:701px){
+  .feed{padding-left:2.4rem;padding-right:2.4rem}
+  .cover-inner{padding-bottom:7rem}
+  .story-media{border-radius:24px}
+}
+@media(max-width:700px){
+  #nav{padding:.7rem 1rem}
+  .masthead{display:flex;align-items:center;justify-content:space-between;text-align:left}
+  .brand{font-size:2rem}
+  .menu-toggle{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(71,52,42,.25);border-radius:999px;background:rgba(251,250,247,.55);color:var(--ink);padding:.5rem .72rem;min-height:44px;font:500 .66rem 'Manrope','Inter',sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+  .menu-icon{display:grid;gap:4px;width:15px}.menu-icon i{display:block;width:15px;height:1px;background:currentColor;transition:transform .25s}.nav-open .menu-icon i:first-child{transform:translateY(2.5px) rotate(45deg)}.nav-open .menu-icon i:last-child{transform:translateY(-2.5px) rotate(-45deg)}
+  #site-menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:.15rem;padding:.75rem 1rem 1.2rem;background:rgba(247,244,239,.98);border-bottom:1px solid var(--line);box-shadow:0 18px 38px rgba(55,39,30,.12);max-height:calc(100svh - 4.4rem);overflow-y:auto}
+  .nav-open #site-menu{display:flex}
+  .navitem{display:block;border-bottom:1px solid rgba(71,52,42,.10)}
+  .navitem>a{display:flex;align-items:center;min-height:48px;padding:.5rem .15rem;font-size:.72rem;letter-spacing:.15em}
+  .dropdown{display:none!important}
+  .cover{min-height:calc(100svh - 4.35rem);height:auto}
+  .cover-inner{padding:0 1.25rem 4rem}
+  .cover-inner h1{font-size:clamp(3.15rem,16vw,5.3rem)}
+  .feed{padding-top:3.2rem}
+  .artgrid{grid-template-columns:1fr;gap:2.4rem}
+  .story-media{border-radius:20px}
+  .story h3{font-size:2rem}
+  .quote{margin-top:3.8rem;margin-bottom:3.3rem}
+  .news{padding-top:3.4rem;padding-bottom:3.5rem}
+}
+@media(prefers-reduced-motion:reduce){.cover-bg{animation:none}.story-media div{transition:none}}
+
+@media(max-width:700px){
+  #nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.65rem}
+  #nav .masthead{order:1;flex:1;min-width:0}
+  #nav .menu-toggle{order:2}
+  #nav #site-menu{order:3;flex-basis:100%}
+}
