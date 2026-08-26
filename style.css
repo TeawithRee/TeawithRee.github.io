@@ -459,3 +459,15 @@ footer .fcontact,footer .copy,footer .credit{color:#cfc0b5}
 
 /* Restrained ambient motion for section pages only. The homepage remains unchanged. */
 .ambient-story-video{display:grid;gap:1.4rem;margin:clamp(3rem,8vw,7rem) auto 0;max-width:1180px;padding:clamp(1.2rem,4vw,3rem);background:linear-gradient(135deg,#fffaf7,#f3f7f2);border:1px solid rgba(92,105,95,.14);border-radius:1.5rem;overflow:hidden}.ambient-video-copy{align-self:center}.ambient-video-copy h2{margin:.4rem 0 1rem}.ambient-video-copy p{max-width:38rem}.ambient-video-frame{position:relative;overflow:hidden;border-radius:1rem;background:#dfe8df;aspect-ratio:16/9}.ambient-video-frame video{display:block;width:100%;height:100%;object-fit:cover}.video-credit{position:absolute;bottom:.6rem;right:.7rem;padding:.25rem .5rem;background:rgba(255,255,255,.82);color:#435148;font-size:.68rem;border-radius:999px}@media (min-width:760px){.ambient-story-video{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center}.ambient-video-frame{min-height:20rem}}@media (prefers-reduced-motion:reduce){.ambient-video-frame video{display:none}.ambient-video-frame{background:var(--paper,#fbfaf8) url('/ecology-bush-walk-ambient-poster.jpg') center/cover no-repeat}.tools .ambient-video-frame{background-image:url('/ecology-notebook-ambient-poster.jpg')}}
+
+/* High-end reading composition: image and copy are separate */
+.cover{min-height:0;height:auto;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;background:#fff;color:var(--ink);overflow:visible;text-align:left}
+.cover-bg{position:relative;inset:auto;order:1;width:100%;height:clamp(17rem,52vw,40rem);min-height:0;transform:none;animation:none;background-position:center;filter:brightness(1.08) saturate(1.04)}
+.cover-scrim{display:none}
+.cover-inner{order:2;position:relative;inset:auto;z-index:2;width:100%;max-width:78rem;margin:0 auto;padding:clamp(2.2rem,5vw,4.6rem) clamp(1.25rem,6vw,6rem) clamp(2.8rem,6vw,5.4rem);color:var(--ink);text-align:left}
+.cover-inner h1{max-width:14ch;margin:0 0 1rem;color:var(--ink);font-size:clamp(2.5rem,6.2vw,5.4rem);font-weight:500;letter-spacing:-.03em;line-height:.98;text-shadow:none}
+.cover-inner p{max-width:42rem;margin:.45rem 0;color:var(--ink);font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.65;text-shadow:none;opacity:1}
+.cover-tag{margin:1.35rem 0 0;padding:0;color:var(--accent);font-size:.75rem;letter-spacing:.08em;text-shadow:none;opacity:1}
+.cover-tag::before{display:none}
+@media(min-width:701px){.cover-bg{height:clamp(25rem,43vw,42rem)}.cover-inner{padding-top:clamp(3rem,5vw,5.6rem);padding-bottom:clamp(3.2rem,6vw,6.2rem)}.cover-inner h1{font-size:clamp(3.5rem,6vw,6.4rem)}}
+@media(max-width:560px){.cover-bg{height:clamp(16rem,70vw,24rem)}.cover-inner{padding:2rem 1.25rem 2.8rem}.cover-inner h1{font-size:clamp(2.5rem,12vw,4rem);line-height:1.02}.cover-inner p{font-size:1rem;line-height:1.55}.cover-tag{margin-top:1rem;font-size:.72rem}}
