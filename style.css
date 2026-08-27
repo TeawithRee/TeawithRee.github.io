@@ -471,7 +471,7 @@ footer .fcontact,footer .copy,footer .credit{color:var(--muted)}
 
 
 /* Homepage correction: the image carries the heading; the reflection remains separate. */
-.home-page .cover{align-items:flex-start;justify-content:flex-start;text-align:left}
+.home-page .cover{height:clamp(560px,78svh,820px);min-height:560px;align-items:flex-start;justify-content:flex-start;text-align:left}
 .home-page .cover-inner{width:100%;max-width:78rem;margin:0 auto;padding:clamp(5.5rem,12vh,9rem) clamp(1.25rem,6vw,6rem) 2rem;text-align:left}
 .home-page .cover-inner h1{max-width:12ch;margin:0;color:#fff;font-size:clamp(2.15rem,5.2vw,4rem);line-height:1.06;text-shadow:0 2px 18px rgba(0,0,0,.7)}
 .home-page .quote{width:100%;max-width:none;margin:3.5rem 0;padding:3rem clamp(1.25rem,6vw,6rem);background:#faf9f7;border:0;text-align:center}
@@ -488,7 +488,7 @@ footer .fcontact,footer .copy,footer .credit{color:var(--muted)}
 .home-page .intro p{ font-size:clamp(1rem,2vw,1.35rem); line-height:1.45; color:var(--ink); }
 
 /* Final homepage hero composition: the locked phrase belongs in the quiet lower photographic zone. */
-.home-page .cover-inner{position:absolute;inset:0;width:100%;max-width:none;margin:0;padding:0;text-align:left}
+.home-page .cover-scrim{background:linear-gradient(180deg,rgba(20,13,9,.08),rgba(20,13,9,.16) 70%,rgba(20,13,9,.28))}.home-page .cover-inner{position:absolute;inset:0;width:100%;max-width:none;margin:0;padding:0;text-align:left}
 .home-page .cover-inner h1{position:absolute;left:clamp(1.1rem,6vw,6rem);top:clamp(5rem,15vh,8rem);max-width:12ch;margin:0;color:#fff;font-size:clamp(2.15rem,5vw,4.2rem);line-height:1.02;font-weight:500;letter-spacing:-.02em;text-shadow:0 3px 28px rgba(0,0,0,.78),0 1px 2px rgba(0,0,0,.9)}
 @media(max-width:700px){.home-page .cover-inner h1{left:1.1rem;top:5rem;max-width:8ch;font-size:clamp(2.05rem,9vw,2.9rem);line-height:1.02}}
 @media(min-width:1200px){.home-page .cover-inner h1{max-width:12ch}}
