@@ -505,3 +505,63 @@ footer .fcontact,footer .copy,footer .credit{color:var(--muted)}
 
 @media(min-width:1200px){.home-page .cover-inner h1{max-width:12ch}}
 .home-page .news button{ font-size:.78rem; letter-spacing:.12em; color:var(--accent); min-height:44px; }
+
+/* Homepage recovery: one clear image, one clear reading band, no collapsed background layer. */
+.home-page .cover{
+  display:block;
+  height:auto;
+  min-height:0;
+  overflow:visible;
+  background:#fff;
+  text-align:left;
+}
+.home-page .cover-bg{
+  position:relative;
+  inset:auto;
+  width:100%;
+  aspect-ratio:4 / 3;
+  background-size:cover;
+  background-position:center;
+  transform:none;
+  animation:none;
+}
+.home-page .cover-scrim{display:none}
+.home-page .cover-inner{
+  position:relative;
+  z-index:1;
+  max-width:1160px;
+  margin:0 auto;
+  padding:1.8rem 2.4rem 2.2rem;
+  color:var(--ink);
+}
+.home-page .cover-inner h1{
+  max-width:13ch;
+  margin:0;
+  color:var(--ink);
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.1rem,4.4vw,4.1rem);
+  font-weight:500;
+  line-height:1.02;
+  letter-spacing:-.02em;
+  text-shadow:none;
+}
+.home-page .intro{padding:1.6rem 2.4rem .8rem}
+.home-page .intro p{max-width:42rem;margin:0 auto;font-size:clamp(1.05rem,2vw,1.35rem);color:var(--soft)}
+.home-page .feed{padding-top:2.8rem}
+.home-page .story-media{box-shadow:none;border-radius:8px}
+.home-page .story-media>div{aspect-ratio:3 / 2;background-size:cover;background-position:center}
+.home-page .story h3{font-size:clamp(1.25rem,2vw,1.65rem);line-height:1.08;font-weight:500}
+.home-page .quote{max-width:820px;margin:3.5rem auto 3.1rem;padding:0 2rem;text-align:center;background:transparent}
+.home-page .quote p{font-size:clamp(1.35rem,2.8vw,2.25rem);line-height:1.28;color:var(--accent);margin:0 auto .8rem}
+.home-page .quote .by{font-size:.66rem;letter-spacing:.16em;text-transform:none;color:var(--muted)}
+.home-page .news{padding:4rem 1.3rem 4.4rem;background:var(--paper);text-align:center}
+.home-page .news h2{max-width:24ch;margin:0 auto 1.8rem;font-size:clamp(1.55rem,3.2vw,2.25rem);line-height:1.15;font-weight:500}
+.home-page .news form{max-width:430px;margin:0 auto}
+@media(max-width:700px){
+  .home-page .cover-bg{aspect-ratio:4 / 3}
+  .home-page .cover-inner{padding:1.35rem 1.3rem 1.7rem}
+  .home-page .cover-inner h1{font-size:clamp(2rem,10vw,3rem);max-width:12ch}
+  .home-page .intro{padding:1.3rem 1.3rem .4rem}
+  .home-page .feed{padding-top:2rem}
+  .home-page .quote{margin:2.8rem auto 2.6rem;padding:0 1.3rem}
+}
