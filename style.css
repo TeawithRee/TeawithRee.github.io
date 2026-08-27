@@ -201,7 +201,7 @@ footer{background:var(--cream);padding:3.2rem 2.4rem 1.8rem;text-align:center;bo
 @media(prefers-reduced-motion:reduce){}
 
 /* Quiet the visual edges without changing the article reading experience. */
-.socials a{background:transparent!important;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 48%,transparent);box-shadow:none}
+.socials a{color:#fff;border:0;box-shadow:none}
 .hero::after{background:linear-gradient(to top,rgba(18,13,10,.84),rgba(18,13,10,.42) 55%,rgba(18,13,10,.12))}
 
 .about-lede{max-width:650px;margin:1.1rem auto 2rem;text-align:center;font-family:'Playfair Display',serif;font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.55;color:var(--soft);font-style:italic}
@@ -487,9 +487,21 @@ footer .fcontact,footer .copy,footer .credit{color:var(--muted)}
 .home-page .feed .cat{ text-transform:none; letter-spacing:.16em; }
 .home-page .intro p{ font-size:clamp(1rem,2vw,1.35rem); line-height:1.45; color:var(--ink); }
 
-/* Final homepage hero composition: the locked phrase belongs in the quiet lower photographic zone. */
-.home-page .cover-scrim{background:linear-gradient(180deg,rgba(20,13,9,.08),rgba(20,13,9,.16) 70%,rgba(20,13,9,.28))}.home-page .cover-inner{position:absolute;inset:0;width:100%;max-width:none;margin:0;padding:0;text-align:left}
-.home-page .cover-inner h1{position:absolute;left:clamp(1.1rem,6vw,6rem);top:clamp(5rem,15vh,8rem);max-width:12ch;margin:0;color:#fff;font-size:clamp(2.15rem,5vw,4.2rem);line-height:1.02;font-weight:500;letter-spacing:-.02em;text-shadow:0 3px 28px rgba(0,0,0,.78),0 1px 2px rgba(0,0,0,.9)}
-@media(max-width:700px){.home-page .cover-inner h1{left:1.1rem;top:5rem;max-width:8ch;font-size:clamp(2.05rem,9vw,2.9rem);line-height:1.02}}
+/* Final homepage hero composition: keep the locked phrase in a clear white reading band below the photograph. */
+@media(max-width:700px){
+  #nav{position:relative;z-index:50}
+  #nav #site-menu{position:absolute!important;top:100%;left:0;right:0;display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:.1rem 1rem;align-items:stretch;padding:.65rem 1rem 1rem;background:#fff;box-shadow:0 14px 30px rgba(55,39,30,.14);max-height:70svh;overflow-y:auto}
+  body.nav-open #nav #site-menu{display:grid}
+  #site-menu .navitem{border-bottom:0}
+  #site-menu .navitem>a{min-height:44px;padding:.45rem 0;font-size:.68rem;letter-spacing:.08em}
+}
+.home-page .cover{display:block;height:auto;min-height:0;overflow:visible;background:#fff}
+.home-page .cover-bg{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:1.5;background-position:center;transform:none;animation:none}
+.home-page .cover-scrim{display:none}
+.home-page .cover-inner{position:relative;inset:auto;width:100%;max-width:78rem;margin:0 auto;padding:1.35rem clamp(1.25rem,6vw,6rem) 1.1rem;text-align:left;background:#fff}
+.home-page .cover-inner h1{position:static;max-width:14ch;margin:0;color:var(--ink);font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.02;text-shadow:none;font-weight:500;letter-spacing:-.02em}
+@media(max-width:700px){.home-page .cover-inner{padding:1.15rem 1.25rem .9rem}.home-page .cover-inner h1{max-width:12ch;font-size:clamp(2.2rem,10vw,3rem);line-height:1.02}}
+
+
 @media(min-width:1200px){.home-page .cover-inner h1{max-width:12ch}}
 .home-page .news button{ font-size:.78rem; letter-spacing:.12em; color:var(--accent); min-height:44px; }
