@@ -13,7 +13,7 @@ The design gate is substantially reconciled to the brief. The original `homehero
 | Gate | Evidence | Result |
 |---|---|---|
 | Library scope | `stories.json` contains 70 unique story URLs with the required 15/15/20/20 section counts. | **Passed locally** |
-| Image assignments | `image-register.json` contains 70 unique image filenames for the 70 library records. | **Passed locally** |
+| Image assignments | `stories.json` contains the authoritative 70 story records and image mappings; the legacy image registers have been removed. | **Passed locally** |
 | Homepage feed | Static fallback and dynamic `stories.json` selection both contain exactly three cards. | **Passed locally** |
 | Social metadata | Full local HTML sweep found zero root-relative `og:image` or `twitter:image` values. | **Passed locally** |
 | Sitemap | Regenerated sitemap contains 77 URLs: shell pages, section pages, and the 70 stories. | **Passed locally** |

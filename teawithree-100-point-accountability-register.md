@@ -200,7 +200,7 @@ The release cannot be certified or published until the local candidate’s remai
 | Local homepage selected feed | Passed locally | `stories.json`, `index.html`, `reconcile_after_registry_latest.txt` | Keep the three verified cards aligned in both data and fallback markup. |
 | Rejected Monday and Eclipse on homepage | Passed locally / failed live | `stories.json` excludes both; live audit still finds older cards | Do not deploy until live parity is proven. |
 | Rejected flower Oura image | Passed locally / failed live parity | Current local register uses non-floral mappings; live domain remains older | Verify deployed build after any future push. |
-| Blue and Blaze title/image/alt/caption | Passed locally | `ecology-blue-and-blaze.html`, `image-register.json`, local reconciliation | Preserve exact approved asset and truthful laptop-screen description. |
+| Blue and Blaze title/image/alt/caption | Passed locally | `ecology-blue-and-blaze.html`, `stories.json`, local reconciliation | Preserve exact approved asset and truthful laptop-screen description. |
 | Current registered library alignment | Passed for 44 mapped story pages | `reconcile_after_registry_latest.txt` reports 0 image, alt, caption, OG, Twitter, H1 mismatches | Do not call this the full 70-story library. |
 | Full 70-story scope | Blocked | `library_scope_latest.txt`: current sections are 10/9/12/13; drafts are not image-approved or published | Reconcile and approve the remaining 26 complete stories before launch. |
 | Visual homepage gate | Passed on current local screenshots with notes | `mobile-homepage-final.png`, `desktop-homepage-final.png`, `aesthetic_findings.md` | Keep checking the hero’s open grass zone and do not move text onto the hat, dog, book, or hands. |
