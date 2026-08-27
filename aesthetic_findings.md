@@ -2,17 +2,17 @@
 
 The locked `homehero.jpg` has clear open grass across the upper-left and upper-right, while the hat occupies the lower-left and the dog and book occupy the centre-right. Hero copy must not begin on the hat; the safest readable area is the lower-right grass/shadow area, kept clear of the book and hands.
 
-The approved `softer-monday-approved.jpg` is a bright blue composition with a white alarm clock and a white MONDAY sign. It is a 3:2 image and is suitable for the modest homepage card crop without inventing or substituting another photograph.
+The approved `softer-monday-approved.webp` is a bright blue composition with a white alarm clock and a white MONDAY sign. It is a 3:2 image and is suitable for the modest homepage card crop without inventing or substituting another photograph.
 
 ## 26 August 2026 — release-candidate visual checkpoint
 
 The mobile homepage render at 390px shows the original dog-and-book hero intact. The phrase is in the upper-left grass zone and does not begin on the hat, but the large serif text spans three lines and reaches visually toward the dog’s body; this remains an art-direction item to review rather than a source/data failure. The page shows exactly three cards, a restrained quote, a visible signup action, colourful social icons, and a light footer with no horizontal overflow.
 
-The inspected `blue-and-blaze-approved.jpg` is a photograph of two dogs eating from bowls while displayed on a Dell laptop screen, with visible screen framing and taskbar. Therefore the current title “What Blue and Blaze Have Taught Me About Time” can be true, but the existing alt/caption “resting together in the afternoon sun” is not an accurate description of the visible photograph. The asset is supplied/approved for this story, but its wording must be aligned to what viewers actually see before release. No substitute image was introduced.
+The inspected `blue-and-blaze-approved.webp` is a photograph of two dogs eating from bowls while displayed on a Dell laptop screen, with visible screen framing and taskbar. Therefore the current title “What Blue and Blaze Have Taught Me About Time” can be true, but the existing alt/caption “resting together in the afternoon sun” is not an accurate description of the visible photograph. The asset is supplied/approved for this story, but its wording must be aligned to what viewers actually see before release. No substitute image was introduced.
 
-The inspected `softer-monday-approved.jpg` clearly shows a white alarm clock above a white sign reading MONDAY on a bright blue background. The previous alt/caption text about a notebook and yellow calla lilies was inaccurate. The story is excluded from the homepage, but its library metadata must describe the clock and sign if the article remains live.
+The inspected `softer-monday-approved.webp` clearly shows a white alarm clock above a white sign reading MONDAY on a bright blue background. The previous alt/caption text about a notebook and yellow calla lilies was inaccurate. The story is excluded from the homepage, but its library metadata must describe the clock and sign if the article remains live.
 
-The inspected `blue-and-blaze-approved.jpg` clearly shows a white dog and a black dog eating from bowls in a photograph displayed on a laptop screen. The article and dynamic card metadata were corrected to state that visible scene rather than claiming the dogs were resting in afternoon sun.
+The inspected `blue-and-blaze-approved.webp` clearly shows a white dog and a black dog eating from bowls in a photograph displayed on a laptop screen. The article and dynamic card metadata were corrected to state that visible scene rather than claiming the dogs were resting in afternoon sun.
 
 
 ## Current local homepage art-direction review
