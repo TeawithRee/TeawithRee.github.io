@@ -229,3 +229,10 @@ This checkpoint supersedes earlier local-only counts while preserving the histor
 | Release readiness | Local candidate is substantially complete, but launch remains blocked until the controlled commit/deployment and live-versus-repository audit pass. | **Blocked** |
 
 The remaining caveat is deliberate and visible rather than hidden: “What the Body Knows Before the App Does” uses the supplied laptop-screen photograph and describes it truthfully, while the new “Wellness Event” page now uses a distinct quiet-room photograph. The image register is unique, but final launch still requires the live domain to serve this exact candidate and an independent fetch to confirm parity.
+
+
+## 27 August 2026 — final live release checkpoint
+
+The verified candidate was merged to the Pages-served `main` branch as commit `79af6d4` through pull request 4. Independent live checks after the rebuild confirmed: homepage HTTP 200; exact hero phrase present; three selected story cards are Garden, In Praise of Small Joys, and Blue and Blaze; new Ecology article HTTP 200; sitemap HTTP 200 with 77 URLs; unknown URL HTTP 404; and no root-relative social-image metadata on the live homepage. A live browser screenshot confirmed the hero phrase is complete, below navigation, in upper-left grass, and clear of the hat, dog, book, and hands. The earlier live black-block regression and lower-left hat overlap are superseded by this final evidence. Search Console recrawl status remains a separate external indexing matter and is not being represented as completed here.
+
+**Current release conclusion:** The site is live and the current public release surface is verified. Googlebot recognition and Search Console indexing should be monitored independently after the new sitemap submission and crawl cycle.

@@ -1,37 +1,44 @@
-# Tea with Ree — controlled deployment report
+# Tea with Ree — final controlled deployment report
 
-**Checkpoint:** 27 August 2026
+**Date:** 27 August 2026
+**Live commit:** `79af6d4` on the Pages-served `main` branch
+**Repository:** [TeawithRee/TeawithRee.github.io](https://github.com/TeawithRee/TeawithRee.github.io)
+**Public site:** [teawithree.com](https://teawithree.com/)
 
-## Release position
+## Final position
 
-The local candidate is now a complete **70-story library build** with the requested section counts: 15 Ecology, 15 Modern Tools, 20 Inner Work, and 20 Wellbeing. The homepage remains deliberately limited to exactly three selected stories: **A Garden Is a Small Climate Conversation**, **In Praise of Small Joys**, and **What Blue and Blaze Have Taught Me About Time**. Monday and Eclipse remain library-only and are not selected for the homepage.
+Tea with Ree is now live from the controlled `main` branch. The restored site preserves the original personal identity, the locked `homehero.jpg`, and the exact hero phrase **“A space to pause and reflect”**. The homepage remains intentionally restrained with exactly three selected stories: **A Garden Is a Small Climate Conversation**, **In Praise of Small Joys**, and **What Blue and Blaze Have Taught Me About Time**. The rejected Monday and Eclipse stories are not in the selected feed.
 
-The design gate is substantially reconciled to the brief. The original `homehero.jpg` is preserved, the exact phrase **“A space to pause and reflect”** is present, and the phrase was checked at mobile, tablet, and desktop after explicit positioning into the lower-left dark photographic zone. The page remains light, uses dark text in the white content areas, retains the original colourful social links, avoids the rejected black footer, and keeps the newsletter action visible without the earlier oversized quotation treatment.
+The library now contains exactly 70 complete local story pages with the requested section counts: 15 Ecology, 15 Modern Tools, 20 Inner Work, and 20 Wellbeing. Each registry record has a local HTML page and a distinct image assignment. No generated image was introduced during this completion pass.
 
-## Evidence table
+## Evidence summary
 
 | Gate | Evidence | Result |
 |---|---|---|
-| Library scope | `stories.json` contains 70 unique story URLs with the required 15/15/20/20 section counts. | **Passed locally** |
-| Image assignments | `image-register.json` contains 70 unique image filenames for the 70 library records. | **Passed locally** |
-| Homepage feed | Static fallback and dynamic `stories.json` selection both contain exactly three cards. | **Passed locally** |
-| Social metadata | Full local HTML sweep found zero root-relative `og:image` or `twitter:image` values. | **Passed locally** |
-| Sitemap | Regenerated sitemap contains 77 URLs: shell pages, section pages, and the 70 stories. | **Passed locally** |
-| Missing-page handling | Root `404.html` exists with light styling and links to the homepage and articles. | **Passed locally** |
-| Responsive rendering | 78 local HTML pages were checked by the bounded render audit. | **Passed locally** |
-| HTTP/status gate | Non-200 local pages: 0. | **Passed locally** |
-| Request gate | Failed local requests: 0. | **Passed locally** |
-| Overflow gate | Horizontal overflow findings: 0. | **Passed locally** |
-| Image gate | Broken images: 0. | **Passed locally** |
-| Heading gate | Pages without an H1: 0. | **Passed locally** |
-| Three-breakpoint article QA | All 26 new articles were captured at 390px, 834px, and 1440px. | **Passed locally with noted asset caveat** |
-| Live parity | The public domain has not yet been independently fetched against this expanded candidate. | **Blocked** |
-| Launch readiness | A controlled commit and live-versus-repository audit remain before claiming launch. | **Blocked** |
+| Homepage hero | Independent live browser inspection after commit `79af6d4`; original photograph retained and phrase visible in the upper-left grass zone. | **Passed live** |
+| Hero safety | Phrase is below the navigation and clear of the hat, dog, book, and hands in the final live screenshot. | **Passed live** |
+| Homepage feed | Live navigation exposes exactly three selected story cards: Garden, In Praise of Small Joys, and Blue and Blaze. | **Passed live** |
+| Library scope | `stories.json`: 70 unique story URLs with counts 15 Ecology, 15 Modern Tools, 20 Inner Work, 20 Wellbeing. | **Passed locally** |
+| Image uniqueness | 70 library records map to 70 unique image filenames. | **Passed locally** |
+| Social metadata | Local sweep found zero root-relative `og:image` or `twitter:image` values. | **Passed locally** |
+| New story availability | `https://teawithree.com/ecology-a-world-made-smaller-by-birds.html` returns HTTP 200. | **Passed live** |
+| Sitemap | `https://teawithree.com/sitemap.xml` returns HTTP 200 and contains 77 URLs. | **Passed live** |
+| Missing-page handling | Unknown public URL returns HTTP 404 and the root `404.html` contains homepage and article recovery links. | **Passed live** |
+| Responsive audit | 80 local HTML pages checked at mobile, tablet, and desktop widths. | **Passed locally** |
+| Render failures | Non-200 local pages: 0; failed requests: 0; horizontal overflow: 0; broken images: 0; pages without H1: 0. | **Passed locally** |
+| Social links | Instagram, TikTok, Facebook, and LinkedIn remain the original colourful destinations. | **Passed live** |
+| Live parity | The public domain now serves the expanded library, current homepage selection, sitemap, and corrected light hero. | **Passed for verified release surface** |
 
-## Remaining release caveat
+## Deliberate content and art-direction decisions
 
-The new page **What the Body Knows Before the App Does** uses the supplied laptop-screen photograph and describes that visible screen truthfully. It is not presented as a direct portrait of a person or device. The Wellness Event page was reassigned to a distinct quiet-room photograph so that the no-repeat rule is maintained. The register now reports 70 unique image assignments.
+The design remains bright, warm, spacious, and personal rather than dark or corporate. The hero uses the supplied photograph without replacement. The supporting line begins with an action verb: “Step into ideas that inspire, restore and move you.” The selected-story images are modestly proportioned, the newsletter is quiet rather than oversized, and the footer is light with dark readable text.
 
-## Controlled next action
+The article contact-sheet review covered all 26 newly added pages at 390px, 834px, and 1440px. The added pages share one article system with consistent image proportions, heading hierarchy, and readable body copy. The Wellness Event page was reassigned to a distinct quiet-room image after the first contact-sheet review identified an accidental repeat. The Garmin article also received a distinct non-repeating supplied asset.
 
-The correct next action is to commit the publishable site files on `teawithree-mobile-first-redesign`, push that branch, and then compare the public domain against the exact commit before merging or treating the site as launched. The live audit must check the homepage selection, the expanded sitemap, the new article URLs, canonical and social image metadata, the 404 response, and the absence of draft-only notes. If the public domain still serves the older build, the release remains blocked rather than being described as live.
+One transparent caveat remains in the content record: **What the Body Knows Before the App Does** uses a supplied laptop-screen photograph, and its caption describes that screen honestly. It is not presented as a personal portrait or as a different device than the photograph shows.
+
+## Release record
+
+The principal completion commit is `59427ed`, followed by the live hero correction and CSS cache-busting work. The final clean deployment was merged to `main` through pull request 4 as commit `79af6d4`. The local candidate was rendered before publication, and the public domain was then independently checked after the merge. This report does not claim that Google Search Console has completed a new crawl; that remains an external indexing observation to monitor separately from the site’s live HTTP and visual state.
+
+The site is therefore **live and technically verified on the current release surface**. Search indexing may continue to update on its own crawl schedule, but the served public build now matches the controlled candidate on the checks listed above.

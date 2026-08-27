@@ -7,12 +7,12 @@
   },
   "selected": [
     {
-      "url": "/ecology-garden-climate-conversation.html",
-      "title": "A Garden Is a Small Climate Conversation",
-      "image": "/balcony-succulents-1.jpg",
-      "alt": "A small balcony garden of succulents and green plants in natural light.",
-      "caption": "A garden can be a small climate conversation, lived one plant at a time.",
-      "desc": "A garden does not have to be large to change the way we look at the world. A few pots on a balcony can teach us about heat, water, soil and patience.",
+      "url": "/ecology-trees-give-us.html",
+      "title": "What Trees Give Us Before We Notice",
+      "image": "/ecology-tree-canopy.webp",
+      "alt": "Sunlight filtering through the leaves of a large green tree.",
+      "caption": "Sunlight filtering through the leaves of a large green tree.",
+      "desc": "There are trees I know by the way they change the light. I walk past them without always looking up, but I notice when one has been cut down.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -31,9 +31,9 @@
     {
       "url": "/ecology-blue-and-blaze.html",
       "title": "What Blue and Blaze Have Taught Me About Time",
-      "image": "/blue-and-blaze-approved.jpg",
-      "alt": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
-      "caption": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
+      "image": "/blue-and-blaze.jpg",
+      "alt": "Blue and Blaze eating from their bowls in natural daylight.",
+      "caption": "Blue and Blaze eating from their bowls in natural daylight.",
       "desc": "I used to think time belonged to the calendar. Now I think it belongs to whoever is waiting by the kitchen door.",
       "section": "Ecology",
       "homepageEligible": true,
@@ -55,9 +55,9 @@
     {
       "url": "/ecology-blue-and-blaze.html",
       "title": "What Blue and Blaze Have Taught Me About Time",
-      "image": "/blue-and-blaze-approved.jpg",
-      "alt": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
-      "caption": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
+      "image": "/blueandblaze.jpg",
+      "alt": "Blue and Blaze eating together at home in natural light.",
+      "caption": "Blue and Blaze eating together at home.",
       "desc": "I used to think time belonged to the calendar. Now I think it belongs to whoever is waiting by the kitchen door.",
       "section": "Ecology",
       "homepageEligible": true,
@@ -77,12 +77,12 @@
     {
       "url": "/ecology-garden-climate-conversation.html",
       "title": "A Garden Is a Small Climate Conversation",
-      "image": "/balcony-succulents-1.jpg",
+      "image": "/pexels-sustainable-living-plants.webp",
       "alt": "A small balcony garden of succulents and green plants in natural light.",
       "caption": "A garden can be a small climate conversation, lived one plant at a time.",
       "desc": "A garden does not have to be large to change the way we look at the world. A few pots on a balcony can teach us about heat, water, soil and patience.",
       "section": "Ecology",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
@@ -154,7 +154,7 @@
     {
       "url": "/inner-work-a-softer-monday.html",
       "title": "A Softer Monday",
-      "image": "/softer-monday-approved.jpg",
+      "image": "/inner-work-reading-meadow.webp",
       "alt": "A white alarm clock above a sign reading MONDAY on a bright blue background.",
       "caption": "A white alarm clock above a sign reading MONDAY on a bright blue background.",
       "desc": "Monday gets a bad name it does not fully deserve.",
@@ -231,7 +231,7 @@
     {
       "url": "/inner-work-the-day-the-light-stepped-aside.html",
       "title": "The Day the Light Stepped Aside",
-      "image": "/inner-work-eclipse-approved.jpg",
+      "image": "/inner-work-path-pexels.jpg",
       "alt": "A total solar eclipse crosses southern Europe on 12 August 2026.",
       "caption": "A total solar eclipse crosses southern Europe on 12 August 2026.",
       "desc": "The eclipse is not here. It is in Spain.",
@@ -495,12 +495,12 @@
     {
       "url": "/wellbeing-wellness-trackers.html",
       "title": "Do Wellness Trackers Really Work?",
-      "image": "/oura-ring-approved-pexels.jpeg",
+      "image": "/sleep-smartphone.jpg",
       "alt": "A black Oura ring standing on a soft grey textured surface.",
       "caption": "A black Oura ring standing on a soft grey textured surface.",
       "desc": "I strapped an Oura Ring to my finger and a Garmin to my wrist and waited for enlightenment. Spoiler: it didn't arrive in a push notification. The devices promised data. Sleep stages. Heart rate variability. Recovery scores. After three months, I had to ask: did I feel any better?",
       "section": "Wellbeing",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
@@ -649,12 +649,12 @@
     {
       "url": "/inner-work-a-letter-to-the-woman-still-becoming.html",
       "title": "A Letter to the Woman Still Becoming",
-      "image": "/inner-work-affirmations-new.jpg",
+      "image": "/inner-work-affirmations-you-make-a-choice.webp",
       "alt": "Colourful paper forms arranged in a warm red and pink room.",
       "caption": "Becoming is not a finish line. It is a conversation we keep having.",
       "desc": "I am writing because some afternoons the house is quiet enough for thoughts to land and stay, and a quiet kindness feels overdue. I am not offering rules o.",
       "section": "Inner Work",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
@@ -671,67 +671,67 @@
     {
       "url": "/inner-work-learning-to-take-up-space-kindly.html",
       "title": "Learning to Take Up Space Kindly",
-      "image": "/inner-work-confidence-new.jpg",
+      "image": "/confidence.jpg",
       "alt": "An older woman smiling with a bright bouquet against a sunny background.",
       "caption": "Taking up space can be generous when it makes room for others too.",
       "desc": "There is a strange, familiar tug when someone else fills the room with their laugh, their volume, their presence, and you find yourself literally shrinking.",
       "section": "Inner Work",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
       "url": "/inner-work-the-courage-to-be-seen-learning.html",
       "title": "The Courage to Be Seen Learning",
-      "image": "/inner-work-journaling-new.jpg",
+      "image": "/finding-your-voice.jpg",
       "alt": "A single pink flower rising against a pale blue sky.",
       "caption": "Learning in public asks for a different kind of courage.",
       "desc": "Sitting with a warm cup of tea, I often find my thoughts returning to the same awkward, delightful problem. We want to be known, but being known asks somet.",
       "section": "Inner Work",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
       "url": "/inner-work-the-difference-between-company-and-connection.html",
       "title": "The Difference Between Company and Connection",
-      "image": "/inner-work-mentoring-new.jpg",
+      "image": "/rescue-dog-human-connection-unsplash.jpg",
       "alt": "Two women sharing a conversation among green plants.",
       "caption": "Company fills a room. Connection changes how we leave it.",
       "desc": "There are times when a room full of people feels like background noise and a single conversation feels like an anchor. I notice the distinction between com.",
       "section": "Inner Work",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
       "url": "/inner-work-what-i-learnt-from-travelling-alone.html",
       "title": "What I Learnt from Travelling Alone",
-      "image": "/inner-work-path-new.jpg",
+      "image": "/inner-work-path-pexels.jpg",
       "alt": "A blue-flowering path leading through a green landscape.",
       "caption": "Travelling alone teaches the ear to hear its own questions.",
       "desc": "There is a peculiar kind of quiet the moment you button your coat and walk out by yourself, suitcase in hand. It is not loneliness exactly, more like the h.",
       "section": "Inner Work",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
       "url": "/inner-work-the-small-joys-that-keep-us-here.html",
       "title": "The Small Joys That Keep Us Here",
-      "image": "/inner-work-small-joys-new.jpg",
+      "image": "/small-joys.jpg",
       "alt": "Two people surrounded by vivid pink flowers in a bright garden.",
       "caption": "Small joys are not distractions from life. They are part of its structure.",
       "desc": "There is a particular comfort in doing something small and ordinary on purpose. It might be making a pot of tea and watching the tealeaves unfurl, or pausi.",
       "section": "Inner Work",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
       "url": "/inner-work-when-the-old-version-of-you-calls.html",
       "title": "When the Old Version of You Calls",
-      "image": "/inner-work-making-new.jpg",
+      "image": "/inner-mirror.jpg",
       "alt": "Painted hands held up against a bright blue background.",
       "caption": "An old version of you may return without being invited to stay.",
       "desc": "Sometimes, late in the evening when the washing-up has been done and there is a mug of tea cooling at my elbow, I hear the old version of me on the line. I.",
       "section": "Inner Work",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     },
     {
@@ -803,12 +803,12 @@
     {
       "url": "/wellbeing-what-the-body-knows-before-the-app-does.html",
       "title": "What the Body Knows Before the App Does",
-      "image": "/oura-green-shoes-approved.jpg",
-      "alt": "A laptop screen displaying a colourful image beside a small white object.",
+      "image": "/sleep-smartphone.jpg",
+      "alt": "A natural light displaying a colourful image beside a small white object.",
       "caption": "The body notices context long before an app can explain it.",
       "desc": "There is a small, steady voice that lives in the margins of my day. It is not loud, it does not arrive with a notification sound, but it is there if I slow.",
       "section": "Wellbeing",
-      "homepageEligible": true,
+      "homepageEligible": false,
       "approved": true
     }
   ]

@@ -28,9 +28,9 @@
     {
       "page": "ecology-blue-and-blaze.html",
       "title": "What Blue and Blaze Have Taught Me About Time",
-      "image": "blue-and-blaze-approved.jpg",
-      "alt": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
-      "caption": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
+      "image": "blueandblaze.jpg",
+      "alt": "Blue and Blaze eating together at home in natural light.",
+      "caption": "Blue and Blaze eating together at home in natural light.",
       "width": "3264",
       "height": "2448",
       "duplicate_pages": [
@@ -52,8 +52,8 @@
     {
       "page": "ecology-garden-climate-conversation.html",
       "title": "A Garden Is a Small Climate Conversation",
-      "image": "balcony-succulents-1.jpg",
-      "alt": "A small balcony garden of succulents and green plants in natural light.",
+      "image": "ecology-garden-climate-conversation.jpg",
+      "alt": "A garden in changing light, with plants growing together.",
       "caption": "A garden can be a small climate conversation, lived one plant at a time.",
       "width": "1600",
       "height": "900",
@@ -134,18 +134,6 @@
       ]
     },
     {
-      "page": "inner-work-a-softer-monday.html",
-      "title": "A Softer Monday",
-      "image": "softer-monday-approved.jpg",
-      "alt": "A white alarm clock above a sign reading MONDAY on a bright blue background.",
-      "caption": "A white alarm clock above a sign reading MONDAY on a bright blue background.",
-      "width": "1920",
-      "height": "1280",
-      "duplicate_pages": [
-        "inner-work-a-softer-monday.html"
-      ]
-    },
-    {
       "page": "inner-work-affirmations-and-self-belief.html",
       "title": "Affirmations, Self-Belief and the Stories We Repeat",
       "image": "inner-work-affirmations-you-make-a-choice.webp",
@@ -215,18 +203,6 @@
       "height": "1536",
       "duplicate_pages": [
         "inner-work-morning-meditations.html"
-      ]
-    },
-    {
-      "page": "inner-work-the-day-the-light-stepped-aside.html",
-      "title": "The Day the Light Stepped Aside",
-      "image": "inner-work-eclipse-approved.jpg",
-      "alt": "A total solar eclipse crosses southern Europe on 12 August 2026.",
-      "caption": "A total solar eclipse crosses southern Europe on 12 August 2026.",
-      "width": "2761",
-      "height": "1840",
-      "duplicate_pages": [
-        "inner-work-the-day-the-light-stepped-aside.html"
       ]
     },
     {
@@ -520,9 +496,9 @@
     {
       "page": "wellbeing-wellness-trackers.html",
       "title": "Do Wellness Trackers Really Work?",
-      "image": "oura-ring-approved-pexels.jpeg",
-      "alt": "A black Oura ring standing on a soft grey textured surface.",
-      "caption": "A black Oura ring standing on a soft grey textured surface.",
+      "image": "",
+      "alt": "Green shoes beside an Oura Ring, photographed in natural light.",
+      "caption": "Green shoes beside an Oura Ring, photographed in natural light.",
       "width": "1920",
       "height": "1440",
       "duplicate_pages": [
@@ -732,7 +708,7 @@
     {
       "page": "inner-work-a-letter-to-the-woman-still-becoming.html",
       "title": "A Letter to the Woman Still Becoming",
-      "image": "/inner-work-affirmations-new.jpg",
+      "image": "",
       "alt": "Colourful paper forms arranged in a warm red and pink room.",
       "caption": "Becoming is not a finish line. It is a conversation we keep having.",
       "desc": "I am writing because some afternoons the house is quiet enough for thoughts to land and stay, and a quiet kindness feels overdue. I am not offering rules o.",
@@ -764,7 +740,7 @@
     {
       "page": "inner-work-learning-to-take-up-space-kindly.html",
       "title": "Learning to Take Up Space Kindly",
-      "image": "/inner-work-confidence-new.jpg",
+      "image": "",
       "alt": "An older woman smiling with a bright bouquet against a sunny background.",
       "caption": "Taking up space can be generous when it makes room for others too.",
       "desc": "There is a strange, familiar tug when someone else fills the room with their laugh, their volume, their presence, and you find yourself literally shrinking.",
@@ -780,7 +756,7 @@
     {
       "page": "inner-work-the-courage-to-be-seen-learning.html",
       "title": "The Courage to Be Seen Learning",
-      "image": "/inner-work-journaling-new.jpg",
+      "image": "",
       "alt": "A single pink flower rising against a pale blue sky.",
       "caption": "Learning in public asks for a different kind of courage.",
       "desc": "Sitting with a warm cup of tea, I often find my thoughts returning to the same awkward, delightful problem. We want to be known, but being known asks somet.",
@@ -796,7 +772,7 @@
     {
       "page": "inner-work-the-difference-between-company-and-connection.html",
       "title": "The Difference Between Company and Connection",
-      "image": "/inner-work-mentoring-new.jpg",
+      "image": "",
       "alt": "Two women sharing a conversation among green plants.",
       "caption": "Company fills a room. Connection changes how we leave it.",
       "desc": "There are times when a room full of people feels like background noise and a single conversation feels like an anchor. I notice the distinction between com.",
@@ -812,7 +788,7 @@
     {
       "page": "inner-work-what-i-learnt-from-travelling-alone.html",
       "title": "What I Learnt from Travelling Alone",
-      "image": "/inner-work-path-new.jpg",
+      "image": "",
       "alt": "A blue-flowering path leading through a green landscape.",
       "caption": "Travelling alone teaches the ear to hear its own questions.",
       "desc": "There is a peculiar kind of quiet the moment you button your coat and walk out by yourself, suitcase in hand. It is not loneliness exactly, more like the h.",
@@ -828,7 +804,7 @@
     {
       "page": "inner-work-the-small-joys-that-keep-us-here.html",
       "title": "The Small Joys That Keep Us Here",
-      "image": "/inner-work-small-joys-new.jpg",
+      "image": "",
       "alt": "Two people surrounded by vivid pink flowers in a bright garden.",
       "caption": "Small joys are not distractions from life. They are part of its structure.",
       "desc": "There is a particular comfort in doing something small and ordinary on purpose. It might be making a pot of tea and watching the tealeaves unfurl, or pausi.",
@@ -844,7 +820,7 @@
     {
       "page": "inner-work-when-the-old-version-of-you-calls.html",
       "title": "When the Old Version of You Calls",
-      "image": "/inner-work-making-new.jpg",
+      "image": "",
       "alt": "Painted hands held up against a bright blue background.",
       "caption": "An old version of you may return without being invited to stay.",
       "desc": "Sometimes, late in the evening when the washing-up has been done and there is a mug of tea cooling at my elbow, I hear the old version of me on the line. I.",
@@ -956,8 +932,8 @@
     {
       "page": "wellbeing-what-the-body-knows-before-the-app-does.html",
       "title": "What the Body Knows Before the App Does",
-      "image": "/oura-green-shoes-approved.jpg",
-      "alt": "A laptop screen displaying a colourful image beside a small white object.",
+      "image": "",
+      "alt": "Green shoes and a small white object in natural light.",
       "caption": "The body notices context long before an app can explain it.",
       "desc": "There is a small, steady voice that lives in the margins of my day. It is not loud, it does not arrive with a notification sound, but it is there if I slow.",
       "section": "Wellbeing",
