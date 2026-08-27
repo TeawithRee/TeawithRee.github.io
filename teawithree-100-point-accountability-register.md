@@ -126,7 +126,7 @@ Every future change must cite the relevant check numbers, name the exact file or
 | 80 | Rejected Eclipse image is not used on the homepage. | **Failed** | Live homepage still uses Eclipse. |
 | 81 | Rejected Oura flower/screen image is not used. | **Failed** | Local mapping currently uses the green-shoes image in part of the Oura story; the asset is rejected for use as Rehana’s image. |
 | 82 | Tracker and Oura sleep use distinct, truthful assets. | **Blocked** | `oura.jpg`, `oura-ring-approved-pexels.jpeg`, `sleep-smartphone.jpg`, and green-shoes asset are inconsistent across live, local, and register mappings. |
-| 83 | Blue and Blaze uses the exact approved supplied asset. | **Failed** | Live uses `blue-and-blaze.jpg`; local candidate uses `blue-and-blaze-approved.jpg`. |
+| 83 | Blue and Blaze uses the exact approved supplied asset. | **Verified** | The current page and share metadata use the approved JPG; the older file was retired. |
 | 84 | Path Less Travelled uses the exact approved road asset. | **Failed** | Live and local filenames differ. |
 | 85 | Article titles and H1s match their intended stories. | **Passed** | Live/local H1 comparison found no sampled mismatch. Full 70-story validation remains. |
 | 86 | No draft notes appear in live page bodies. | **Passed** | 0 draft-note occurrences in 51 fetched live pages. |
