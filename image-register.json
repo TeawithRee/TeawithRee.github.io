@@ -28,9 +28,9 @@
     {
       "page": "ecology-blue-and-blaze.html",
       "title": "What Blue and Blaze Have Taught Me About Time",
-      "image": "blue-and-blaze.jpg",
-      "alt": "Blue and Blaze resting together in the afternoon sun.",
-      "caption": "Blue and Blaze resting together in the afternoon sun.",
+      "image": "blue-and-blaze-approved.jpg",
+      "alt": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
+      "caption": "Blue and Blaze eating from their bowls in a photograph displayed on a laptop screen.",
       "width": "3264",
       "height": "2448",
       "duplicate_pages": [
@@ -136,9 +136,9 @@
     {
       "page": "inner-work-a-softer-monday.html",
       "title": "A Softer Monday",
-      "image": "softer-monday.jpg",
-      "alt": "A notebook lettered with the word Monday, beside yellow calla lilies.",
-      "caption": "A small flower, held out with both hands.",
+      "image": "softer-monday-approved.jpg",
+      "alt": "A white alarm clock above a sign reading MONDAY on a bright blue background.",
+      "caption": "A white alarm clock above a sign reading MONDAY on a bright blue background.",
       "width": "1920",
       "height": "1280",
       "duplicate_pages": [
@@ -220,7 +220,7 @@
     {
       "page": "inner-work-the-day-the-light-stepped-aside.html",
       "title": "The Day the Light Stepped Aside",
-      "image": "inner-work-eclipse.jpg",
+      "image": "inner-work-eclipse-approved.jpg",
       "alt": "A total solar eclipse crosses southern Europe on 12 August 2026.",
       "caption": "A total solar eclipse crosses southern Europe on 12 August 2026.",
       "width": "2761",
@@ -244,7 +244,7 @@
     {
       "page": "inner-work-the-path-less-travelled.html",
       "title": "The Path Less Travelled",
-      "image": "road-less-travelled.jpg",
+      "image": "inner-work-path-pexels.jpg",
       "alt": "A quiet road disappearing into the morning mist.",
       "caption": "A quiet road disappearing into the morning mist.",
       "width": "2304",
@@ -423,7 +423,7 @@
     },
     {
       "page": "wellbeing-inside-the-sauna.html",
-      "title": "Inside the Sauna: A Case Study",
+      "title": "Inside the Sauna",
       "image": "approved-wellbeing-space.jpg",
       "alt": "The still heat of a wooden sauna.",
       "caption": "The still heat of a wooden sauna.",
@@ -551,6 +551,422 @@
       "height": "4000",
       "duplicate_pages": [
         "wellbeing-what-my-oura-ring-taught-me-about-sleep.html"
+      ]
+    },
+    {
+      "page": "ecology-a-world-made-smaller-by-birds.html",
+      "title": "A World Made Smaller by Birds",
+      "image": "/ecology-bush-walk-ambient-poster.jpg",
+      "alt": "A person walking through dense green forest beside tall ferns.",
+      "caption": "A small walk can make a much larger world feel close.",
+      "desc": "I was making a cup of tea the other morning when a flash of white and black cut across the grey sky, and for a few minutes the garden felt as if it were li.",
+      "section": "Ecology",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "ecology-a-world-made-smaller-by-birds.html"
+      ]
+    },
+    {
+      "page": "ecology-conservation-begins-with-attention.html",
+      "title": "Conservation Begins with Attention",
+      "image": "/ecology-notebook-ambient-poster.jpg",
+      "alt": "A hand writing in a notebook beside a warm drink.",
+      "caption": "Care often begins with the simple act of paying attention.",
+      "desc": "There is something modest and stubborn about attention. It does not demand grand gestures or specialist knowledge. It is the act of turning your head, slow.",
+      "section": "Ecology",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "ecology-conservation-begins-with-attention.html"
+      ]
+    },
+    {
+      "page": "ecology-rainforest-after-rain.html",
+      "title": "Rainforest After Rain",
+      "image": "/ecologyoceans.jpg",
+      "alt": "A sea turtle gliding through clear blue water.",
+      "caption": "A living landscape carries stories of weather, water and time.",
+      "desc": "There is something about the moment right after the rain stops that always makes me slow down, the way the air changes and the forest seems to have a new p.",
+      "section": "Ecology",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "ecology-rainforest-after-rain.html"
+      ]
+    },
+    {
+      "page": "ecology-the-air-we-share.html",
+      "title": "The Air We Share",
+      "image": "/citywalk.jpg",
+      "alt": "A vivid, plant-lined street in Cape Town.",
+      "caption": "The air around us is shared, even when our lives feel separate.",
+      "desc": "I often notice the air before I see anything else. On some mornings it comes cool and sharp, carrying the faint yeast of a bakers van and the metallic tang.",
+      "section": "Ecology",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "ecology-the-air-we-share.html"
+      ]
+    },
+    {
+      "page": "ecology-what-we-owe-the-soil.html",
+      "title": "What We Owe the Soil",
+      "image": "/sustainableliving.jpg",
+      "alt": "Hands tending a leafy houseplant in a sunlit room.",
+      "caption": "Care for the soil begins with noticing what keeps life going.",
+      "desc": "I think about soil more often than most might expect. There is a certain humility in watching a handful of earth crumble between your fingers and recognisi.",
+      "section": "Ecology",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "ecology-what-we-owe-the-soil.html"
+      ]
+    },
+    {
+      "page": "modern-tools-a-tool-is-only-as-wise-as-the-question.html",
+      "title": "A Tool Is Only as Wise as the Question",
+      "image": "/tlsecondbrain.jpg",
+      "alt": "A pale notebook and phone arranged on a bright yellow desk.",
+      "caption": "A tool becomes useful when the question behind it is clear.",
+      "desc": "There is something almost ritual about setting a cup of tea down and looking out at the small rectangle of sky my kitchen window offers. It is an ordinary.",
+      "section": "Modern Tools",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "modern-tools-a-tool-is-only-as-wise-as-the-question.html"
+      ]
+    },
+    {
+      "page": "modern-tools-can-ai-help-the-climate-without-becoming-another-cost.html",
+      "title": "Can AI Help the Climate Without Becoming Another Cost?",
+      "image": "/modern-tools-ai-blocks.jpg",
+      "alt": "Abstract blue technology forms arranged against a pale background.",
+      "caption": "The useful question is not only what technology can do, but what it costs.",
+      "desc": "Lately I have been thinking about the neat, clever tools that promise to help us meet climate goals. They can do startling things with data, spot patterns.",
+      "section": "Modern Tools",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "modern-tools-can-ai-help-the-climate-without-becoming-another-cost.html"
+      ]
+    },
+    {
+      "page": "modern-tools-can-technology-help-us-notice-more.html",
+      "title": "Can Technology Help Us Notice More?",
+      "image": "/modern-tools-blue-phone-notebook.jpg",
+      "alt": "A blue phone and notebook arranged on a bright turquoise surface.",
+      "caption": "Technology can sharpen attention, but it should not replace it.",
+      "desc": "I have a small ritual of standing at the kitchen sink for a minute before I turn on the kettle, partly because it feels like an odd kind of permission to j.",
+      "section": "Modern Tools",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "modern-tools-can-technology-help-us-notice-more.html"
+      ]
+    },
+    {
+      "page": "modern-tools-the-cost-of-convenience.html",
+      "title": "The Cost of Convenience",
+      "image": "/modern-tools-colourful-smart-home.jpg",
+      "alt": "A colourful phone and smart-home objects arranged on a bright surface.",
+      "caption": "Convenience is never free of consequences.",
+      "desc": "I make a cup of tea, the kettle humming on its own, and a notification tells me my shopping will arrive in an hour. There is a small comfort in that certai.",
+      "section": "Modern Tools",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "modern-tools-the-cost-of-convenience.html"
+      ]
+    },
+    {
+      "page": "modern-tools-when-a-recommendation-becomes-a-narrowing.html",
+      "title": "When a Recommendation Becomes a Narrowing",
+      "image": "/tldependence.jpg",
+      "alt": "A phone resting on a slim notebook against a vivid yellow background.",
+      "caption": "A recommendation can help us choose, or quietly narrow the world we see.",
+      "desc": "There is a peculiar economy to suggestions. One small nudge on my screen and the afternoon seems to rearrange itself, as if the app, the playlist or the on.",
+      "section": "Modern Tools",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "modern-tools-when-a-recommendation-becomes-a-narrowing.html"
+      ]
+    },
+    {
+      "page": "modern-tools-the-infrastructure-we-forget.html",
+      "title": "The Infrastructure We Forget",
+      "image": "/tlgiveback.jpg",
+      "alt": "A quiet home workspace with a monitor, plant and afternoon light.",
+      "caption": "The systems we rely on deserve more attention than they usually receive.",
+      "desc": "I was making a pot of tea the other morning and noticed the kettle click off before I had time to breathe. It felt like a small miracle, which of course it.",
+      "section": "Modern Tools",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "modern-tools-the-infrastructure-we-forget.html"
+      ]
+    },
+    {
+      "page": "inner-work-a-letter-to-the-woman-still-becoming.html",
+      "title": "A Letter to the Woman Still Becoming",
+      "image": "/inner-work-affirmations-new.jpg",
+      "alt": "Colourful paper forms arranged in a warm red and pink room.",
+      "caption": "Becoming is not a finish line. It is a conversation we keep having.",
+      "desc": "I am writing because some afternoons the house is quiet enough for thoughts to land and stay, and a quiet kindness feels overdue. I am not offering rules o.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-a-letter-to-the-woman-still-becoming.html"
+      ]
+    },
+    {
+      "page": "inner-work-how-to-stay-tender-without-becoming-naive.html",
+      "title": "How to Stay Tender Without Becoming Naive",
+      "image": "/inner-work-morning-meditations.jpg",
+      "alt": "A woman sitting beside a bright window with flowering plants.",
+      "caption": "Tenderness can be a way of seeing clearly, not a refusal to know better.",
+      "desc": "There is a softness I keep like a favourite mug, easy to reach for and, if I am honest, sometimes at risk of being chipped. Tenderness is not sentimentalis.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-how-to-stay-tender-without-becoming-naive.html"
+      ]
+    },
+    {
+      "page": "inner-work-learning-to-take-up-space-kindly.html",
+      "title": "Learning to Take Up Space Kindly",
+      "image": "/inner-work-confidence-new.jpg",
+      "alt": "An older woman smiling with a bright bouquet against a sunny background.",
+      "caption": "Taking up space can be generous when it makes room for others too.",
+      "desc": "There is a strange, familiar tug when someone else fills the room with their laugh, their volume, their presence, and you find yourself literally shrinking.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-learning-to-take-up-space-kindly.html"
+      ]
+    },
+    {
+      "page": "inner-work-the-courage-to-be-seen-learning.html",
+      "title": "The Courage to Be Seen Learning",
+      "image": "/inner-work-journaling-new.jpg",
+      "alt": "A single pink flower rising against a pale blue sky.",
+      "caption": "Learning in public asks for a different kind of courage.",
+      "desc": "Sitting with a warm cup of tea, I often find my thoughts returning to the same awkward, delightful problem. We want to be known, but being known asks somet.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-the-courage-to-be-seen-learning.html"
+      ]
+    },
+    {
+      "page": "inner-work-the-difference-between-company-and-connection.html",
+      "title": "The Difference Between Company and Connection",
+      "image": "/inner-work-mentoring-new.jpg",
+      "alt": "Two women sharing a conversation among green plants.",
+      "caption": "Company fills a room. Connection changes how we leave it.",
+      "desc": "There are times when a room full of people feels like background noise and a single conversation feels like an anchor. I notice the distinction between com.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-the-difference-between-company-and-connection.html"
+      ]
+    },
+    {
+      "page": "inner-work-what-i-learnt-from-travelling-alone.html",
+      "title": "What I Learnt from Travelling Alone",
+      "image": "/inner-work-path-new.jpg",
+      "alt": "A blue-flowering path leading through a green landscape.",
+      "caption": "Travelling alone teaches the ear to hear its own questions.",
+      "desc": "There is a peculiar kind of quiet the moment you button your coat and walk out by yourself, suitcase in hand. It is not loneliness exactly, more like the h.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-what-i-learnt-from-travelling-alone.html"
+      ]
+    },
+    {
+      "page": "inner-work-the-small-joys-that-keep-us-here.html",
+      "title": "The Small Joys That Keep Us Here",
+      "image": "/inner-work-small-joys-new.jpg",
+      "alt": "Two people surrounded by vivid pink flowers in a bright garden.",
+      "caption": "Small joys are not distractions from life. They are part of its structure.",
+      "desc": "There is a particular comfort in doing something small and ordinary on purpose. It might be making a pot of tea and watching the tealeaves unfurl, or pausi.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-the-small-joys-that-keep-us-here.html"
+      ]
+    },
+    {
+      "page": "inner-work-when-the-old-version-of-you-calls.html",
+      "title": "When the Old Version of You Calls",
+      "image": "/inner-work-making-new.jpg",
+      "alt": "Painted hands held up against a bright blue background.",
+      "caption": "An old version of you may return without being invited to stay.",
+      "desc": "Sometimes, late in the evening when the washing-up has been done and there is a mug of tea cooling at my elbow, I hear the old version of me on the line. I.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "inner-work-when-the-old-version-of-you-calls.html"
+      ]
+    },
+    {
+      "page": "wellbeing-ageing-without-apology.html",
+      "title": "Ageing Without Apology",
+      "image": "/wellbeing-quiet-work-continuing.jpg",
+      "alt": "A person cycling along a quiet tree-lined road in soft daylight.",
+      "caption": "Ageing is not an apology. It is a life continuing to become more itself.",
+      "desc": "There is a small, steady pleasure in noticing how my days have shifted shape. A kettle sings a little longer in the afternoon; the light in the kitchen hit.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "wellbeing-ageing-without-apology.html"
+      ]
+    },
+    {
+      "page": "wellbeing-the-health-advice-i-no-longer-chase.html",
+      "title": "The Health Advice I No Longer Chase",
+      "image": "/fasting-plate.jpg",
+      "alt": "A fresh plate of greens and vegetables on a pale table.",
+      "caption": "Health advice is useful only when it leaves room for a real human life.",
+      "desc": "Health advice arrives daily, bright and certain, offering a neat formula for looking, feeling or performing better. For a long time I treated those formula.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "wellbeing-the-health-advice-i-no-longer-chase.html"
+      ]
+    },
+    {
+      "page": "wellbeing-the-medicine-of-a-good-laugh.html",
+      "title": "The Medicine of a Good Laugh",
+      "image": "/tea-notes-space.jpg",
+      "alt": "A warm cup of tea catching the light beside a dark tabletop.",
+      "caption": "A good laugh can change the temperature of an ordinary day.",
+      "desc": "You know that little alchemy that happens when a laugh breaks out? It can be as simple as a snort over an over-brewed mug of tea, and yet it changes everyt.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "wellbeing-the-medicine-of-a-good-laugh.html"
+      ]
+    },
+    {
+      "page": "wellbeing-the-wellness-event-as-a-shared-room.html",
+      "title": "The Wellness Event as a Shared Room",
+      "image": "/tea-notes-reflection.jpg",
+      "alt": "A person sitting in a quiet room beside a window.",
+      "caption": "A shared room can give wellbeing a little more room to breathe.",
+      "desc": "I turned up to a local wellness event the way you might arrive at someone's flat for an evening: half an hour late, carrying a mug and a small unease about.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "wellbeing-the-wellness-event-as-a-shared-room.html"
+      ]
+    },
+    {
+      "page": "wellbeing-thriving-is-more-than-feeling-fine.html",
+      "title": "Thriving Is More Than Feeling Fine",
+      "image": "/sauna.jpg",
+      "alt": "A bright, plant-filled room with a sauna and soft pink textiles.",
+      "caption": "Thriving has a warmer, messier edge than simply feeling fine.",
+      "desc": "I often think of thriving as a slightly more honest word than happiness. Feeling fine is tidy and acceptable, the sort of status we report when someone ask.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "wellbeing-thriving-is-more-than-feeling-fine.html"
+      ]
+    },
+    {
+      "page": "wellbeing-what-my-garmin-taught-me-about-effort.html",
+      "title": "What My Garmin Taught Me About Effort",
+      "image": "/pexels-city-walk-bokaap.webp",
+      "alt": "A person walking through a colourful city street in daylight.",
+      "caption": "Effort is softer and stranger than I once supposed.",
+      "desc": "When I first strapped a Garmin to my wrist I expected it to be a strict accountant of exertion, a device that only counted the obvious: kilometres, calorie.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "wellbeing-what-my-garmin-taught-me-about-effort.html"
+      ]
+    },
+    {
+      "page": "wellbeing-what-the-body-knows-before-the-app-does.html",
+      "title": "What the Body Knows Before the App Does",
+      "image": "/oura-green-shoes-approved.jpg",
+      "alt": "A laptop screen displaying a colourful image beside a small white object.",
+      "caption": "The body notices context long before an app can explain it.",
+      "desc": "There is a small, steady voice that lives in the margins of my day. It is not loud, it does not arrive with a notification sound, but it is there if I slow.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true,
+      "width": "",
+      "height": "",
+      "duplicate_pages": [
+        "wellbeing-what-the-body-knows-before-the-app-does.html"
       ]
     }
   ]
