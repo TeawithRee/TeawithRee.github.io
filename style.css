@@ -565,3 +565,84 @@ footer .fcontact,footer .copy,footer .credit{color:var(--muted)}
   .home-page .feed{padding-top:2rem}
   .home-page .quote{margin:2.8rem auto 2.6rem;padding:0 1.3rem}
 }
+
+/* Last-night reference recovery: preserve the full photograph and place the locked copy in open grass. */
+.home-page .cover{
+  position:relative;
+  display:block;
+  height:auto;
+  min-height:0;
+  aspect-ratio:4 / 3;
+  overflow:hidden;
+  text-align:left;
+  background:#fff;
+}
+.home-page .cover-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  aspect-ratio:auto;
+  background-size:cover;
+  background-position:center;
+  transform:none;
+  animation:none;
+}
+.home-page .cover-scrim{
+  display:block;
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(12,25,18,.72) 0%,rgba(12,25,18,.32) 30%,rgba(12,25,18,0) 58%);
+}
+.home-page .cover-inner{
+  position:absolute;
+  z-index:2;
+  top:28%;
+  left:6%;
+  max-width:33rem;
+  margin:0;
+  padding:0 1.4rem 0 0;
+  color:#fff;
+}
+.home-page .cover-inner h1{
+  max-width:10ch;
+  margin:0 0 1rem;
+  color:#fff;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.25rem,5.2vw,4.6rem);
+  font-weight:500;
+  line-height:1.02;
+  letter-spacing:-.02em;
+  text-shadow:0 2px 20px rgba(0,0,0,.42);
+}
+.home-page .cover-inner p{
+  max-width:27rem;
+  margin:0 0 1.35rem;
+  color:rgba(255,255,255,.96);
+  font-family:'Manrope','Inter',sans-serif;
+  font-size:clamp(.8rem,1.25vw,1rem);
+  line-height:1.55;
+  text-shadow:0 1px 14px rgba(0,0,0,.38);
+}
+.home-page .cover-tag{
+  display:block;
+  margin:0;
+  padding:0;
+  color:#fff;
+  font-family:'Manrope','Inter',sans-serif;
+  font-size:.66rem;
+  letter-spacing:.18em;
+  text-transform:none;
+  opacity:.9;
+  text-shadow:0 1px 14px rgba(0,0,0,.38);
+}
+.home-page .cover-tag::before{display:none}
+@media(max-width:700px){
+  .home-page .cover{aspect-ratio:4 / 3}
+  .home-page .cover-inner{top:31%;left:5%;max-width:15.5rem;padding-right:.8rem}
+  .home-page .cover-inner h1{font-size:clamp(2rem,10vw,3rem);max-width:8ch}
+  .home-page .cover-inner p{font-size:.76rem;line-height:1.45;max-width:14rem}
+  .home-page .cover-tag{font-size:.58rem;letter-spacing:.1em}
+}
+
+/* Remove the superseded white hero panel from the earlier mobile recovery layer. */
+.home-page .cover-inner{background:transparent;box-shadow:none}
