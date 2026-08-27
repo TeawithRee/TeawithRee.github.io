@@ -489,7 +489,7 @@ footer .fcontact,footer .copy,footer .credit{color:var(--muted)}
 
 /* Final homepage hero composition: the locked phrase belongs in the quiet lower photographic zone. */
 .home-page .cover-inner{position:absolute;inset:0;width:100%;max-width:none;margin:0;padding:0;text-align:left}
-.home-page .cover-inner h1{position:absolute;left:clamp(1.1rem,6vw,6rem);bottom:clamp(1.7rem,6vh,4.5rem);max-width:13ch;margin:0;color:#fff;font-size:clamp(2.15rem,5vw,4.2rem);line-height:1.02;font-weight:500;letter-spacing:-.02em;text-shadow:0 3px 28px rgba(0,0,0,.78),0 1px 2px rgba(0,0,0,.9)}
-@media(max-width:700px){.home-page .cover-inner h1{left:1.1rem;bottom:1.6rem;max-width:10ch;font-size:clamp(2.15rem,10vw,3.1rem);line-height:1.02}}
+.home-page .cover-inner h1{position:absolute;left:clamp(1.1rem,6vw,6rem);top:clamp(5rem,15vh,8rem);max-width:12ch;margin:0;color:#fff;font-size:clamp(2.15rem,5vw,4.2rem);line-height:1.02;font-weight:500;letter-spacing:-.02em;text-shadow:0 3px 28px rgba(0,0,0,.78),0 1px 2px rgba(0,0,0,.9)}
+@media(max-width:700px){.home-page .cover-inner h1{left:1.1rem;top:5rem;max-width:8ch;font-size:clamp(2.05rem,9vw,2.9rem);line-height:1.02}}
 @media(min-width:1200px){.home-page .cover-inner h1{max-width:12ch}}
 .home-page .news button{ font-size:.78rem; letter-spacing:.12em; color:var(--accent); min-height:44px; }
