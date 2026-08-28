@@ -4,9 +4,9 @@
 /* Final hero composition: preserve the full supplied photograph and place the short invitation low over the book/person area. */
 .home-page .cover{position:relative;overflow:hidden}
 .home-page .cover-bg{background-size:cover;background-position:center center}
-.home-page .cover-inner{position:absolute;z-index:2;top:auto;left:auto;right:5.5%;bottom:7%;max-width:24rem;padding:0;text-align:right;background:transparent;box-shadow:none}
-.home-page .cover-inner h1{max-width:10ch;margin:0;color:#fff;font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.04;text-shadow:0 2px 16px rgba(0,0,0,.55)}
-@media(max-width:700px){.home-page .cover-inner{right:5%;bottom:6%;max-width:12rem}.home-page .cover-inner h1{max-width:9ch;font-size:clamp(1.7rem,8vw,2.4rem)}}
+.home-page .cover-inner{position:absolute;z-index:2;top:auto;left:auto;right:6%;bottom:9%;max-width:28rem;padding:0;text-align:right;background:transparent;box-shadow:none}
+.home-page .cover-inner h1{max-width:15ch;margin:0;color:#fff;font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.04;text-shadow:0 2px 16px rgba(0,0,0,.55)}
+@media(max-width:700px){.home-page .cover-inner{left:5%;right:auto;top:8%;bottom:auto;max-width:9rem;padding:0;text-align:left}.home-page .cover-inner h1{max-width:9ch;font-size:clamp(1.55rem,7vw,2.05rem);line-height:1.03}}
 
 .story-media img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}.story:hover .story-media img{transform:scale(1.06)}
 
