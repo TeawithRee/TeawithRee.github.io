@@ -45,3 +45,8 @@
 .ambient-video-frame{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
 .ambient-static-image{display:block;width:100%;height:100%;min-height:320px;background-size:cover;background-position:center;border-radius:inherit}
 @media(max-width:820px){.ambient-story-video{grid-template-columns:1fr;gap:1.5rem;margin:2.5rem auto;padding:0 1.3rem}.ambient-static-image{min-height:240px}.navitem>a{min-height:48px;display:flex;align-items:center}.home-page .quote{margin:3rem 1.25rem;padding:2.5rem 1.5rem}.home-page .quote p{font-size:clamp(1.35rem,5.5vw,1.8rem);line-height:1.4;max-width:100%}}
+
+/* Final audit authority layer: keep one visible hierarchy after all legacy selectors. */
+.navitem>a,.navlinks a{font-family:Manrope,Inter,sans-serif;font-size:.84rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.cover-inner h1,.home-page .cover-inner h1{font-family:Cormorant Garamond,Playfair Display,Georgia,serif;font-weight:500}
+.story h3,.secpage .story h3{font-family:Cormorant Garamond,Playfair Display,Georgia,serif;font-weight:500;line-height:1.15}
