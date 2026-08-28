@@ -61,7 +61,7 @@ Every future change must cite the relevant check numbers, name the exact file or
 | 30 | Eclipse is removed from homepage selection if rejected for brightness. | **Failed** | Live homepage still shows Eclipse. |
 | 31 | Homepage replacement story is approved, not guessed. | **Blocked** | Monday and Eclipse are rejected; final supplied replacement must be established from the register. |
 | 32 | Homepage static HTML and `stories.json` agree. | **Failed** | Dynamic registry previously overwrote static markup; current live site is behind the local candidate. |
-| 33 | Homepage selected feed can evolve when approved stories are added. | **Blocked** | Local data flow exists, but editorial selection rules and live deployment are not proven. |
+| 33 | Homepage selected feed can evolve when approved stories are added. | **Blocked** | Local data flow exists, but selection rules and live deployment are not proven. |
 | 34 | Homepage feed remains human-controlled rather than random. | **Not yet checked** | Define and test selection rules before implementing personalisation. |
 | 35 | Homepage card titles are sentence case. | **Passed** | Visible titles are not all-uppercase; verify final CSS. |
 | 36 | Homepage card images are modest rather than oversized. | **Failed** | Live desktop cards are small relative to the page while the quote dominates; overall rhythm needs art direction. |

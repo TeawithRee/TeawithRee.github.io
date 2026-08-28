@@ -20,7 +20,7 @@ Keep the clean `README.md`, `CNAME`, `BingSiteAuth.xml`, `.nojekyll`, `robots.tx
 
 ## What this change does
 
-The homepage Google title and descriptions now use the approved quiet editorial wording and no longer describe Books and Travel as current top-level sections. The homepage visible introduction is aligned with the same direction.
+The homepage Google title and descriptions now use the approved quiet wording and no longer describe Books and Travel as current top-level sections. The homepage visible introduction is aligned with the same direction.
 
 Tea Notes becomes a short, spacious landing page with one paragraph, one `Start a Conversation` email link, the three pathway names Reset, Renewal and Becoming and a short closing line. The dense application form, extensive programme details and future app material are removed from the landing page and can be developed separately later.
 
