@@ -47,7 +47,7 @@
       "image": "/ecology-love-dog.webp",
       "alt": "A rescue dog resting close to a person who is gently holding its face.",
       "caption": "Love for one dog can open the heart to many.",
-      "desc": "Blue is my rescue Rottweiler. Loving him has quietly dismantled any idea I once held that rescue work is abstract or distant. You meet the dog in front of you first — the eyes that still carry old caution, the small daily tests of trust, the way a body learns it is finally safe. Only later do you feel the weight of all the others still waiting.",
+      "desc": "Blue is my rescue Rottweiler. Loving him has quietly dismantled any idea I once held that rescue work is abstract or distant. You meet the dog in front of you first, the eyes that still carry old caution, the small daily tests of trust, the way a body learns it is finally safe. Only later do you feel the weight of all the others still waiting.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -113,7 +113,7 @@
       "image": "/rescue-hope-approved.webp",
       "alt": "A volunteer gently supports a rescue dog.",
       "caption": "A volunteer gently supporting a rescue dog.",
-      "desc": "There is a moment in every rescue story when fear turns to trust. It is not dramatic. It is quiet — so quiet you might miss it if you are not paying attention. A dog that flinched at every footstep begins to lean into a hand. A pigeon with a broken wing stops trying to fly away and simply breathes. These moments are the architecture of hope.",
+      "desc": "There is a moment in every rescue story when fear turns to trust. It is not dramatic. It is quiet, so quiet you might miss it if you are not paying attention. A dog that flinched at every footstep begins to lean into a hand. A pigeon with a broken wing stops trying to fly away and simply breathes. These moments are the architecture of hope.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -146,7 +146,7 @@
       "image": "/ecology-sustainability.webp",
       "alt": "A houseplant being cared for at home.",
       "caption": "A houseplant being cared for at home, one small choice at a time.",
-      "desc": "I used to think sustainable living was mostly a private discipline — the bin sorted properly, the water used carefully, a way of being tidy with the planet the way you might be tidy with a kitchen. Now I think it has to answer to something larger than tidiness, because the forecast has started making that unavoidable.",
+      "desc": "I used to think sustainable living was mostly a private discipline, the bin sorted properly, the water used carefully, a way of being tidy with the planet the way you might be tidy with a kitchen. Now I think it has to answer to something larger than tidiness, because the forecast has started making that unavoidable.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -179,7 +179,7 @@
       "image": "/confidence.jpg",
       "alt": "At ease in one's own body.",
       "caption": "At ease in one's own body.",
-      "desc": "There is a particular confidence that arrives after forty. It does not announce itself with trumpets. (I wish it did. I would have noticed sooner.) It slips in through the back door, wearing comfortable shoes, and sits down without asking permission.",
+      "desc": "There is a particular confidence that arrives after forty. It does not announce itself with trumpets. (I wish it did. I would have noticed sooner.) It slips in through the back door, wearing comfortable shoes and sits down without asking permission.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -344,7 +344,7 @@
       "image": "/modern-tools-06-responsible-ai.jpeg",
       "alt": "A close view of a person using technology while considering its human impact.",
       "caption": "Technology matters most when we ask what it means for real people.",
-      "desc": "I have spent the past year working closely with AI tools, and I am interested in what they mean beyond the excitement. The important questions are often ordinary ones. What happens to our privacy? Who is responsible when an answer is wrong? Does a useful tool give us time back, or does it quietly take over our judgement?",
+      "desc": "I have spent the past year working closely with AI tools and I am interested in what they mean beyond the excitement. The important questions are often ordinary ones. What happens to our privacy? Who is responsible when an answer is wrong? Does a useful tool give us time back, or does it quietly take over our judgement?",
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true
@@ -355,7 +355,7 @@
       "image": "/modern-tools-07-second-brain.jpeg",
       "alt": "Creative coding and digital design workspace with multiple screens.",
       "caption": "Creative coding and digital design workspace with multiple screens.",
-      "desc": "Your mind is for having ideas, not holding them. That is the idea behind the second brain movement, and honestly, it has changed how I think. Externalise your thinking so that your biological brain is free to do what it does best: connect, create and wonder.",
+      "desc": "Your mind is for having ideas, not holding them. That is the idea behind the second brain movement and honestly, it has changed how I think. Externalise your thinking so that your biological brain is free to do what it does best: connect, create and wonder.",
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true
@@ -366,7 +366,7 @@
       "image": "/modern-tools-08-assistance-dependence.jpeg",
       "alt": "People absorbed in their phones, illustrating the line between digital assistance and dependence.",
       "caption": "People absorbed in their phones, illustrating the line between digital assistance and dependence. Photograph via Pexels.",
-      "desc": "My favourite mornings begin with the tactile ritual of shutting my laptop, nudging a notebook towards me and making a single neat line down the margin. The gesture is small and domestic. It is also a test. Closing the laptop does not make the world less clever. What it does is remind me that some decisions need human attention — the sort of attention that cannot be outsourced to the pleasing certainty of a search result or an algorithmic nudge.",
+      "desc": "My favourite mornings begin with the tactile ritual of shutting my laptop, nudging a notebook towards me and making a single neat line down the margin. The gesture is small and domestic. It is also a test. Closing the laptop does not make the world less clever. What it does is remind me that some decisions need human attention, the sort of attention that cannot be outsourced to the pleasing certainty of a search result or an algorithmic nudge.",
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true
@@ -375,9 +375,9 @@
       "url": "/tools-what-ai-can-give-back-to-a-human-day.html",
       "title": "What AI Can Give Back to a Human Day",
       "image": "/modern-tools-09-human-time.jpeg",
-      "alt": "A laptop, tea, and handwritten notes in a calm working space.",
-      "caption": "A laptop, tea, and handwritten notes in a calm working space. Photograph via Pexels.",
-      "desc": "On the kitchen table this morning my laptop sat beside a sheaf of handwritten notes and a cooling cup of tea. The notes were flecked with scribbles and arrows and the kind of small, useful mistakes that tell you you have been thinking for yourself. The laptop offered a different kind of promise — pages of text waiting to be nudged into shape. I have been learning how to let the two coexist rather than compete. The question I keep returning to is not what AI can do for me but what it can give back to the human parts of my day.",
+      "alt": "A laptop, tea and handwritten notes in a calm working space.",
+      "caption": "A laptop, tea and handwritten notes in a calm working space. Photograph via Pexels.",
+      "desc": "On the kitchen table this morning my laptop sat beside a sheaf of handwritten notes and a cooling cup of tea. The notes were flecked with scribbles and arrows and the kind of small, useful mistakes that tell you you have been thinking for yourself. The laptop offered a different kind of promise, pages of text waiting to be nudged into shape. I have been learning how to let the two coexist rather than compete. The question I keep returning to is not what AI can do for me but what it can give back to the human parts of my day.",
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true
@@ -386,8 +386,8 @@
       "url": "/wellbeing-a-day-without-eating.html",
       "title": "A Day Without Eating",
       "image": "/wellbeing-24-hour-fasting.jpg",
-      "alt": "A bright plate arranged with a clock, fork, and knife, representing time, food, and fasting.",
-      "caption": "A bright plate arranged with a clock, fork, and knife, representing time, food, and fasting.",
+      "alt": "A bright plate arranged with a clock, fork and knife, representing time, food and fasting.",
+      "caption": "A bright plate arranged with a clock, fork and knife, representing time, food and fasting.",
       "desc": "I used to think fasting was a discipline you performed for someone else to notice. A neat achievement, mentioned once it was safely over.",
       "section": "Wellbeing",
       "homepageEligible": true,
@@ -452,8 +452,8 @@
       "url": "/wellbeing-rest-is-not-a-reward.html",
       "title": "Rest Is Not a Reward",
       "image": "/approved-books-lifestyle.jpg",
-      "alt": "A wicker basket of books, dried flowers, fruit, and folded textiles in warm natural light.",
-      "caption": "A wicker basket of books, dried flowers, fruit, and folded textiles in warm natural light.",
+      "alt": "A wicker basket of books, dried flowers, fruit and folded textiles in warm natural light.",
+      "caption": "A wicker basket of books, dried flowers, fruit and folded textiles in warm natural light.",
       "desc": "I have treated rest as something I could earn for a long time. Finish the work. Answer the messages. Be useful. Then perhaps there would be a quiet afternoon waiting for me at the end of it all.",
       "section": "Wellbeing",
       "homepageEligible": true,
@@ -531,7 +531,7 @@
       "image": "/birds-smaller-world-approved.jpeg",
       "alt": "A person walking through dense green forest beside tall ferns.",
       "caption": "A small walk can make a much larger world feel close.",
-      "desc": "I was making a cup of tea the other morning when a flash of white and black cut across the grey sky, and for a few minutes the garden felt as if it were linked by invisible thread to somewhere far beyond the rooftops. Birds have that effect — drawing distant places into the small patch of earth we can see from our windows.",
+      "desc": "I was making a cup of tea the other morning when a flash of white and black cut across the grey sky and for a few minutes the garden felt as if it were linked by invisible thread to somewhere far beyond the rooftops. Birds have that effect, drawing distant places into the small patch of earth we can see from our windows.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -542,7 +542,7 @@
       "image": "/conservation-attention-approved.jpeg",
       "alt": "A hand writing in a notebook beside a warm drink.",
       "caption": "Care often begins with the simple act of paying attention.",
-      "desc": "There is something modest and stubborn about attention. It does not demand grand gestures or specialist knowledge. It is the act of turning your head, slowing your pace, and noticing what is already happening around you.",
+      "desc": "There is something modest and stubborn about attention. It does not demand grand gestures or specialist knowledge. It is the act of turning your head, slowing your pace and noticing what is already happening around you.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -553,7 +553,7 @@
       "image": "/rainforest-after-rain-approved.jpeg",
       "alt": "A sea turtle gliding through clear blue water.",
       "caption": "A living landscape carries stories of weather, water and time.",
-      "desc": "There is something about the moment right after the rain stops that always makes me slow down — the way the air changes and the forest seems to have a new patience. I find myself listening before I look, because the sounds tell you more than the shapes.",
+      "desc": "There is something about the moment right after the rain stops that always makes me slow down, the way the air changes and the forest seems to have a new patience. I find myself listening before I look, because the sounds tell you more than the shapes.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -575,7 +575,7 @@
       "image": "/soil-we-owe-approved.jpeg",
       "alt": "Hands tending a leafy houseplant in a sunlit room.",
       "caption": "Care for the soil begins with noticing what keeps life going.",
-      "desc": "I think about soil more often than most might expect. There is a certain humility in watching a handful of earth crumble between your fingers and recognising that most of what supports us is quiet, dark and underfoot. It keeps growing things alive, stores water, holds stories of seasons and footsteps, and does all this without noise or credit.",
+      "desc": "I think about soil more often than most might expect. There is a certain humility in watching a handful of earth crumble between your fingers and recognising that most of what supports us is quiet, dark and underfoot. It keeps growing things alive, stores water, holds stories of seasons and footsteps and does all this without noise or credit.",
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true
@@ -586,7 +586,7 @@
       "image": "/modern-tools-10-question.jpeg",
       "alt": "A hand writes in a notebook beside a laptop.",
       "caption": "A hand writes in a notebook beside a laptop. Photograph via Pexels.",
-      "desc": "There is something almost ritual about setting a cup of tea down and looking out at the small rectangle of sky my kitchen window offers. It is an ordinary pause, but it reminds me that tools are best judged by the company they keep. A perfectly good kettle will not warm a cold room, and a clever app will not find the answer you need unless you know how to ask it. The way we frame a question sets the direction of everything that follows.",
+      "desc": "There is something almost ritual about setting a cup of tea down and looking out at the small rectangle of sky my kitchen window offers. It is an ordinary pause, but it reminds me that tools are best judged by the company they keep. A perfectly good kettle will not warm a cold room and a clever app will not find the answer you need unless you know how to ask it. The way we frame a question sets the direction of everything that follows.",
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true
@@ -608,7 +608,7 @@
       "image": "/modern-tools-12-notice-more.jpeg",
       "alt": "A phone photographs a landscape, showing technology helping us look more closely.",
       "caption": "A phone photographs a landscape, showing technology helping us look more closely. Photograph via Pexels.",
-      "desc": "I have a small ritual of standing at the kitchen sink for a minute before I turn on the kettle, partly because it feels like an odd kind of permission to just be. Lately I have been aware of how much the tools in my pocket and on my wrist shape that minute, and whether they help me notice the things I want to notice.",
+      "desc": "I have a small ritual of standing at the kitchen sink for a minute before I turn on the kettle, partly because it feels like an odd kind of permission to just be. Lately I have been aware of how much the tools in my pocket and on my wrist shape that minute and whether they help me notice the things I want to notice.",
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true
@@ -619,7 +619,7 @@
       "image": "/modern-tools-13-cost-convenience.jpeg",
       "alt": "People with a shopping trolley and a message about the cost of convenience.",
       "caption": "People stand with a shopping trolley and a message about the cost of convenience. Photograph via Pexels.",
-      "desc": "I make a cup of tea, the kettle humming on its own, and a notification tells me my shopping will arrive in an hour. There is a small comfort in that certainty. It means no trolley-wrangling in the rain, no rummaging for loose change at the shop counter, and no need to plan the day around opening hours. It also nudges a question that sits quietly at the back of my mind: at what point does ease start to cost more than money?",
+      "desc": "I make a cup of tea, the kettle humming on its own and a notification tells me my shopping will arrive in an hour. There is a small comfort in that certainty. It means no trolley-wrangling in the rain, no rummaging for loose change at the shop counter and no need to plan the day around opening hours. It also nudges a question that sits quietly at the back of my mind: at what point does ease start to cost more than money?",
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true
@@ -652,7 +652,7 @@
       "image": "/inner-work-reading-a-letter.jpg",
       "alt": "A handwritten letter held beside a rose in warm natural light.",
       "caption": "A handwritten letter held beside a rose in warm natural light.",
-      "desc": "I am writing because some afternoons the house is quiet enough for thoughts to land and stay, and a quiet kindness feels overdue. I am not offering rules o.",
+      "desc": "I am writing because some afternoons the house is quiet enough for thoughts to land and stay and a quiet kindness feels overdue.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -663,7 +663,7 @@
       "image": "/inner-work-morning-meditations.jpg",
       "alt": "A woman sitting beside a bright window with flowering plants.",
       "caption": "Tenderness can be a way of seeing clearly, not a refusal to know better.",
-      "desc": "There is a softness I keep like a favourite mug, easy to reach for and, if I am honest, sometimes at risk of being chipped. Tenderness is not sentimentalis.",
+      "desc": "There is a softness I keep like a favourite mug, easy to reach for and, if I am honest, sometimes at risk of being chipped.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -674,7 +674,7 @@
       "image": "/inner-work-confidence-new.jpg",
       "alt": "An older woman smiling with a bright bouquet against a sunny background.",
       "caption": "Taking up space can be generous when it makes room for others too.",
-      "desc": "There is a strange, familiar tug when someone else fills the room with their laugh, their volume, their presence, and you find yourself literally shrinking.",
+      "desc": "There is a strange, familiar tug when someone else fills the room with their laugh, their volume, their presence and you find yourself literally shrinking.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -685,7 +685,7 @@
       "image": "/inner-work-practising-learning.jpg",
       "alt": "A hand writing music on a chalkboard during practice.",
       "caption": "A hand writing music on a chalkboard during practice.",
-      "desc": "Sitting with a warm cup of tea, I often find my thoughts returning to the same awkward, delightful problem. We want to be known, but being known asks somet.",
+      "desc": "Sitting with a warm cup of tea, I often find my thoughts returning to the same awkward, delightful problem.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -696,7 +696,7 @@
       "image": "/inner-work-mentoring-new.jpg",
       "alt": "Two women sharing a conversation among green plants.",
       "caption": "Company fills a room. Connection changes how we leave it.",
-      "desc": "There are times when a room full of people feels like background noise and a single conversation feels like an anchor. I notice the distinction between com.",
+      "desc": "There are times when a room full of people feels like background noise and a single conversation feels like an anchor.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -707,7 +707,7 @@
       "image": "/inner-work-path-new.jpg",
       "alt": "A blue-flowering path leading through a green landscape.",
       "caption": "Travelling alone teaches the ear to hear its own questions.",
-      "desc": "There is a peculiar kind of quiet the moment you button your coat and walk out by yourself, suitcase in hand. It is not loneliness exactly, more like the h.",
+      "desc": "There is a peculiar kind of quiet the moment you button your coat and walk out by yourself, suitcase in hand.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -718,7 +718,7 @@
       "image": "/inner-work-small-joys-new.jpg",
       "alt": "Two people surrounded by vivid pink flowers in a bright garden.",
       "caption": "Small joys are not distractions from life. They are part of its structure.",
-      "desc": "There is a particular comfort in doing something small and ordinary on purpose. It might be making a pot of tea and watching the tealeaves unfurl, or pausi.",
+      "desc": "There is a particular comfort in doing something small and ordinary on purpose.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -729,7 +729,7 @@
       "image": "/inner-work-former-self.webp",
       "alt": "A dancer seen from behind with one arm raised, suggesting movement and an emerging self.",
       "caption": "A dancer seen from behind with one arm raised, suggesting movement and an emerging self.",
-      "desc": "Sometimes, late in the evening when the washing-up has been done and there is a mug of tea cooling at my elbow, I hear the old version of me on the line. I.",
+      "desc": "Sometimes, late in the evening when the washing-up has been done and there is a mug of tea cooling at my elbow, I hear the old version of me on the line.",
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true
@@ -740,7 +740,7 @@
       "image": "/wellbeing-quiet-work-continuing.jpg",
       "alt": "A person cycling along a quiet tree-lined road in soft daylight.",
       "caption": "Ageing is not an apology. It is a life continuing to become more itself.",
-      "desc": "There is a small, steady pleasure in noticing how my days have shifted shape. A kettle sings a little longer in the afternoon; the light in the kitchen hit.",
+      "desc": "There is a small, steady pleasure in noticing how my days have shifted shape.",
       "section": "Wellbeing",
       "homepageEligible": true,
       "approved": true
@@ -751,7 +751,7 @@
       "image": "/fasting-plate.jpg",
       "alt": "A fresh plate of greens and vegetables on a pale table.",
       "caption": "Health advice is useful only when it leaves room for a real human life.",
-      "desc": "Health advice arrives daily, bright and certain, offering a neat formula for looking, feeling or performing better. For a long time I treated those formula.",
+      "desc": "Health advice arrives daily, bright and certain, offering a neat formula for looking, feeling or performing better.",
       "section": "Wellbeing",
       "homepageEligible": true,
       "approved": true
@@ -762,7 +762,7 @@
       "image": "/tea-notes-space.jpg",
       "alt": "A warm cup of tea catching the light beside a dark tabletop.",
       "caption": "A good laugh can change the temperature of an ordinary day.",
-      "desc": "You know that little alchemy that happens when a laugh breaks out? It can be as simple as a snort over an over-brewed mug of tea, and yet it changes everyt.",
+      "desc": "You know that little alchemy that happens when a laugh breaks out?",
       "section": "Wellbeing",
       "homepageEligible": true,
       "approved": true
@@ -773,7 +773,7 @@
       "image": "/tea-notes-reflection.jpg",
       "alt": "A person sitting in a quiet room beside a window.",
       "caption": "A shared room can give wellbeing a little more room to breathe.",
-      "desc": "I turned up to a local wellness event the way you might arrive at someone's flat for an evening: half an hour late, carrying a mug and a small unease about.",
+      "desc": "I turned up to a local wellness event the way you might arrive at someone's flat for an evening.",
       "section": "Wellbeing",
       "homepageEligible": true,
       "approved": true
@@ -784,7 +784,7 @@
       "image": "/sauna.jpg",
       "alt": "A bright, plant-filled room with a sauna and soft pink textiles.",
       "caption": "Thriving has a warmer, messier edge than simply feeling fine.",
-      "desc": "I often think of thriving as a slightly more honest word than happiness. Feeling fine is tidy and acceptable, the sort of status we report when someone ask.",
+      "desc": "I often think of thriving as a slightly more honest word than happiness.",
       "section": "Wellbeing",
       "homepageEligible": true,
       "approved": true
@@ -795,7 +795,7 @@
       "image": "/wellbeing-garmin-5km-challenge.webp",
       "alt": "A pair of green running shoes ready for a five-kilometre challenge.",
       "caption": "A pair of green running shoes ready for a five-kilometre challenge.",
-      "desc": "When I first strapped a Garmin to my wrist I expected it to be a strict accountant of exertion, a device that only counted the obvious: kilometres, calorie.",
+      "desc": "When I first strapped a Garmin to my wrist I expected it to be a strict accountant of exertion.",
       "section": "Wellbeing",
       "homepageEligible": true,
       "approved": true
@@ -806,7 +806,7 @@
       "image": "/wellbeing-oura-ring-approved.jpeg",
       "alt": "A black health-tracking ring resting on a pale surface.",
       "caption": "A black health-tracking ring resting on a pale surface.",
-      "desc": "There is a small, steady voice that lives in the margins of my day. It is not loud, it does not arrive with a notification sound, but it is there if I slow.",
+      "desc": "There is a small, steady voice that lives in the margins of my day. It is not loud, it does not arrive with a notification sound.",
       "section": "Wellbeing",
       "homepageEligible": true,
       "approved": true
