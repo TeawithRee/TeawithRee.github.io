@@ -135,3 +135,9 @@ footer .copy,footer .credit,footer .fcontact{color:#cfc0b5}
   .home-page .cover-inner{width:100%;max-width:24rem;right:5.5%}
   .home-page .cover-inner h1{max-width:10ch;font-family:Playfair Display,serif}
 }
+
+/* Tablet subject-safe placement: move the title off the hat and into the grass below the book. */
+@media(min-width:701px) and (max-width:820px){
+  .home-page .cover-inner{bottom:1%}
+  .home-page .cover-inner h1{margin-left:auto}
+}
