@@ -85,3 +85,53 @@ footer .copy,footer .credit,footer .fcontact{color:#cfc0b5}
 
 /* Mobile overflow fix: keep the approved homepage hero photograph inside the viewport. */
 @media(max-width:700px){.home-page .cover-bg{transform:none;animation:none}}
+
+/* Original desktop/tablet navigation restoration: keep the masthead horizontal and centred. */
+@media(min-width:701px){
+  #nav{display:block;background:rgba(247,244,239,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(71,52,42,.11);padding:.75rem 1rem .55rem}
+  #nav.solid{background:rgba(247,244,239,.96);padding:.55rem 1rem .45rem}
+  .masthead{text-align:center;margin-bottom:.2rem}
+  .brand{display:inline-block;font-family:Playfair Display,Cormorant Garamond,Georgia,serif;font-weight:900;font-size:clamp(1.8rem,3.8vw,2.7rem);letter-spacing:.02em}
+  .navrow{display:flex;justify-content:center;align-items:center;flex-wrap:nowrap;gap:1.5rem;padding:.35rem .2rem;overflow-x:auto;scrollbar-width:none}
+  .navrow::-webkit-scrollbar{display:none}
+  .navitem{display:inline-flex;position:static;border-top:0;flex:0 0 auto}
+  .navitem>a{display:block;padding:.4rem 0;min-height:48px;font-size:.69rem;letter-spacing:.12em;white-space:nowrap}
+  .ddtoggle,.dropdown,.navitem>a:after{display:none}
+}
+
+/* Original homepage hero restoration for desktop and tablet. */
+@media(min-width:701px){
+  .home-page .cover{height:auto;min-height:0;aspect-ratio:4/3}
+  .home-page .cover-bg{position:absolute;inset:0;width:100%;aspect-ratio:auto;background-size:cover;background-position:50%;transform:none;animation:none}
+  .home-page .cover-inner{position:absolute;z-index:2;top:auto;left:auto;right:5.5%;bottom:7%;max-width:24rem;padding:0;text-align:right;background:transparent;box-shadow:none}
+  .home-page .cover-inner h1{max-width:10ch;margin:0;color:#fff;font-family:Playfair Display,Cormorant Garamond,Georgia,serif;font-size:clamp(1.8rem,4vw,3.4rem);font-weight:500;line-height:1.04;letter-spacing:0;text-shadow:0 2px 16px rgba(0,0,0,.55)}
+}
+
+/* Exact original desktop/tablet overlay geometry. */
+@media(min-width:701px){
+  #nav{position:fixed;top:0;left:0;right:0;z-index:50}
+  .home-page .cover-inner{right:6%;max-width:30rem}
+  .home-page .cover-inner h1{max-width:15ch}
+}
+
+/* Final exact original desktop/tablet homepage treatment. */
+@media(min-width:701px){
+  #nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:.7rem 1.4rem .45rem;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .masthead{text-align:center;margin-bottom:.2rem}
+  .brand{display:inline;font-family:Cormorant Garamond,Playfair Display,Georgia,serif;font-weight:600;font-size:clamp(1.8rem,3.8vw,2.7rem);letter-spacing:.015em;color:var(--ink)}
+  .navrow{display:flex;justify-content:center;align-items:center;flex-wrap:nowrap;gap:1.25rem;padding:.35rem .2rem;overflow-x:auto;scrollbar-width:none}
+  .navrow::-webkit-scrollbar{display:none}
+  .navitem{display:flex;position:static;border-top:0;flex:0 0 auto}
+  .navitem>a{display:block;padding:0 0 .25rem;min-height:auto;font-size:.69rem;letter-spacing:.12em;white-space:nowrap}
+  .ddtoggle,.dropdown,.navitem>a:after{display:none}
+  .home-page .cover-inner{right:5.5%;max-width:24rem}
+  .home-page .cover-inner h1{max-width:10ch}
+}
+
+/* Match the original desktop/tablet computed geometry exactly. */
+@media(min-width:701px){
+  #nav{padding:.75rem 1rem .55rem}
+  .brand{font-family:Cormorant Garamond,serif;font-weight:600;letter-spacing:.015em}
+  .home-page .cover-inner{width:100%;max-width:24rem;right:5.5%}
+  .home-page .cover-inner h1{max-width:10ch;font-family:Playfair Display,serif}
+}
