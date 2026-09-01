@@ -97,3 +97,60 @@ footer{background:#fff;text-align:center;padding:3rem 1.5rem 1.8rem}
 
 /* Mobile readability refinement without moving the approved overlay upward. */
 @media(max-width:700px){.home-page .cover-inner{bottom:1.8%}.home-page .cover-inner h1{font-size:clamp(1.8rem,7.2vw,2.4rem);font-weight:600;line-height:1.02;text-shadow:0 2px 16px rgba(0,0,0,.65)}}
+
+/* Ecology-only correction from current live page */
+.ecology .section-hero--no-image { min-height:0; padding:clamp(3rem,8vw,6rem) 1.25rem clamp(2rem,5vw,3.5rem); background:#fff; }
+.ecology .section-hero--no-image .section-hero-copy { position:static; max-width:48rem; margin:0 auto; text-align:center; }
+.ecology .section-hero--no-image .section-hero-copy h1 { margin:.35rem auto .75rem; }
+.ecology .section-hero--no-image .section-hero-copy p { margin:0 auto; }
+.ecology .card-share { position:absolute; top:.75rem; right:.75rem; z-index:3; }
+.ecology .card-share summary { display:grid; place-items:center; width:2.15rem; height:2.15rem; border:1px solid rgba(36,32,29,.22); border-radius:50%; background:#fff; color:var(--ink); font:600 1.2rem/1 Manrope,sans-serif; cursor:pointer; list-style:none; }
+.ecology .card-share summary::-webkit-details-marker { display:none; }
+.ecology .card-share .share-panel { position:absolute; top:2.55rem; right:0; display:grid; min-width:8rem; padding:.35rem; background:#fff; border:1px solid rgba(36,32,29,.16); box-shadow:0 8px 20px rgba(36,32,29,.12); }
+.ecology .card-share .share-panel button { padding:.55rem .6rem; border:0; background:#fff; color:var(--ink); text-align:left; font:500 .7rem/1.2 Manrope,sans-serif; cursor:pointer; }
+.ecology .card-share .share-panel button:hover { background:#f7f7f7; }
+.ecology .story { position:relative; }
+.ecology footer { padding:2rem 1rem 2.5rem; text-align:center; background:#fff; border-top:1px solid rgba(36,32,29,.12); }
+.ecology footer .socials { display:flex; justify-content:center; gap:.55rem; margin:.8rem 0 1rem; }
+.ecology footer .socials a { width:2.25rem; height:2.25rem; background:#fff!important; color:var(--ink)!important; border:1px solid rgba(36,32,29,.35); box-shadow:none; }
+.ecology .section-home { display:block; width:max-content; margin:2rem 0 0; text-align:left; }
+
+/* Ecology visual treatment based on supplied current mobile reference */
+.ecology { background:#fff; }
+.ecology #nav { background:#fff; }
+.ecology .section-hero--no-image { padding:clamp(2.6rem,7vw,4.5rem) 1.25rem clamp(1.8rem,4vw,3rem); background:#fff; }
+.ecology .section-hero--no-image .section-hero-copy { max-width:44rem; }
+.ecology .section-hero--no-image .kicker { color:#2a9a70; }
+.ecology .secpage-head { margin:0 auto clamp(1.5rem,4vw,3rem); padding:0 1.25rem; max-width:48rem; text-align:center; }
+.ecology .artgrid { gap:clamp(1.35rem,3vw,2rem); padding-inline:clamp(1rem,3vw,2rem); }
+.ecology .story-media { border-radius:14px; overflow:hidden; border:1px solid rgba(36,32,29,.12); background:#fff; }
+.ecology .story-media img { display:block; width:100%; height:auto; }
+.ecology .card-share summary { width:2.35rem; height:2.35rem; }
+@media (max-width:700px){
+  .ecology .section-hero--no-image { padding-top:2.25rem; padding-bottom:1.5rem; }
+  .ecology .section-hero--no-image .section-hero-copy h1 { font-size:clamp(2.1rem,8vw,3rem); }
+  .ecology .secpage-head { margin-bottom:1.35rem; }
+  .ecology .artgrid { grid-template-columns:1fr; padding-inline:1rem; gap:1.45rem; }
+}
+@media (min-width:701px) and (max-width:1100px){ .ecology .artgrid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1101px){ .ecology .artgrid { grid-template-columns:repeat(3,minmax(0,1fr)); max-width:78rem; margin-inline:auto; } }
+
+/* Ecology: one heading only; no text is placed over an image */
+.ecology .section-hero--no-image .section-hero-copy .kicker { display:none; }
+.ecology .section-hero--no-image .section-hero-copy h1 { color:var(--ink); }
+
+/* Ecology: ultra-discreet share control outside imagery */
+.ecology .story-title-row { display:flex; align-items:flex-start; justify-content:space-between; gap:.55rem; margin-top:.7rem; }
+.ecology .story-title-row h3 { margin:0; flex:1; }
+.ecology .story-title-row .card-share { position:relative; top:auto; right:auto; flex:0 0 auto; margin-top:.12rem; }
+.ecology .story-title-row .card-share summary { width:1.35rem; height:1.35rem; border:0; background:transparent; color:var(--muted); font-size:.95rem; font-weight:500; }
+.ecology .story-title-row .card-share .share-panel { top:1.6rem; right:0; }
+
+/* Ecology mobile spacing: remove the fixed-header offset when the header is in flow */
+@media (max-width:700px){ .ecology main.secpage { padding-top:0!important; } }
+
+/* Ecology opening: tighter vertical rhythm across all widths */
+.ecology .section-hero--no-image { padding-top:1.5rem; padding-bottom:1rem; }
+.ecology .section-hero--no-image .section-hero-copy h1 { margin-top:0; margin-bottom:.5rem; }
+.ecology .section-hero--no-image .section-hero-copy p { margin:0; }
+@media (max-width:700px){ .ecology .section-hero--no-image { padding-top:1.35rem; padding-bottom:.9rem; } }
