@@ -294,3 +294,19 @@ body.home-page footer .socials a, body.about-page footer .socials a, body.wellbe
   border:1px solid rgba(36,32,29,.35);
   box-shadow:none;
 }
+
+/* Place return links on the left edge on Home, Tea Notes and About */
+body.home-page .home-return, body.tea-notes .home-return, body.about-page .home-return {
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 2.4rem;
+  text-align:left;
+}
+body.home-page .home-return .back, body.tea-notes .home-return .back, body.about-page .home-return .back {
+  display:inline-block;
+  margin-left:0;
+  text-align:left;
+}
+@media (max-width:700px) {
+  body.home-page .home-return, body.tea-notes .home-return, body.about-page .home-return { padding:0 1.3rem; }
+}
