@@ -203,3 +203,60 @@ footer{background:#fff;text-align:center;padding:3rem 1.5rem 1.8rem}
 /* Shared masthead: pure white luxury header, no beige tint */
 html body #nav, html body #nav.site-header { background:#fff!important; }
 html body #nav::before, html body #nav::after { background:#fff!important; }
+
+/* Modern Tools masthead rhythm: compact navigation and opening, preserving readable type */
+.tools .section-hero--no-image { padding:.85rem 1.25rem .6rem; }
+.tools #nav .navlinks { gap:.9rem; }
+@media (max-width:700px){
+  .tools .section-hero--no-image { padding:.75rem 1rem .55rem; }
+  .tools #nav .navlinks { gap:.55rem; }
+}
+@media (min-width:701px) and (max-width:1100px){
+  .tools .section-hero--no-image { padding:.9rem 1.25rem .6rem; }
+}
+
+/* Ecology top parity with the approved Modern Tools page */
+.ecology .section-hero--no-image { padding:.85rem 1.25rem .6rem; }
+.ecology .section-hero--no-image .section-hero-copy h1 { margin:0 0 .5rem; }
+.ecology .section-hero--no-image .section-hero-copy p { margin:0; }
+.ecology #nav .navlinks { gap:.9rem; }
+@media (max-width:700px){
+  .ecology .section-hero--no-image { padding:.75rem 1rem .55rem; }
+  .ecology #nav .navlinks { gap:.55rem; }
+}
+@media (min-width:701px) and (max-width:1100px){
+  .ecology .section-hero--no-image { padding:.9rem 1.25rem .6rem; }
+}
+
+/* Inner Work parity with the approved Modern Tools section treatment */
+.inner-work .section-hero--no-image { min-height:0; padding:.85rem 1.25rem .6rem; background:#fff; }
+.inner-work .section-hero--no-image .section-hero-copy { position:static; max-width:44rem; margin:0 auto; text-align:center; }
+.inner-work .section-hero--no-image .section-hero-copy h1 { margin:0 0 .5rem; color:var(--ink); }
+.inner-work .section-hero--no-image .section-hero-copy p { margin:0; }
+.inner-work .artgrid { gap:clamp(1.35rem,3vw,2rem); padding-inline:clamp(1rem,3vw,2rem); }
+.inner-work .story-media { border-radius:14px; overflow:hidden; border:1px solid rgba(36,32,29,.12); background:#fff; }
+.inner-work .story-media img { display:block; width:100%; height:auto; }
+.inner-work .story-title-row { display:flex; align-items:flex-start; justify-content:space-between; gap:.55rem; margin-top:.7rem; }
+.inner-work .story-title-row h3 { margin:0; flex:1; }
+.inner-work .story-title-row .card-share { position:relative; flex:0 0 auto; margin-top:.12rem; }
+.inner-work .card-share summary { display:grid; place-items:center; width:1.35rem; height:1.35rem; border:0; background:transparent; color:var(--muted); font:500 .95rem/1 Manrope,sans-serif; cursor:pointer; list-style:none; }
+.inner-work .card-share summary::-webkit-details-marker { display:none; }
+.inner-work .card-share .share-panel { position:absolute; top:1.6rem; right:0; display:grid; min-width:8rem; padding:.35rem; background:#fff; border:1px solid rgba(36,32,29,.16); box-shadow:0 8px 20px rgba(36,32,29,.12); z-index:5; }
+.inner-work .card-share .share-panel button { padding:.55rem .6rem; border:0; background:#fff; color:var(--ink); text-align:left; font:500 .7rem/1.2 Manrope,sans-serif; cursor:pointer; }
+.inner-work .section-home { display:block; width:max-content; margin:0; text-align:left; }
+.inner-work footer { padding:2rem 1rem 2.5rem; text-align:center; background:#fff; border-top:1px solid rgba(36,32,29,.12); margin-top:0; }
+.inner-work footer .socials { display:flex; justify-content:center; gap:.55rem; margin:.8rem 0 1rem; }
+.inner-work footer .socials a { width:2.25rem; height:2.25rem; background:#fff!important; color:var(--ink)!important; border:1px solid rgba(36,32,29,.35); box-shadow:none; }
+@media (max-width:700px){ .inner-work .section-hero--no-image { padding:.75rem 1rem .55rem; } .inner-work .artgrid { grid-template-columns:1fr; padding-inline:1rem; gap:1.45rem; } }
+@media (min-width:701px) and (max-width:1100px){ .inner-work .section-hero--no-image { padding:.9rem 1.25rem .6rem; } .inner-work .artgrid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1101px){ .inner-work .artgrid { grid-template-columns:repeat(3,minmax(0,1fr)); max-width:78rem; margin-inline:auto; } }
+
+/* Inner Work closing rhythm: keep BACK TO MENU close to the matched footer */
+.inner-work .section-home { margin-top:0!important; margin-bottom:0!important; }
+.inner-work footer { margin-top:0!important; }
+@media (max-width:1100px){ .inner-work .section-home { padding-bottom:.75rem; } }
+@media (min-width:1101px){ .inner-work .section-home { padding-bottom:1rem; } }
+
+/* Final closing-gap correction: page main padding controls the space before footer */
+body.inner-work main.secpage { padding-bottom: 12px !important; }
+@media (min-width: 1101px) { body.inner-work main.secpage { padding-bottom: 16px !important; } }
