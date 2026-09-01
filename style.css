@@ -310,3 +310,13 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
 @media (max-width:700px) {
   body.home-page .home-return, body.tea-notes .home-return, body.about-page .home-return { padding:0 1.3rem; }
 }
+
+/* Home share parity: match the discreet title-row three-dot control */
+.home-page .story-title-row { display:flex; align-items:flex-start; justify-content:space-between; gap:.55rem; margin-top:.7rem; }
+.home-page .story-title-row h3 { margin:0; flex:1; }
+.home-page .story-title-row .card-share { position:relative; top:auto; right:auto; flex:0 0 auto; margin-top:.12rem; }
+.home-page .card-share summary { display:grid; place-items:center; width:1.35rem; height:1.35rem; border:0; background:transparent; color:var(--muted); font:500 .95rem/1 Manrope,sans-serif; cursor:pointer; list-style:none; }
+.home-page .card-share summary::-webkit-details-marker { display:none; }
+.home-page .card-share .share-panel { position:absolute; top:1.6rem; right:0; display:grid; min-width:8rem; padding:.35rem; background:#fff; border:1px solid rgba(36,32,29,.16); box-shadow:0 8px 20px rgba(36,32,29,.12); z-index:5; }
+.home-page .card-share .share-panel button { padding:.55rem .6rem; border:0; background:#fff; color:var(--ink); text-align:left; font:500 .7rem/1.2 Manrope,sans-serif; cursor:pointer; }
+.home-page .card-share .share-panel button:hover { background:#f7f7f7; }
