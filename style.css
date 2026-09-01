@@ -272,3 +272,25 @@ body.inner-work footer .socials a { width:64px !important; height:64px !importan
 body.inner-work footer { padding:32px 16px 40px !important; }
 body.inner-work footer .socials { gap:8.8px !important; margin:12.8px 0 16px !important; }
 body.inner-work footer .socials a { width:44px !important; height:44px !important; }
+
+/* Footer parity: match the approved Modern Tools, Ecology and Inner Work treatment */
+body.home-page footer, body.about-page footer, body.wellbeing footer, body.tea-notes footer {
+  padding:2rem 1rem 2.5rem;
+  text-align:center;
+  background:#fff;
+  border-top:1px solid rgba(36,32,29,.12);
+}
+body.home-page footer .socials, body.about-page footer .socials, body.wellbeing footer .socials, body.tea-notes footer .socials {
+  display:flex;
+  justify-content:center;
+  gap:.55rem;
+  margin:.8rem 0 1rem;
+}
+body.home-page footer .socials a, body.about-page footer .socials a, body.wellbeing footer .socials a, body.tea-notes footer .socials a {
+  width:2.25rem;
+  height:2.25rem;
+  background:#fff !important;
+  color:var(--ink) !important;
+  border:1px solid rgba(36,32,29,.35);
+  box-shadow:none;
+}
