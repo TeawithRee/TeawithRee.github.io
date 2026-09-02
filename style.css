@@ -405,12 +405,17 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
 @media (max-width:700px) { .about-page .about-head { padding-left:0; padding-right:0; } }
 
 /* About review: make the newsletter closing block quieter and more proportionate. */
+.home-page .news { padding:2.8rem 1.3rem 3.1rem; }
 .about-page .news { padding:2.8rem 1.3rem 3.1rem; }
-.about-page .news > div > div:nth-child(2) { font-size:clamp(2rem,5vw,3.1rem) !important; margin-bottom:20px !important; }
+.home-page .news > div > div:nth-child(2),
+.about-page .news > div > div:nth-child(2) { font-size:clamp(1.9rem,5.2vw,3rem) !important; margin-bottom:20px !important; }
 .about-page .news img { max-width:270px !important; margin-bottom:20px !important; }
 @media (max-width:700px) {
+  .home-page .news { padding:2.4rem 1rem 2.7rem; }
   .about-page .news { padding:2.4rem 1rem 2.7rem; }
-  .about-page .news > div > div:nth-child(2) { font-size:clamp(2rem,8vw,2.8rem) !important; }
+  .home-page .news > div > div:nth-child(2),
+  .about-page .news > div > div:nth-child(2) { font-size:clamp(1.9rem,5.2vw,3rem) !important; }
+  .home-page .news img,
   .about-page .news img { max-width:270px !important; }
 }
 
