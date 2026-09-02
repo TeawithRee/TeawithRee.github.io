@@ -757,3 +757,15 @@ body.wellbeing .story > p {
 @media (max-width:700px) {
   body.wellbeing .story > p { -webkit-line-clamp:2; }
 }
+
+
+/* Compact tools story excerpts */
+body.tools .story > p {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+}
+@media (max-width:700px) {
+  body.tools .story > p { -webkit-line-clamp:2; }
+}
