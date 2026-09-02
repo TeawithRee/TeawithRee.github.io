@@ -375,3 +375,8 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
 
 /* Final Home closing rhythm: tighter, still breathable */
 .home-page .feed + section[aria-label="Reflection from Tea with Ree"] { margin-top:0.5rem !important; margin-bottom:2.5rem !important; }
+
+/* Tea Notes local review: reserve space for the fixed shared navigation. */
+.tea-notes main#main-content { padding-top: 134px; }
+@media (min-width:701px) and (max-width:1100px) { .tea-notes main#main-content { padding-top: 116px; } }
+@media (max-width:700px) { .tea-notes main#main-content { padding-top: 82px; } }
