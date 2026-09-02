@@ -769,3 +769,40 @@ body.tools .story > p {
 @media (max-width:700px) {
   body.tools .story > p { -webkit-line-clamp:2; }
 }
+
+/* Final Tea Notes contact-link and excerpt cache fix */
+body.tea-notes .tn-page > p > a.read {
+  display:inline;
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  font:inherit;
+  letter-spacing:0;
+  text-transform:none;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:.16em;
+}
+
+/* Tea Notes: one shared reading edge for every lower-page element. */
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"],
+body.tea-notes .tn-page .tn-programmes,
+body.tea-notes .tn-page > p:not(.home-return),
+body.tea-notes main > p.home-return {
+  width:100% !important;
+  max-width:52rem !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  box-sizing:border-box;
+  padding-left:1rem !important;
+  padding-right:1rem !important;
+}
+body.tea-notes .tn-page .tn-programme-grid {
+  width:100% !important;
+  max-width:none !important;
+}
+body.tea-notes .tn-page .tn-programme { width:100%; }
+body.tea-notes main > p.home-return { margin-top:1rem !important; margin-bottom:1rem !important; }
+body.tea-notes main > p.home-return .section-home { margin-left:0 !important; }
