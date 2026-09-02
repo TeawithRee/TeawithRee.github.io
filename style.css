@@ -340,3 +340,16 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
 /* Exact Ecology heading scale for About review */
 .about-page .about-head h1 { font-size:32px; line-height:56px; }
 @media (max-width:700px) { .about-page .about-head h1 { font-size:32px; line-height:56px; } }
+
+/* Compact Tea Notes treatment */
+.tea-notes .tn-page { padding-top:0; }
+.tea-notes .tn-page .secpage-head { max-width:54rem; margin:0 auto; padding:1.1rem 1.3rem .25rem; }
+.tea-notes .tn-page .secpage-head h1 { margin:0 0 1rem; }
+.tea-notes .tn-page .secpage-head p { margin:.55rem auto; }
+.tea-notes .tn-page .tn-visual { width:min(100%, 52rem); margin:1.1rem auto 1.5rem; padding:0 1.3rem; }
+.tea-notes .tn-page .tn-visual img { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; object-position:center; border:1px solid rgba(36,32,29,.12); border-radius:14px; }
+.tea-notes .tn-page .programmes { max-width:78rem; margin:0 auto; }
+@media (max-width:700px) {
+  .tea-notes .tn-page .secpage-head { padding:1rem 1rem .1rem; }
+  .tea-notes .tn-page .tn-visual { width:100%; margin:.85rem auto 1.1rem; padding:0 1rem; }
+}
