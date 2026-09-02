@@ -901,7 +901,5 @@ body.tea-notes main > p.home-return .section-home { margin-left:0 !important; }
   .home-page .news img,.about-page .news img{max-width:210px!important;border-radius:10px!important}
   .home-page .news form,.about-page .news form{max-width:320px!important;gap:8px!important}
 }
-/* Cinematic image finish: quiet vividness for every photographic image in page content. */
-main img{filter:saturate(1.06) contrast(1.03) brightness(1.01)}
 .story-media img,.news img{filter:saturate(1.06) contrast(1.03) brightness(1.01)}
 .cover-bg{filter:saturate(1.05) contrast(1.02)}
