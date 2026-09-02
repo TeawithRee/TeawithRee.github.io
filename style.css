@@ -557,3 +557,100 @@ body.wellbeing .story-title-row .share-panel {
   box-shadow:0 8px 20px rgba(36,32,29,.12);
   z-index:5;
 }
+
+
+/* Final compact sanctuary rhythm: all menu pages and Tea Notes */
+body.ecology main.secpage,
+body.inner-work main.secpage,
+body.wellbeing main.secpage,
+body.tools main.secpage,
+body.tea-notes main#main-content { padding-top:0 !important; padding-bottom:0 !important; }
+body.ecology .section-hero--no-image,
+body.inner-work .section-hero--no-image,
+body.tools .section-hero--no-image { min-height:0; padding:.85rem 1.25rem .6rem !important; }
+body.ecology .section-hero-copy h1,
+body.inner-work .section-hero-copy h1,
+body.tools .section-hero-copy h1,
+body.wellbeing .secpage-head h1,
+body.tea-notes .secpage-head h1 { font-family:Cormorant Garamond,Georgia,serif; font-size:32px; line-height:1.15; font-weight:500; margin:0 0 .45rem !important; }
+body.ecology .section-hero-copy p,
+body.inner-work .section-hero-copy p,
+body.tools .section-hero-copy p,
+body.wellbeing .secpage-head p,
+body.tea-notes .secpage-head p { margin:0 !important; }
+body.ecology .artgroup { margin:0 0 1.25rem !important; }
+body.ecology .secgroup-title { margin:1.25rem 0 .7rem !important; padding-bottom:.3rem; }
+body.ecology .artgrid,
+body.inner-work .artgrid,
+body.wellbeing .artgrid,
+body.tools .artgrid { gap:1.35rem !important; }
+body.ecology .section-home,
+body.inner-work .section-home,
+body.wellbeing .section-home,
+body.tools .section-home,
+body.tea-notes .section-home { margin-top:.75rem !important; margin-bottom:0 !important; padding-bottom:.5rem !important; }
+body.ecology footer,
+body.inner-work footer,
+body.wellbeing footer,
+body.tools footer,
+body.tea-notes footer { margin-top:0 !important; padding-top:1.5rem !important; padding-bottom:2rem !important; }
+body.tea-notes .tn-page .secpage-head { max-width:54rem; margin:0 auto !important; padding:.85rem 1rem .4rem !important; text-align:center; }
+body.tea-notes .tn-page .tn-visual { width:min(calc(100% - 2rem),30rem) !important; margin:.7rem auto 1rem !important; padding:0 !important; }
+body.tea-notes .tn-page .tn-visual img { aspect-ratio:3/2; object-fit:cover; }
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] { margin:.75rem auto .9rem !important; padding:0 clamp(1rem,3vw,2rem) !important; }
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] p { margin:0 !important; line-height:1.58 !important; }
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] p + p { margin-top:.3rem !important; }
+body.tea-notes .tn-page .tn-programmes { margin:0 auto !important; padding:0 clamp(1rem,3vw,2rem) !important; }
+body.tea-notes .tn-page .tn-programme-grid { gap:.8rem !important; }
+body.tea-notes .tn-page .tn-programme h2 { margin:0 0 .2rem !important; font-family:Cormorant Garamond,Georgia,serif; font-size:1.55rem; line-height:1.1; }
+body.tea-notes .tn-page .tn-programme p { margin:0 !important; line-height:1.58 !important; }
+body.tea-notes .tn-page > p:not(.home-return) { margin:.85rem auto .55rem !important; }
+@media (max-width:700px) {
+  body.ecology .section-hero--no-image,
+  body.inner-work .section-hero--no-image,
+  body.tools .section-hero--no-image { padding:.7rem 1rem .5rem !important; }
+  body.ecology .artgrid,
+  body.inner-work .artgrid,
+  body.wellbeing .artgrid,
+  body.tools .artgrid { gap:1.2rem !important; }
+  body.tea-notes .tn-page .secpage-head { padding:.7rem 1rem .3rem !important; }
+  body.tea-notes .tn-page .tn-visual { width:calc(100% - 2rem) !important; margin:.55rem auto .8rem !important; }
+  body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] { margin:.55rem auto .75rem !important; }
+  body.tea-notes .tn-page .tn-programme-grid { gap:.65rem !important; }
+}
+
+/* Touch article browsing: mobile and touch tablets can move through cards horizontally without widening the page. */
+@media (max-width:700px), (pointer:coarse) and (min-width:701px) and (max-width:1100px) {
+  body.ecology .artgrid,
+  body.inner-work .artgrid,
+  body.wellbeing .artgrid,
+  body.tools .artgrid {
+    display:flex;
+    grid-template-columns:none;
+    overflow-x:auto;
+    overflow-y:hidden;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;
+    touch-action:pan-x;
+    scrollbar-width:none;
+    padding-inline:1rem;
+  }
+  body.ecology .artgrid::-webkit-scrollbar,
+  body.inner-work .artgrid::-webkit-scrollbar,
+  body.wellbeing .artgrid::-webkit-scrollbar,
+  body.tools .artgrid::-webkit-scrollbar { display:none; }
+  body.ecology .artgrid .story,
+  body.inner-work .artgrid .story,
+  body.wellbeing .artgrid .story,
+  body.tools .artgrid .story {
+    flex:0 0 min(82vw,320px);
+    scroll-snap-align:start;
+  }
+}
+
+@media (pointer:coarse) and (min-width:701px) and (max-width:1100px) {
+  body.ecology .artgrid .story,
+  body.inner-work .artgrid .story,
+  body.wellbeing .artgrid .story,
+  body.tools .artgrid .story { flex-basis:340px; }
+}
