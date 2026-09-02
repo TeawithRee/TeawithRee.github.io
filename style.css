@@ -413,3 +413,75 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
   .about-page .news > div > div:nth-child(2) { font-size:clamp(2rem,8vw,2.8rem) !important; }
   .about-page .news img { max-width:270px !important; }
 }
+
+/* About local review: match section-page hierarchy and moderate the mobile portrait. */
+.about-page .about-head { display:flex; flex-direction:column; }
+.about-page .about-head h1 { order:1; }
+.about-page .about-head .about-opening { order:2; margin:.35rem 0 0; }
+@media (max-width:700px) { .about-page .about-portrait { width:min(100% - 2rem,16rem); } }
+
+/* About review: keep the opening biography paragraph left-aligned with the rest. */
+.about-page .about-words p:first-child { text-align:left !important; max-width:52rem !important; margin-left:0 !important; margin-right:0 !important; }
+
+/* About review variant: center the portrait to harmonize with the newsletter. */
+.about-page .about-portrait { margin-left:auto !important; margin-right:auto !important; }
+
+/* About review: headings and opening sentence match the centered section-page treatment. */
+.about-page .about-head { text-align:center !important; align-items:center; }
+.about-page .about-head h1,
+.about-page .about-head .about-opening { text-align:center !important; }
+
+/* About review: match the Tea Notes image width at each responsive breakpoint. */
+.about-page .about-portrait { width:min(100%,36rem); }
+@media (max-width:700px) { .about-page .about-portrait { width:min(100% - 2rem,19.75rem); } }
+
+/* About review: match the settled section-page distance below the mobile header. */
+@media (max-width:700px) { .about-page.art { padding-top:0 !important; } }
+
+/* About review: apply the section-page top rhythm to the actual About main element. */
+body.about-page main.art.aboutpage { padding-top:0 !important; }
+
+/* About review: exact Ecology section-heading typography and rhythm. */
+body.about-page main.art.aboutpage .about-head h1 {
+  font-family:"Cormorant Garamond","Playfair Display",Georgia,serif !important;
+  font-size:32px !important;
+  line-height:56px !important;
+  font-weight:500 !important;
+  margin:0 !important;
+}
+body.about-page main.art.aboutpage .about-head .about-opening {
+  font-family:Manrope,Inter,sans-serif !important;
+  font-size:16px !important;
+  line-height:25.6px !important;
+  margin:0 !important;
+}
+@media (max-width:700px) {
+  body.about-page main.art.aboutpage .about-head h1 {
+    font-size:33.6px !important;
+    line-height:58.8px !important;
+  }
+  body.about-page main.art.aboutpage .about-head .about-opening {
+    font-size:15.2px !important;
+    line-height:23.56px !important;
+  }
+}
+
+/* About review: remove the inherited 420px cap and match Tea Notes image treatment. */
+body.about-page main.art.aboutpage .about-portrait {
+  width:100% !important;
+  max-width:36rem !important;
+}
+@media (max-width:700px) {
+  body.about-page main.art.aboutpage .about-portrait {
+    width:calc(100% - 2rem) !important;
+    max-width:19.75rem !important;
+  }
+}
+
+/* About review: reserve the same fixed-header clearance used by the section pages. */
+body.about-page main.art.aboutpage { padding-top:150px !important; }
+@media (max-width:700px) { body.about-page main.art.aboutpage { padding-top:94px !important; } }
+
+/* About review: match Ecology’s actual heading start at each breakpoint. */
+body.about-page main.art.aboutpage { padding-top:134px !important; }
+@media (max-width:700px) { body.about-page main.art.aboutpage { padding-top:0 !important; } }
