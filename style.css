@@ -485,3 +485,70 @@ body.about-page main.art.aboutpage { padding-top:150px !important; }
 /* About review: match Ecology’s actual heading start at each breakpoint. */
 body.about-page main.art.aboutpage { padding-top:134px !important; }
 @media (max-width:700px) { body.about-page main.art.aboutpage { padding-top:0 !important; } }
+
+/* Shared section heading review: Tea Notes and Wellbeing match Ecology/About. */
+body.tea-notes main#main-content > .tn-page .secpage-head h1,
+body.wellbeing main#main-content > .secpage-head h1 {
+  font-family:"Cormorant Garamond","Playfair Display",Georgia,serif !important;
+  font-size:32px !important;
+  line-height:56px !important;
+  font-weight:500 !important;
+  margin:0 0 8px !important;
+}
+@media (max-width:700px) {
+  body.tea-notes main#main-content > .tn-page .secpage-head h1,
+  body.wellbeing main#main-content > .secpage-head h1 {
+    font-size:33.6px !important;
+    line-height:58.8px !important;
+  }
+}
+/* Keep the approved three-dot share control discreet and outside the image. */
+body.wellbeing .card-share { position:relative; z-index:2; }
+body.wellbeing .card-share > summary { font-size:1.1rem; line-height:1; padding:.2rem .35rem; }
+
+/* Wellbeing review: the share control is represented by vertical dots only. */
+body.wellbeing .card-share > summary { list-style:none; }
+body.wellbeing .card-share > summary::-webkit-details-marker { display:none; }
+body.wellbeing .card-share > summary::marker { content:""; }
+
+/* Wellbeing review: place the discreet share control in the article title row. */
+body.wellbeing .story-title-row {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:.55rem;
+  margin-top:.7rem;
+}
+body.wellbeing .story-title-row h3 { margin:0; flex:1; }
+body.wellbeing .story-title-row .card-share {
+  position:relative;
+  top:auto;
+  right:auto;
+  flex:0 0 auto;
+  margin-top:.12rem;
+}
+body.wellbeing .story-title-row .card-share > summary {
+  display:grid;
+  place-items:center;
+  width:1.35rem;
+  height:1.35rem;
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  font:500 .95rem/1 Manrope,sans-serif;
+  cursor:pointer;
+  list-style:none;
+}
+body.wellbeing .story-title-row .card-share > summary::-webkit-details-marker { display:none; }
+body.wellbeing .story-title-row .share-panel {
+  position:absolute;
+  top:1.6rem;
+  right:0;
+  display:grid;
+  min-width:8rem;
+  padding:.35rem;
+  background:#fff;
+  border:1px solid rgba(36,32,29,.16);
+  box-shadow:0 8px 20px rgba(36,32,29,.12);
+  z-index:5;
+}
