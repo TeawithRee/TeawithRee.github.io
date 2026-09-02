@@ -733,3 +733,15 @@ body.ecology .story > p {
 @media (max-width:700px) {
   body.ecology .story > p { -webkit-line-clamp:2; }
 }
+
+
+/* Compact inner-work story excerpts */
+body.inner-work .story > p {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+}
+@media (max-width:700px) {
+  body.inner-work .story > p { -webkit-line-clamp:2; }
+}
