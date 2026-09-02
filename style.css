@@ -867,3 +867,23 @@ body.tea-notes main > p.home-return .section-home { margin-left:0 !important; }
     scroll-snap-align:start;
   }
 }
+
+/* Touch laptop browsing: tools */
+@media (pointer:coarse) and (min-width:1101px) {
+  body.tools .artgrid {
+    display:flex;
+    grid-template-columns:none;
+    overflow-x:auto;
+    overflow-y:hidden;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;
+    touch-action:pan-x;
+    scrollbar-width:none;
+    padding-inline:1rem;
+  }
+  body.tools .artgrid::-webkit-scrollbar { display:none; }
+  body.tools .artgrid .story {
+    flex:0 0 min(34vw,420px);
+    scroll-snap-align:start;
+  }
+}
