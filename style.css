@@ -887,3 +887,19 @@ body.tea-notes main > p.home-return .section-home { margin-left:0 !important; }
     scroll-snap-align:start;
   }
 }
+
+
+/* Final newsletter scale and restrained cinematic treatment */
+.home-page .news > div > div:nth-child(2),
+.about-page .news > div > div:nth-child(2){font-family:Cormorant Garamond,Playfair Display,Georgia,serif!important;font-size:clamp(1.7rem,3.4vw,2.55rem)!important;line-height:1.1!important;margin-bottom:16px!important}
+.home-page .news img,.about-page .news img{max-width:240px!important;margin-bottom:16px!important}
+@media (max-width:700px){
+  .home-page .news,.about-page .news{padding:2rem .9rem 2.2rem!important}
+  .home-page .news>div,.about-page .news>div{width:100%!important;max-width:420px!important}
+  .home-page .news > div > div:nth-child(2),
+  .about-page .news > div > div:nth-child(2){font-size:clamp(1.55rem,7vw,2.1rem)!important}
+  .home-page .news img,.about-page .news img{max-width:210px!important;border-radius:10px!important}
+  .home-page .news form,.about-page .news form{max-width:320px!important;gap:8px!important}
+}
+.story-media img,.news img{filter:saturate(1.06) contrast(1.03) brightness(1.01)}
+.cover-bg{filter:saturate(1.05) contrast(1.02)}

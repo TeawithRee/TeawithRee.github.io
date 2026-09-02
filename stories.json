@@ -3,7 +3,10 @@
   "selectionPolicy": {
     "visibleCount": 3,
     "mode": "curated",
-    "note": "The selected array is the live homepage set. Add an approved story here when it is ready; rejected homepage stories remain library-only."
+    "note": "The selected array is the live homepage set. Add an approved story here when it is ready; rejected homepage stories remain library-only.",
+    "sortBy": "publishedAt",
+    "sortDirection": "desc",
+    "missingDateOrder": "preserve"
   },
   "selected": [
     {
