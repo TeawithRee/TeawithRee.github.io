@@ -360,3 +360,7 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
 .home-page .quote .by { color:#5a5a5a; }
 .home-page .news .kicker,
 .home-page .news h2 { color:#171717; }
+
+/* About: monochrome newsletter text */
+.about-page .news .kicker,
+.about-page .news h2 { color:#171717; }
