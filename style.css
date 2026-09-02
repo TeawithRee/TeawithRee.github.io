@@ -353,3 +353,10 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
   .tea-notes .tn-page .secpage-head { padding:1rem 1rem .1rem; }
   .tea-notes .tn-page .tn-visual { width:100%; margin:.85rem auto 1.1rem; padding:0 1rem; }
 }
+
+
+/* Home: monochrome quote and newsletter text */
+.home-page .quote p { color:#171717; }
+.home-page .quote .by { color:#5a5a5a; }
+.home-page .news .kicker,
+.home-page .news h2 { color:#171717; }
