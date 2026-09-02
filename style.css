@@ -745,3 +745,15 @@ body.inner-work .story > p {
 @media (max-width:700px) {
   body.inner-work .story > p { -webkit-line-clamp:2; }
 }
+
+
+/* Compact wellbeing story excerpts */
+body.wellbeing .story > p {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+}
+@media (max-width:700px) {
+  body.wellbeing .story > p { -webkit-line-clamp:2; }
+}
