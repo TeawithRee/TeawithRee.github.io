@@ -725,50 +725,51 @@ body main.art footer .follow-label { display:none !important; }
 
 /* Compact ecology story excerpts */
 body.ecology .story > p {
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:3;
-  overflow:hidden;
+  display:-webkit-box !important;
+  -webkit-box-orient:vertical !important;
+  -webkit-line-clamp:3 !important;
+  overflow:hidden !important;
 }
 @media (max-width:700px) {
-  body.ecology .story > p { -webkit-line-clamp:2; }
+  body.ecology .story > p { -webkit-line-clamp:2 !important; }
 }
 
 
 /* Compact inner-work story excerpts */
 body.inner-work .story > p {
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:3;
-  overflow:hidden;
+  display:-webkit-box !important;
+  -webkit-box-orient:vertical !important;
+  -webkit-line-clamp:3 !important;
+  overflow:hidden !important;
 }
 @media (max-width:700px) {
-  body.inner-work .story > p { -webkit-line-clamp:2; }
+  body.inner-work .story > p { -webkit-line-clamp:2 !important; }
 }
 
 
 /* Compact wellbeing story excerpts */
 body.wellbeing .story > p {
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:3;
-  overflow:hidden;
+  display:-webkit-box !important;
+  -webkit-box-orient:vertical !important;
+  -webkit-line-clamp:3 !important;
+  overflow:hidden !important;
 }
 @media (max-width:700px) {
-  body.wellbeing .story > p { -webkit-line-clamp:2; }
+  body.wellbeing .story > p { -webkit-line-clamp:2 !important; }
 }
 
 
 /* Compact tools story excerpts */
 body.tools .story > p {
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:3;
-  overflow:hidden;
+  display:-webkit-box !important;
+  -webkit-box-orient:vertical !important;
+  -webkit-line-clamp:3 !important;
+  overflow:hidden !important;
 }
 @media (max-width:700px) {
-  body.tools .story > p { -webkit-line-clamp:2; }
+  body.tools .story > p { -webkit-line-clamp:2 !important; }
 }
+
 
 /* Final Tea Notes contact-link and excerpt cache fix */
 body.tea-notes .tn-page > p > a.read {
