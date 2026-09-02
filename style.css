@@ -354,13 +354,24 @@ body.home-page .home-return .back, body.tea-notes .home-return .back, body.about
   .tea-notes .tn-page .tn-visual { width:100%; margin:.85rem auto 1.1rem; padding:0 1rem; }
 }
 
-
-/* Home: monochrome quote and newsletter text */
-.home-page .quote p { color:#171717; }
-.home-page .quote .by { color:#5a5a5a; }
+/* Local review: monochrome quote and newsletter text only */
+.home-page .quote p,
+.about-page .quote p { color:#171717; }
+.home-page .quote .by,
+.about-page .quote .by { color:#5a5a5a; }
 .home-page .news .kicker,
-.home-page .news h2 { color:#171717; }
-
-/* About: monochrome newsletter text */
+.home-page .news h2,
 .about-page .news .kicker,
 .about-page .news h2 { color:#171717; }
+
+/* Home quote-to-First Pour spacing: keep the closing sections visually connected */
+.home-page section[aria-label="Reflection from Tea with Ree"] { margin-bottom:1.5rem !important; }
+
+/* Home story grid to quote spacing: reduce excess white space */
+.home-page .artgrid + section[aria-label="Reflection from Tea with Ree"] { margin-top:1.5rem !important; }
+
+/* Correct Home feed-to-quote boundary */
+.home-page .feed + section[aria-label="Reflection from Tea with Ree"] { margin-top:1.5rem !important; }
+
+/* Final Home closing rhythm: tighter, still breathable */
+.home-page .feed + section[aria-label="Reflection from Tea with Ree"] { margin-top:0.5rem !important; margin-bottom:2.5rem !important; }
