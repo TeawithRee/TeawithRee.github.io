@@ -697,6 +697,21 @@ body.tea-notes .tn-page > p:not(.home-return) {
 }
 
 
+/* Restore section introductions below the fixed masthead on the four section pages. */
+body.ecology main.secpage,
+body.inner-work main.secpage,
+body.tools main.secpage,
+body.wellbeing main.secpage {
+  padding-top:134px !important;
+}
+@media (max-width:700px) {
+  body.ecology main.secpage,
+  body.inner-work main.secpage,
+  body.tools main.secpage,
+  body.wellbeing main.secpage {
+    padding-top:82px !important;
+  }
+}
 /* Final article typography parity: Cormorant headings and restrained reading column */
 body main.art { max-width:760px; margin:0 auto; padding:6rem 1.5rem 2.5rem; }
 body main.art h1,
