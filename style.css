@@ -1414,3 +1414,35 @@ body main.art a.section-home { color:#245b60 !important; }
 body main.secpage .story h2,
 body main.secpage .story-title-row h2 { font-family:Cormorant Garamond,Playfair Display,Georgia,serif; font-size:clamp(1.25rem,1.75vw,1.7rem); line-height:1.08; font-weight:500; margin:0; }
 @media(max-width:700px){ body main.secpage .story h2 { font-size:1.35rem; } }
+
+/* Page-consistency review: match editorial openings to the compact About and Tea Notes rhythm. */
+@media (min-width:701px) {
+  body.ecology main.secpage,
+  body.inner-work main.secpage,
+  body.tools main.secpage,
+  body.wellbeing main.secpage { padding-top:74px !important; }
+}
+@media (max-width:700px) {
+  body.ecology main.secpage,
+  body.inner-work main.secpage,
+  body.tools main.secpage,
+  body.wellbeing main.secpage { padding-top:4px !important; }
+}
+body.inner-work main.secpage > a.section-home,
+body.tools main.secpage > a.section-home {
+  display:block !important;
+  width:max-content !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+  text-align:left !important;
+}
+.home-page > .intro {
+  margin:83px auto 0;
+  padding:1.2rem 1.25rem .8rem;
+  text-align:center;
+}
+@media (max-width:700px) {
+  .home-page > .intro { margin-top:74px; padding:1rem 1.25rem .7rem; }
+}
