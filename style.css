@@ -903,3 +903,199 @@ body.tea-notes main > p.home-return .section-home { margin-left:0 !important; }
 }
 .story-media img,.news img{filter:saturate(1.06) contrast(1.03) brightness(1.01)}
 .cover-bg{filter:saturate(1.05) contrast(1.02)}
+
+/* Tea Notes proof correction: match About's measured reading edge and restrained image scale. */
+body.tea-notes main#main-content > .tn-page {
+  width:100%;
+  max-width:760px;
+  margin:0 auto;
+  padding:0 1.5rem;
+  box-sizing:border-box;
+}
+body.tea-notes .tn-page .secpage-head {
+  width:100%;
+  max-width:none;
+  margin:0 !important;
+  padding:0 0 .9rem !important;
+  text-align:center;
+}
+body.tea-notes .tn-page .secpage-head h1 {
+  font-size:32px !important;
+  line-height:1.05 !important;
+  margin:0 0 .45rem !important;
+}
+body.tea-notes .tn-page .secpage-head p {
+  margin:0 !important;
+  font-size:1rem;
+  line-height:1.55;
+}
+body.tea-notes .tn-page .tn-visual {
+  width:min(100%,36rem) !important;
+  margin:0 auto 1.35rem !important;
+  padding:0 !important;
+}
+body.tea-notes .tn-page .tn-visual img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+}
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"],
+body.tea-notes .tn-page .tn-programmes,
+body.tea-notes .tn-page > p:not(.home-return) {
+  width:100% !important;
+  max-width:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+  box-sizing:border-box;
+}
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] {
+  margin-top:0 !important;
+  margin-bottom:1.35rem !important;
+}
+body.tea-notes .tn-page .tn-programmes {
+  margin-bottom:1.15rem !important;
+}
+body.tea-notes .tn-page .tn-programme-grid {
+  width:100% !important;
+  max-width:none !important;
+  gap:1rem !important;
+}
+body.tea-notes .tn-page .tn-programme h2 {
+  font-size:1.55rem !important;
+  line-height:1.15 !important;
+  margin:0 0 .25rem !important;
+}
+body.tea-notes .tn-page .tn-programme p,
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] p {
+  font-size:1rem !important;
+  line-height:1.65 !important;
+}
+body.tea-notes .tn-page > p:not(.home-return) {
+  margin:.25rem 0 .75rem !important;
+  font-size:.95rem !important;
+  line-height:1.6 !important;
+}
+body.tea-notes .tn-page > p:not(.home-return) a.read {
+  display:inline-block;
+  color:var(--ink) !important;
+  font-family:Manrope,Inter,sans-serif !important;
+  font-size:.9em !important;
+  font-weight:600 !important;
+  letter-spacing:.03em !important;
+  text-decoration:none !important;
+  border-bottom:1px solid currentColor !important;
+  padding-bottom:.08em !important;
+  transition:opacity .2s ease;
+}
+body.tea-notes .tn-page > p:not(.home-return) a.read:hover,
+body.tea-notes .tn-page > p:not(.home-return) a.read:focus-visible { opacity:.6; }
+body.tea-notes main > p.home-return {
+  width:100% !important;
+  max-width:760px !important;
+  margin:1rem auto !important;
+  padding:0 1.5rem !important;
+  box-sizing:border-box;
+}
+@media (max-width:700px) {
+  body.tea-notes main#main-content > .tn-page { padding:0 1rem; }
+  body.tea-notes .tn-page .secpage-head { padding-bottom:.7rem !important; }
+  body.tea-notes .tn-page .secpage-head h1 { font-size:33.6px !important; line-height:1.05 !important; }
+  body.tea-notes .tn-page .tn-visual { width:100% !important; margin-bottom:1.05rem !important; }
+  body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] { margin-bottom:1.05rem !important; }
+  body.tea-notes .tn-page .tn-programme-grid { gap:.85rem !important; }
+  body.tea-notes main > p.home-return { padding:0 1rem !important; }
+}
+@media (min-width:701px) and (max-width:1100px) {
+  body.tea-notes main#main-content > .tn-page { padding:0 1.5rem; }
+}
+@media (pointer:coarse) and (min-width:1101px) {
+  body.tea-notes main#main-content > .tn-page { max-width:760px; }
+}
+
+/* Tea Notes proof correction v2: match About's top offset and measured portrait frame. */
+body.tea-notes main#main-content {
+  padding-top:134px !important;
+  padding-bottom:24px !important;
+}
+body.tea-notes main#main-content > .tn-page {
+  max-width:760px !important;
+  margin:0 auto !important;
+  padding:0 1.5rem !important;
+}
+body.tea-notes .tn-page .secpage-head {
+  padding:16px 0 4px !important;
+  margin:0 0 17.6px !important;
+}
+body.tea-notes .tn-page .secpage-head h1 {
+  font-size:32px !important;
+  line-height:56px !important;
+  margin:0 !important;
+}
+body.tea-notes .tn-page .secpage-head p {
+  margin:0 !important;
+  line-height:25.6px !important;
+}
+body.tea-notes .tn-page .tn-visual {
+  width:min(100%,36rem) !important;
+  margin:0 auto 20px !important;
+  padding:0 !important;
+}
+body.tea-notes .tn-page .tn-visual img {
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+}
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"],
+body.tea-notes .tn-page .tn-programmes,
+body.tea-notes .tn-page > p:not(.home-return) {
+  width:100% !important;
+  max-width:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+body.tea-notes .tn-page > section[aria-label="Tea Notes booking information"] {
+  margin:0 0 20px !important;
+}
+body.tea-notes .tn-page .tn-programmes {
+  margin:0 0 18px !important;
+}
+body.tea-notes .tn-page .tn-programme-grid {
+  gap:1rem !important;
+}
+body.tea-notes .tn-page > p:not(.home-return) {
+  margin:0 0 12px !important;
+}
+body.tea-notes main > p.home-return {
+  width:100% !important;
+  max-width:760px !important;
+  margin:16px auto !important;
+  padding:0 1.5rem !important;
+}
+@media (max-width:700px) {
+  body.tea-notes main#main-content { padding-top:0 !important; padding-bottom:24px !important; }
+  body.tea-notes main#main-content > .tn-page { padding:0 1rem !important; }
+  body.tea-notes .tn-page .secpage-head { padding:16px 0 4px !important; margin-bottom:12px !important; }
+  body.tea-notes .tn-page .secpage-head h1 { font-size:33.6px !important; line-height:56px !important; }
+  body.tea-notes .tn-page .tn-visual { width:100% !important; margin-bottom:16px !important; }
+  body.tea-notes main > p.home-return { padding:0 1rem !important; }
+}
+
+/* Tea Notes proof correction v3: quieter rhythm between the three programme blocks. */
+body.tea-notes .tn-page .tn-programme-grid {
+  gap:.55rem !important;
+}
+body.tea-notes .tn-page .tn-programme {
+  padding-top:12px !important;
+  padding-bottom:14px !important;
+}
+@media (max-width:700px) {
+  body.tea-notes .tn-page .tn-programme-grid { gap:.45rem !important; }
+  body.tea-notes .tn-page .tn-programme { padding-top:10px !important; padding-bottom:12px !important; }
+}
