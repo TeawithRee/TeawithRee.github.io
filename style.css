@@ -1446,3 +1446,34 @@ body.tools main.secpage > a.section-home {
 @media (max-width:700px) {
   .home-page > .intro { margin-top:74px; padding:1rem 1.25rem .7rem; }
 }
+
+/* Mobile newsletter containment: keep the email field and submit button fully inside the viewport. */
+@media (max-width:700px) {
+  body.home-page .news > div,
+  body.about-page .news > div {
+    width:100% !important;
+    max-width:520px !important;
+    box-sizing:border-box !important;
+  }
+  body.home-page .news form,
+  body.about-page .news form {
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) auto !important;
+    width:100% !important;
+    max-width:none !important;
+    gap:8px !important;
+    box-sizing:border-box !important;
+  }
+  body.home-page .news form input,
+  body.about-page .news form input {
+    min-width:0 !important;
+    width:100% !important;
+    box-sizing:border-box !important;
+  }
+  body.home-page .news form button,
+  body.about-page .news form button {
+    min-width:0 !important;
+    padding-inline:18px !important;
+    box-sizing:border-box !important;
+  }
+}
