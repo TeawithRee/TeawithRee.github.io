@@ -899,6 +899,23 @@ body.tools main.art figure:not(.about-portrait) img {
     height:300px;
   }
 }
+/* Final shared return-link alignment and restrained First Pour height. */
+body main.secpage > a.section-home {
+  display:inline-block !important;
+  margin:.65rem 0 0 !important;
+  padding:0 0 .25rem !important;
+  text-align:left !important;
+}
+body.home-page .news,
+body.about-page .news {
+  padding:3rem 1.3rem 3.2rem !important;
+}
+@media (max-width:700px) {
+  body.home-page .news,
+  body.about-page .news {
+    padding:2.5rem 1.1rem 2.7rem !important;
+  }
+}
 /* Touch laptop browsing: ecology */
 @media (pointer:coarse) and (min-width:1101px) {
   body.ecology .artgrid {
