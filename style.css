@@ -823,6 +823,49 @@ body.tea-notes .tn-page .tn-programme { width:100%; }
 body.tea-notes main > p.home-return { margin-top:1rem !important; margin-bottom:1rem !important; }
 body.tea-notes main > p.home-return .section-home { margin-left:0 !important; }
 
+/* Final shared BACK TO MENU alignment and compact closing rhythm. */
+body main > p.home-return {
+  width:100% !important;
+  margin:.75rem 0 0 !important;
+  padding:0 !important;
+  text-align:left !important;
+}
+body main > p.home-return .section-home {
+  display:inline-block !important;
+  margin:0 !important;
+  padding:0 0 .25rem !important;
+  text-align:left !important;
+}
+@media (max-width:700px) {
+  body main > p.home-return {
+    margin:.6rem 0 0 !important;
+  }
+}
+/* Final menu spacing and Wellbeing opening alignment. */
+#nav .navrow {
+  gap:1rem !important;
+  padding:.2rem 0 !important;
+}
+body.wellbeing main.secpage > .secpage-head {
+  max-width:54rem !important;
+  margin:0 auto .85rem !important;
+  padding:.85rem 1rem .35rem !important;
+  text-align:center !important;
+}
+body.wellbeing main.secpage > .secpage-head h1,
+body.wellbeing main.secpage > .secpage-head p {
+  text-align:center !important;
+}
+@media (max-width:700px) {
+  #nav .navrow {
+    gap:.85rem !important;
+    padding:.2rem 0 !important;
+  }
+  body.wellbeing main.secpage > .secpage-head {
+    margin-bottom:.65rem !important;
+    padding:.7rem 1rem .25rem !important;
+  }
+}
 /* Touch laptop browsing: ecology */
 @media (pointer:coarse) and (min-width:1101px) {
   body.ecology .artgrid {
