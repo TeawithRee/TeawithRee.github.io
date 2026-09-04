@@ -941,6 +941,72 @@ body.wellbeing main.secpage > .secpage-head > * {
     gap:.55rem !important;
   }
 }
+/* Final compact masthead and navigation rhythm. */
+#nav {
+  padding-top:8px !important;
+  padding-bottom:4px !important;
+}
+#nav .masthead,
+#nav .brand {
+  line-height:1.1 !important;
+}
+#nav .masthead {
+  margin-bottom:0 !important;
+}
+#nav .navrow {
+  gap:.7rem !important;
+  padding:0 !important;
+}
+@media (max-width:700px) {
+  #nav {
+    padding-top:6px !important;
+    padding-bottom:3px !important;
+  }
+  #nav .navrow {
+    gap:.5rem !important;
+  }
+}
+/* Final compact menu spacing. */
+#nav .navrow {
+  gap:.35rem !important;
+}
+@media (max-width:700px) {
+  #nav .navrow {
+    gap:.25rem !important;
+  }
+}
+/* Final masthead-to-content rhythm across all page types. */
+body.ecology main.secpage,
+body.inner-work main.secpage,
+body.tools main.secpage,
+body.wellbeing main.secpage {
+  padding-top:94px !important;
+}
+body main.art {
+  padding-top:3.5rem !important;
+}
+@media (max-width:700px) {
+  body.ecology main.secpage,
+  body.inner-work main.secpage,
+  body.tools main.secpage,
+  body.wellbeing main.secpage {
+    padding-top:68px !important;
+  }
+  body main.art {
+    padding-top:2.25rem !important;
+  }
+}
+/* Final compact opening rhythm for Tea Notes and About. */
+body.tea-notes main,
+body.about-page main.art {
+  padding-top:14px !important;
+}
+@media (max-width:700px) {
+  body.tea-notes main,
+  body.about-page main.art {
+    padding-top:10px !important;
+  }
+}
 /* Touch laptop browsing: ecology */
 @media (pointer:coarse) and (min-width:1101px) {
   body.ecology .artgrid {
@@ -1260,3 +1326,83 @@ body.tea-notes .tn-page > p:not(.home-return) a.read:focus-visible {
   color:inherit !important;
   opacity:.65;
 }
+
+/* Definitive final opening alignment after all page-specific overrides. */
+body.tea-notes main,
+body.about-page main.art {
+  padding-top:94px !important;
+}
+body.about-page main.art .about-head,
+body.tea-notes .tn-page .secpage-head {
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+  margin-top:0 !important;
+  margin-bottom:.85rem !important;
+}
+@media (max-width:700px) {
+  body.tea-notes main,
+  body.about-page main.art {
+    padding-top:68px !important;
+  }
+}
+/* End final opening alignment. */
+
+/* Match every page opening to the compact section-page rhythm. */
+body.tea-notes main,
+body.about-page main.art {
+  padding-top:68px !important;
+}
+@media (max-width:700px) {
+  body.tea-notes main,
+  body.about-page main.art {
+    padding-top:50px !important;
+  }
+}
+/* End compact page-opening rhythm. */
+
+/* Highest-specificity opening correction for About and Tea Notes. */
+body.about-page main.art.aboutpage,
+body.tea-notes main#main-content {
+  padding-top:68px !important;
+}
+@media (max-width:700px) {
+  body.about-page main.art.aboutpage,
+  body.tea-notes main#main-content {
+    padding-top:50px !important;
+  }
+}
+/* End highest-specificity opening correction. */
+
+/* Final safe masthead clearance for About and Tea Notes. */
+body.about-page main.art.aboutpage,
+body.tea-notes main#main-content {
+  padding-top:108px !important;
+}
+@media (max-width:700px) {
+  body.about-page main.art.aboutpage,
+  body.tea-notes main#main-content {
+    padding-top:82px !important;
+  }
+}
+/* End safe masthead clearance. */
+
+/* Further reduce the menu-to-heading gap across every page. */
+body.ecology main.secpage,
+body.inner-work main.secpage,
+body.tools main.secpage,
+body.wellbeing main.secpage,
+body.about-page main.art.aboutpage,
+body.tea-notes main#main-content {
+  padding-top:88px !important;
+}
+@media (max-width:700px) {
+  body.ecology main.secpage,
+  body.inner-work main.secpage,
+  body.tools main.secpage,
+  body.wellbeing main.secpage,
+  body.about-page main.art.aboutpage,
+  body.tea-notes main#main-content {
+    padding-top:68px !important;
+  }
+}
+/* End further menu-to-heading reduction. */
