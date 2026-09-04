@@ -866,6 +866,39 @@ body.wellbeing main.secpage > .secpage-head p {
     padding:.7rem 1rem .25rem !important;
   }
 }
+/* Shared image-height system for section cards and linked article heroes. */
+body.ecology .story-media img,
+body.inner-work .story-media img,
+body.wellbeing .story-media img,
+body.tools .story-media img {
+  display:block;
+  width:100%;
+  height:clamp(210px, 22vw, 300px);
+  object-fit:cover;
+}
+body.ecology main.art figure:not(.about-portrait) img,
+body.inner-work main.art figure:not(.about-portrait) img,
+body.wellbeing main.art figure:not(.about-portrait) img,
+body.tools main.art figure:not(.about-portrait) img {
+  display:block;
+  width:100%;
+  height:clamp(300px, 42vw, 520px);
+  object-fit:cover;
+}
+@media (max-width:700px) {
+  body.ecology .story-media img,
+  body.inner-work .story-media img,
+  body.wellbeing .story-media img,
+  body.tools .story-media img {
+    height:220px;
+  }
+  body.ecology main.art figure:not(.about-portrait) img,
+  body.inner-work main.art figure:not(.about-portrait) img,
+  body.wellbeing main.art figure:not(.about-portrait) img,
+  body.tools main.art figure:not(.about-portrait) img {
+    height:300px;
+  }
+}
 /* Touch laptop browsing: ecology */
 @media (pointer:coarse) and (min-width:1101px) {
   body.ecology .artgrid {
