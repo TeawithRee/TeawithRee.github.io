@@ -1099,3 +1099,31 @@ body.tea-notes .tn-page .tn-programme {
   body.tea-notes .tn-page .tn-programme-grid { gap:.45rem !important; }
   body.tea-notes .tn-page .tn-programme { padding-top:10px !important; padding-bottom:12px !important; }
 }
+
+/* Tea Notes proof correction v4: align programme text to the coaching column. */
+body.tea-notes .tn-page .tn-programme {
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+/* Tea Notes proof correction v5: email link follows the surrounding body text. */
+body.tea-notes .tn-page > p:not(.home-return) a.read {
+  display:inline;
+  color:inherit !important;
+  font-family:inherit !important;
+  font-size:inherit !important;
+  font-weight:inherit !important;
+  letter-spacing:inherit !important;
+  line-height:inherit !important;
+  text-decoration:underline !important;
+  text-decoration-thickness:1px !important;
+  text-underline-offset:.16em;
+  border:0 !important;
+  padding:0 !important;
+  opacity:1;
+}
+body.tea-notes .tn-page > p:not(.home-return) a.read:hover,
+body.tea-notes .tn-page > p:not(.home-return) a.read:focus-visible {
+  color:inherit !important;
+  opacity:.65;
+}
