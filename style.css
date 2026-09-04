@@ -1406,3 +1406,11 @@ body.tea-notes main#main-content {
   }
 }
 /* End further menu-to-heading reduction. */
+
+/* Accessibility maintenance layer: preserve the visual system while improving contrast and heading-level parity. */
+#site-menu .navitem > a,
+body main.secpage a.section-home,
+body main.art a.section-home { color:#245b60 !important; }
+body main.secpage .story h2,
+body main.secpage .story-title-row h2 { font-family:Cormorant Garamond,Playfair Display,Georgia,serif; font-size:clamp(1.25rem,1.75vw,1.7rem); line-height:1.08; font-weight:500; margin:0; }
+@media(max-width:700px){ body main.secpage .story h2 { font-size:1.35rem; } }

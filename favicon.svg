@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tea with Ree">
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <path d="M18 20h28v5H18zM21 25h22v16a8 8 0 0 1-8 8h-6a8 8 0 0 1-8-8z" fill="#24201d"/>
+  <path d="M43 29h5a6 6 0 0 1 0 12h-5v-4h5a2 2 0 0 0 0-4h-5z" fill="#24201d"/>
+  <path d="M26 14c-3 3 3 4 0 7M34 14c-3 3 3 4 0 7" fill="none" stroke="#24201d" stroke-width="2" stroke-linecap="round"/>
+</svg>
