@@ -916,6 +916,31 @@ body.about-page .news {
     padding:2.5rem 1.1rem 2.7rem !important;
   }
 }
+/* Final navigation compactness and definitive Wellbeing centring. */
+#nav .navrow {
+  gap:.7rem !important;
+}
+body.wellbeing main.secpage > .secpage-head {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:100% !important;
+  max-width:54rem !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+body.wellbeing main.secpage > .secpage-head > * {
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+@media (max-width:700px) {
+  #nav .navrow {
+    gap:.55rem !important;
+  }
+}
 /* Touch laptop browsing: ecology */
 @media (pointer:coarse) and (min-width:1101px) {
   body.ecology .artgrid {
