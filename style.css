@@ -1205,3 +1205,53 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Requested visual correction: Tea Notes keeps its design, with a quiet image treatment and left reading-edge return link. */
+body.tea-notes .tn-page .tn-visual,
+body.tea-notes .tn-page .tn-visual img {
+  box-shadow:none !important;
+}
+body.tea-notes main > p.home-return,
+body.about-page main > p.home-return {
+  text-align:left !important;
+}
+/* Home story cards: preserve each supplied image's natural proportion instead of stretching it into a fixed crop. */
+body.home-page .story-media img {
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+/* Home story headings now match the section-page story-heading system. */
+body.home-page .story h3,
+body.home-page .story-title-row h3 {
+  font-family:"Cormorant Garamond", Georgia, serif !important;
+  font-size:clamp(1.25rem,1.75vw,1.7rem) !important;
+  font-weight:500 !important;
+  line-height:1.08 !important;
+  letter-spacing:0 !important;
+  margin:.1rem 0 .5rem !important;
+}
+@media (max-width:700px) {
+  body.home-page .story h3,
+  body.home-page .story-title-row h3 { font-size:1.35rem !important; }
+}
+/* Article heroes: show the complete supplied image and give the text a clear reading interval. */
+body main.art figure:not(.about-portrait) {
+  margin:0 0 2.2rem !important;
+}
+body main.art figure:not(.about-portrait) img {
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* Tea Notes image stability: preserve the supplied 1080x794 ratio while removing only the shadow. */
+body.tea-notes .tn-page .tn-visual img {
+  aspect-ratio:1080 / 794 !important;
+  object-fit:contain !important;
+}
