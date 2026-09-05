@@ -1571,3 +1571,17 @@ body main.art > p.home-return > a.section-home {
   body main.secpage > p.home-return,
   body main.art > p.home-return { margin-top:12px !important; }
 }
+
+/* Article pages use a direct .back link rather than the menu-card wrapper. Keep the same reading edge. */
+body main.art > a.back {
+  display:inline-block !important;
+  position:static !important;
+  box-sizing:border-box !important;
+  margin:16px 0 0 !important;
+  padding:0 0 4px !important;
+  text-align:left !important;
+  transform:none !important;
+}
+@media (max-width:700px) {
+  body main.art > a.back { margin-top:12px !important; }
+}
