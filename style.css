@@ -616,7 +616,7 @@ footer {
   border-radius: 50%;
   border: 1px solid var(--line-strong);
   color: var(--ink);
-  background: var(--bg);
+  background: var(--bg) !important;
   transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
@@ -809,6 +809,11 @@ footer {
 
 .about-portrait {
   max-width: 380px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Win over .art figure so the portrait actually centres on the About page */
+.aboutpage .about-portrait {
   margin: 0 auto 1.5rem;
 }
 
