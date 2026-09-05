@@ -1539,3 +1539,35 @@ html body.wellbeing main.secpage .secpage-head h1 {
   object-fit:cover;
   object-position:center center;
 }
+
+/* Definitive shared BACK TO MENU alignment: one reading edge on every page. */
+body main > p.home-return,
+body main.secpage > p.home-return,
+body main.art > p.home-return {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:none !important;
+  margin:16px 0 0 !important;
+  padding:0 !important;
+  text-align:left !important;
+  transform:none !important;
+}
+body main > p.home-return > a.section-home,
+body main.secpage > p.home-return > a.section-home,
+body main.art > p.home-return > a.section-home {
+  display:inline-block !important;
+  position:static !important;
+  box-sizing:border-box !important;
+  width:auto !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:0 0 4px !important;
+  text-align:left !important;
+  transform:none !important;
+}
+@media (max-width:700px) {
+  body main > p.home-return,
+  body main.secpage > p.home-return,
+  body main.art > p.home-return { margin-top:12px !important; }
+}
