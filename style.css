@@ -100,7 +100,7 @@ body.about-page { --accent: #111111; }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 112px;
 }
 
 body {
@@ -653,7 +653,7 @@ footer {
 .secpage {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5rem 1.5rem 2rem;
+  padding: 7rem 1.5rem 2rem;
 }
 
 .secpage-head {
@@ -727,7 +727,7 @@ footer {
 .art {
   max-width: 720px;
   margin: 0 auto;
-  padding: 5rem 1.5rem 2rem;
+  padding: 7rem 1.5rem 2rem;
 }
 
 .art h1 {
@@ -794,8 +794,8 @@ footer {
 .aboutpage {
   max-width: 900px;
   margin: 0 auto;
-  padding: 5rem 1.5rem 2rem;
-  text-align: center;
+  padding: 7rem 1.5rem 2rem;
+  text-align: left;
 }
 
 .about-head {
@@ -814,19 +814,19 @@ footer {
 
 /* Win over .art figure so the portrait actually centres on the About page */
 .aboutpage .about-portrait {
-  margin: 0 auto 1.5rem;
+  margin: 0 0 1.5rem;
 }
 
 .about-portrait img {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 18px 44px rgba(36, 32, 29, 0.16);
+  box-shadow: none;
 }
 
 .about-words {
   max-width: 56ch;
-  margin: 0 auto;
+  margin: 0;
   text-align: left;
 }
 
@@ -840,16 +840,16 @@ footer {
 .about-words p:first-of-type {
   font-size: 1.15rem;
   color: var(--ink);
-  text-align: center;
+  text-align: left;
   max-width: 48ch;
-  margin: 0 auto 1.5rem;
+  margin: 0 0 1.5rem;
 }
 
 /* —— Tea Notes / Coaching Page —— */
 .tn-page {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 5rem 1.5rem 2rem;
+  padding: 7rem 1.5rem 2rem;
 }
 
 .tn-page .secpage-head {
@@ -866,7 +866,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 18px 44px rgba(36, 32, 29, 0.16);
+  box-shadow: none;
 }
 
 .tn-programme-grid {
@@ -927,11 +927,21 @@ footer {
   transform: translateY(24px);
   transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
               transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation: reveal-fallback 0.6s ease 1s forwards;
+}
+
+/* Safety net: if the scroll script never adds .in, show the content anyway */
+@keyframes reveal-fallback {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .reveal.in {
   opacity: 1;
   transform: none;
+  animation: none;
 }
 
 /* —— Share Section in Articles —— */
@@ -1051,12 +1061,25 @@ footer {
     padding: 0.5rem 1rem;
   }
   
-  .masthead {
+  #nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+  }
+  
+  .masthead {
+    order: 1;
     text-align: left;
     margin-bottom: 0;
+  }
+  
+  .menu-toggle {
+    order: 2;
+  }
+  
+  #site-menu {
+    order: 3;
   }
   
   .menu-toggle {
@@ -1161,6 +1184,12 @@ footer {
     gap: 2rem;
   }
   
+  .story-media img,
+  .story-media div {
+    aspect-ratio: auto;
+    height: 220px;
+  }
+  
   .seccard-grid,
   .tn-programme-grid {
     grid-template-columns: 1fr;
@@ -1188,7 +1217,8 @@ footer {
   }
   
   .about-portrait {
-    max-width: 280px;
+    max-width: 220px;
+    margin: 0 0 1.5rem;
   }
 }
 
@@ -1197,6 +1227,11 @@ footer {
   html {
     scroll-behavior: auto;
   }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
   *,
   *::before,
   *::after {
@@ -1204,54 +1239,4 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-/* Requested visual correction: Tea Notes keeps its design, with a quiet image treatment and left reading-edge return link. */
-body.tea-notes .tn-page .tn-visual,
-body.tea-notes .tn-page .tn-visual img {
-  box-shadow:none !important;
-}
-body.tea-notes main > p.home-return,
-body.about-page main > p.home-return {
-  text-align:left !important;
-}
-/* Home story cards: preserve each supplied image's natural proportion instead of stretching it into a fixed crop. */
-body.home-page .story-media img {
-  display:block !important;
-  width:100% !important;
-  height:auto !important;
-  aspect-ratio:auto !important;
-  object-fit:contain !important;
-  object-position:center !important;
-}
-/* Home story headings now match the section-page story-heading system. */
-body.home-page .story h3,
-body.home-page .story-title-row h3 {
-  font-family:"Cormorant Garamond", Georgia, serif !important;
-  font-size:clamp(1.25rem,1.75vw,1.7rem) !important;
-  font-weight:500 !important;
-  line-height:1.08 !important;
-  letter-spacing:0 !important;
-  margin:.1rem 0 .5rem !important;
-}
-@media (max-width:700px) {
-  body.home-page .story h3,
-  body.home-page .story-title-row h3 { font-size:1.35rem !important; }
-}
-/* Article heroes: show the complete supplied image and give the text a clear reading interval. */
-body main.art figure:not(.about-portrait) {
-  margin:0 0 2.2rem !important;
-}
-body main.art figure:not(.about-portrait) img {
-  height:auto !important;
-  max-height:none !important;
-  aspect-ratio:auto !important;
-  object-fit:contain !important;
-  object-position:center !important;
-}
-
-/* Tea Notes image stability: preserve the supplied 1080x794 ratio while removing only the shadow. */
-body.tea-notes .tn-page .tn-visual img {
-  aspect-ratio:1080 / 794 !important;
-  object-fit:contain !important;
 }
