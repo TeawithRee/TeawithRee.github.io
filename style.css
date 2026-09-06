@@ -508,6 +508,11 @@ p {
   color: var(--ink-muted);
   line-height: 1.55;
   margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* —— Share Menu —— */
@@ -657,7 +662,7 @@ footer {
 }
 
 .secpage-head {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
 }
 
@@ -669,7 +674,7 @@ footer {
 .secpage-head p {
   color: var(--ink-muted);
   max-width: 520px;
-  margin: 0 auto;
+  margin: 0;
   font-size: 0.95rem;
 }
 
@@ -681,13 +686,13 @@ footer {
 /* —— Section heading: unify Kimi's .section-hero with .secpage-head —— */
 .section-hero,
 .section-hero--no-image {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
 }
 
 .section-hero-copy {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .section-hero-copy h1 {
@@ -698,7 +703,7 @@ footer {
 .section-hero-copy p {
   color: var(--ink-muted);
   max-width: 520px;
-  margin: 0 auto;
+  margin: 0;
   font-size: 0.95rem;
 }
 
@@ -814,7 +819,7 @@ footer {
 
 /* Win over .art figure so the portrait actually centres on the About page */
 .aboutpage .about-portrait {
-  margin: 0 0 1.5rem;
+  margin: 0 auto 1.5rem;
 }
 
 .about-portrait img {
@@ -1218,7 +1223,7 @@ footer {
   
   .about-portrait {
     max-width: 220px;
-    margin: 0 0 1.5rem;
+    margin: 0 auto 1.5rem;
   }
 }
 
