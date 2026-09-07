@@ -207,11 +207,11 @@ p {
 
 .navrow {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.2rem 1.4rem;
   padding: 0.2rem 0;
-  overflow-x: auto;
   scrollbar-width: none;
 }
 
@@ -472,6 +472,7 @@ p {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -666,7 +667,7 @@ footer {
 .secpage {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 7rem 1.5rem 2rem;
+  padding: 8.5rem 1.5rem 2rem;
 }
 
 .secpage-head {
@@ -736,11 +737,12 @@ footer {
   border-bottom: 1px solid var(--line);
 }
 
+
 /* —— Article Pages —— */
 .art {
   max-width: 720px;
   margin: 0 auto;
-  padding: 7rem 1.5rem 2rem;
+  padding: 8.5rem 1.5rem 2rem;
 }
 
 .art h1 {
@@ -807,7 +809,7 @@ footer {
 .aboutpage {
   max-width: 680px;
   margin: 0 auto;
-  padding: 7rem 1.5rem 2rem;
+  padding: 8.5rem 1.5rem 2rem;
   text-align: left;
 }
 
@@ -862,7 +864,7 @@ footer {
 .tn-page {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 7rem 1.5rem 2rem;
+  padding: 8.5rem 1.5rem 2rem;
 }
 
 .tn-page .secpage-head {
@@ -1199,8 +1201,7 @@ footer {
   
   .story-media img,
   .story-media div {
-    aspect-ratio: auto;
-    height: 220px;
+    aspect-ratio: 3 / 2;
   }
   
   .seccard-grid,
