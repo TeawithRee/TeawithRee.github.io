@@ -4,6 +4,23 @@
 <link href="/style.css?v=20260908-b" rel="stylesheet"/><link as="image" fetchpriority="high" href="/garden-climate-approved.webp?v=3" imagesizes="(max-width: 700px) 100vw, 33vw" imagesrcset="/garden-climate-approved-480w.webp?v=3 480w, /garden-climate-approved-900w.webp?v=3 900w, /garden-climate-approved.webp?v=3 1920w" rel="preload"/>
 <style>
 
+  /* Tight masthead — minimal space above menu */
+  #nav, header#nav {
+    padding-top: 0.12rem !important;
+    padding-bottom: 0.28rem !important;
+  }
+  .masthead {
+    margin: 0 auto 0.05rem !important;
+    padding: 0 !important;
+    line-height: 1.15 !important;
+  }
+  .intro {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-top: 0 !important;
+  }
+
+
   /* Home story titles: match section pages (clear, large, left-aligned) */
   .home-page .story h2,
   .home-page .story-title-row h2 {
@@ -52,11 +69,7 @@
     display: block !important;
   }
 
-  /* Light nav top trim — match section pages */
-  #nav, header#nav {
-    padding-top: 0.28rem !important;
-    padding-bottom: 0.4rem !important;
-  }
+  
 
   /* Hide sub-menu dropdowns */
   .dropdown, .ddtoggle { display: none !important; }
