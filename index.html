@@ -5,14 +5,128 @@
 <style>
   /* Hide sub-menu dropdowns */
   .dropdown, .ddtoggle { display: none !important; }
-  /* Remove beige box and collapse excess vertical spacing */
-  .first-pour, .fp-inner, section#subscribe { 
-    background: transparent !important; 
+
+  /* Reduce space above brand / menu */
+  #nav, header#nav {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+    margin: 0 !important;
+  }
+  .masthead, .brand {
+    margin: 0 !important;
+    padding-top: 0.15rem !important;
+    padding-bottom: 0.15rem !important;
+  }
+  .navrow { margin-top: 0.15rem !important; }
+
+  /* No italics on tagline */
+  .intro, .intro p, section.intro p {
+    font-style: normal !important;
+    font-style: normal !important;
+    padding: 0.35rem 1rem !important;
+    margin: 0 !important;
+  }
+
+  /* Tighten cover / hero */
+  .cover {
+    margin: 0 !important;
+  }
+  .cover-inner h1 {
+    margin: 0.4rem 0 !important;
+  }
+
+  /* Compact selected stories */
+  .feed {
+    padding: 0.5rem 0 0.35rem !important;
+    margin: 0 !important;
+  }
+  .rule { margin: 0.35rem 0 0.5rem !important; }
+  .artgrid {
+    gap: 0.65rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+  .story { margin: 0 !important; }
+  .story-title-row { margin: 0.3rem 0 0 !important; }
+  .story h3 { margin: 0.15rem 0 !important; }
+  .story p { margin: 0.2rem 0 0 !important; font-size: 0.92em; }
+
+  /* Newsletter / First Pour — compact, no beige box */
+  .first-pour, .fp-inner, section#subscribe {
+    background: transparent !important;
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
-    padding: 0.25rem 0 !important; 
-    margin: 0.25rem auto !important; 
+    padding: 0.35rem 0 !important;
+    margin: 0.35rem auto !important;
+  }
+  .fp-eyebrow {
+    margin: 0.15rem 0 0.3rem !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  .fp-stage {
+    position: relative;
+    margin: 0 auto 0.45rem !important;
+    max-width: 560px;
+  }
+  /* Hide the old right-side white "sip" wording */
+  .fp-words {
+    display: none !important;
+  }
+  /* Slow left-to-right text rising from the steam */
+  .fp-steam-text {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    bottom: 18%;
+    margin: 0;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+    text-align: left;
+    letter-spacing: 0.01em;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.45);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    animation: steamReveal 3.2s ease-out 0.6s forwards;
+  }
+  @keyframes steamReveal {
+    0%   { width: 0; opacity: 0; }
+    15%  { opacity: 1; }
+    100% { width: 84%; opacity: 1; }
+  }
+  .first-pour-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem auto 0.2rem !important;
+    max-width: 420px;
+  }
+  .first-pour-form input[type="email"] {
+    flex: 1 1 180px;
+    min-width: 160px;
+    font: inherit;
+    letter-spacing: normal;
+  }
+  .first-pour-form button {
+    font: inherit;
+    letter-spacing: normal;
+    text-transform: none !important;
+    white-space: nowrap;
+  }
+
+  /* Footer tighter */
+  footer {
+    padding-top: 0.85rem !important;
+    margin-top: 0.4rem !important;
   }
 </style>
 </head><body class="home-page"><a class="skip-link" href="#main-content">Skip to content</a><header id="nav"><button aria-controls="site-menu" aria-expanded="false" aria-label="Menu, open navigation" class="menu-toggle" type="button"><span aria-hidden="true" class="menu-icon"><i></i><i></i></span><span class="menu-label">Menu</span></button><div class="masthead"><a class="brand" href="/">Tea with Ree</a></div><nav class="navrow" id="site-menu"><div class="navitem"><a aria-current="page" href="/">Home</a></div><div class="navitem"><a href="/ecology.html">Ecology</a></div><div class="navitem"><a href="/inner-work.html">Inner Work</a></div><div class="navitem"><a href="/wellbeing.html">Wellbeing</a></div><div class="navitem"><a href="/tools.html">Modern Tools</a></div><div class="navitem"><a href="/tea-notes.html">Tea Notes</a></div><div class="navitem"><a href="/about.html">About</a></div></nav></header><section aria-label="About Tea with Ree" class="intro" id="main-content"><p>Step into ideas that inspire, restore and move you.</p></section><header class="cover"><img alt="" aria-hidden="true" class="cover-bg" decoding="async" fetchpriority="high" height="1280" loading="eager" sizes="100vw" src="/homehero.webp" srcset="/homehero-900w.webp 900w, /homehero.webp 1399w" width="1920"/><div class="cover-scrim"></div><div class="cover-inner"><h1>A space to pause and reflect</h1></div></header><section class="feed"><div class="rule reveal"><h2 class="cat">Selected Stories</h2><span class="line"></span></div><div class="artgrid"><article class="story reveal"><a aria-label="Read: A Garden Is a Small Climate Conversation" class="story-media" href="/ecology-garden-climate-conversation.html"><img alt="Garden with a curved lawn and bright flowers, making room for small climate conversations." decoding="async" height="1280" loading="eager" sizes="(max-width: 700px) 100vw, 33vw" src="/garden-climate-approved.webp?v=3" srcset="/garden-climate-approved-480w.webp?v=3 480w, /garden-climate-approved-900w.webp?v=3 900w, /garden-climate-approved.webp?v=3 1920w" width="1920"/></a><div class="story-title-row"><h3><a href="/ecology-garden-climate-conversation.html">A Garden Is a Small Climate Conversation</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div></article><article class="story reveal"><a aria-label="Read: In Praise of Small Joys" class="story-media" href="/ecology-in-praise-of-small-joys.html"><img alt="Child holding a duckling close, finding joy in a small encounter." decoding="async" height="2400" loading="lazy" sizes="(max-width: 700px) 100vw, 33vw" src="/small-joys-approved.webp?v=4" srcset="/small-joys-approved-480w.webp?v=4 480w, /small-joys-approved-900w.webp?v=4 900w, /small-joys-approved.webp?v=4 1600w" width="1600"/></a><div class="story-title-row"><h3><a href="/ecology-in-praise-of-small-joys.html">In Praise of Small Joys</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div></article><article class="story reveal"><a aria-label="Read: What Blue and Blaze Have Taught Me About Time" class="story-media" href="/ecology-blue-and-blaze.html"><img alt="Two dogs sitting beside their food bowls, sharing the slower rhythm of home." decoding="async" height="1536" loading="lazy" sizes="(max-width: 700px) 100vw, 33vw" src="/blue-and-blaze-approved.webp?v=4" srcset="/blue-and-blaze-approved-480w.webp?v=4 480w, /blue-and-blaze-approved-900w.webp?v=4 900w, /blue-and-blaze-approved.webp?v=4 2048w" width="2048"/></a><div class="story-title-row"><h3><a href="/ecology-blue-and-blaze.html">What Blue and Blaze Have Taught Me About Time</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div></article></div></section><section class="first-pour reveal" id="subscribe">
@@ -23,7 +137,8 @@
 <source src="/first-pour-steam.mp4" type="video/mp4"/>
 </video>
 <span class="fp-veil" aria-hidden="true"></span>
-<h2 class="fp-words">Never miss a sip</h2>
+<h2 class="fp-words" aria-hidden="true">Never miss a sip</h2>
+<p class="fp-steam-text">Never miss a sip</p>
 </div>
 <form class="first-pour-form" action="https://assets.mailerlite.com/jsonp/2560589/forms/195676246664808129/subscribe" method="post" target="_blank">
 <input aria-label="Email address" name="fields[email]" placeholder="Your email" required type="email"/>
