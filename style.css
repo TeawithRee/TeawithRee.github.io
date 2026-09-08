@@ -1254,3 +1254,225 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* =========================================================
+   TEA WITH REE — KIMI REPAIR PASS
+   Structural fixes only. Existing visual system retained.
+   ========================================================= */
+
+#nav {
+  position: sticky;
+}
+
+#site-menu {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 701px) {
+  .secpage-head h1,
+  .section-hero-copy h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .secpage,
+  .tn-page {
+    padding-top: 2rem;
+  }
+
+  .secpage-head,
+  .section-hero,
+  .section-hero--no-image {
+    padding-top: .75rem;
+    margin-top: .5rem;
+  }
+
+  .secpage-head h1,
+  .section-hero-copy h1 {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0 0 .5rem;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    font-size: clamp(1.5rem, 7vw, 2.1rem);
+  }
+}
+
+.first-pour .first-pour-form {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.first-pour .first-pour-form input {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto !important;
+  height: 52px;
+  box-sizing: border-box;
+  border: 1px solid rgba(36, 32, 29, .28) !important;
+  border-radius: 10px !important;
+  padding: 0 12px !important;
+}
+
+.first-pour .first-pour-form button {
+  flex: 0 0 auto;
+  width: auto !important;
+  height: 52px;
+  padding: 0 13px !important;
+  white-space: nowrap;
+  border-radius: 10px !important;
+}
+
+.first-pour {
+  position: relative;
+}
+.first-pour .pour-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto 20px;
+}
+.first-pour .pour-wrap .first-pour-image {
+  margin: 0 !important;
+}
+/* A single, gentle wisp rising from the cup. */
+.first-pour .pour-steam {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  width: 6px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.5);
+  filter: blur(6px);
+  transform: translateX(-50%);
+  animation: tea-steam 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes tea-steam {
+  0%, 100% { transform: translate(-50%, 5px) scale(.85); opacity: .18; }
+  45% { transform: translate(-50%, -8px) scale(1); opacity: .62; }
+}
+
+.tn-conversation {
+  max-width: 78rem;
+  margin: 2.25rem auto 0;
+  padding: 0 clamp(1rem, 3vw, 2rem);
+}
+.tn-conversation-inner {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.tn-eyebrow,
+.tn-availability {
+  font-family: Manrope, sans-serif;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.tn-conversation h2 {
+  margin: .45rem 0 .65rem;
+}
+.tn-conversation p:not(.tn-eyebrow):not(.tn-availability) {
+  max-width: 48ch;
+  line-height: 1.7;
+}
+.tn-conversation-button {
+  display: inline-block;
+  margin-top: .55rem;
+  padding: .75rem 1rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  color: var(--ink);
+  font-family: Manrope, sans-serif;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.tn-conversation-button:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.tn-availability {
+  margin-top: .8rem !important;
+  color: var(--ink-muted);
+  letter-spacing: .08em;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.tea-thought {
+  max-width: 900px;
+  margin: 3rem auto 1rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.tea-thought-inner {
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.tea-thought-label {
+  margin: 0 0 .7rem;
+  font-family: Manrope, sans-serif;
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.tea-thought blockquote {
+  margin: 0 auto;
+  max-width: 38ch;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.25;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .first-pour .first-pour-form {
+    max-width: 100%;
+  }
+  .first-pour .first-pour-form button {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    font-size: 13px !important;
+  }
+  .tn-conversation {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .first-pour .pour-steam {
+    animation: none;
+    opacity: .35;
+  }
+}
