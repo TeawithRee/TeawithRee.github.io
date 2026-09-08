@@ -6,14 +6,14 @@
   /* Hide sub-menu dropdowns */
   .dropdown, .ddtoggle { display: none !important; }
 
-  /* Slightly less space above brand only — keep air elsewhere */
+  /* Light trim above brand only — match ecology air elsewhere */
   #nav, header#nav {
     padding-top: 0.65rem !important;
     padding-bottom: 0.55rem !important;
   }
   .masthead { padding-top: 0.2rem !important; }
 
-  /* Tagline: no italics, keep calm spacing */
+  /* Tagline: no italics */
   .intro, .intro p, section.intro p {
     font-style: normal !important;
   }
@@ -30,40 +30,12 @@
     overflow: hidden;
   }
 
-  /* Hide the old static white text on the right */
+  /* Hide old static white wording */
   .fp-words {
     display: none !important;
   }
 
-  
-    18%  { opacity: 1; transform: translate(-50%, -50%) rotate(0deg) scale(1); }
-    /* hold */
-    55%  { opacity: 1; transform: translate(-50%, -50%) rotate(0deg) scale(1); }
-    /* fade away */
-    72%  { opacity: 0; transform: translate(-50%, -58%) rotate(10deg) scale(1.03); }
-    100% { opacity: 0; transform: translate(-50%, -42%) rotate(-12deg) scale(0.92); }
-  }
-
-  /* Form: natural width, consistent type, sentence-case button */
-  .first-pour-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .first-pour-form input[type="email"],
-  .first-pour-form button {
-    font: inherit;
-    letter-spacing: normal;
-  }
-  .first-pour-form button {
-    text-transform: none !important;
-  }
-
-  /* Mobile / tablet polish for steam text */
-  
-  /* Elegant steam text: soft fade only — alive, not busy */
+  /* Soft fade steam text — alive, luxurious */
   .fp-steam-text {
     position: absolute;
     left: 50%;
@@ -84,13 +56,29 @@
     animation: steamSoft 12s ease-in-out infinite;
     pointer-events: none;
   }
-
   @keyframes steamSoft {
     0%   { opacity: 0; }
-    12%  { opacity: 1; }   /* soft fade in ~1.4s */
-    55%  { opacity: 1; }   /* hold */
-    70%  { opacity: 0; }   /* soft fade out */
-    100% { opacity: 0; }   /* long pause before return */
+    12%  { opacity: 1; }
+    55%  { opacity: 1; }
+    70%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  /* Form: natural type, sentence case */
+  .first-pour-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-pour-form input[type="email"],
+  .first-pour-form button {
+    font: inherit;
+    letter-spacing: normal;
+  }
+  .first-pour-form button {
+    text-transform: none !important;
   }
 
   @media (max-width: 700px) {
@@ -108,7 +96,7 @@
     }
   }
 </style>
-</head><body class="home-page"><a class="skip-link" href="#main-content">Skip to content</a><header id="nav"><button aria-controls="site-menu" aria-expanded="false" aria-label="Menu, open navigation" class="menu-toggle" type="button"><span aria-hidden="true" class="menu-icon"><i></i><i></i></span><span class="menu-label">Menu</span></button><div class="masthead"><a class="brand" href="/">Tea with Ree</a></div><nav class="navrow" id="site-menu"><div class="navitem"><a aria-current="page" href="/">Home</a></div><div class="navitem"><a href="/ecology.html">Ecology</a></div><div class="navitem"><a href="/inner-work.html">Inner Work</a></div><div class="navitem"><a href="/wellbeing.html">Wellbeing</a></div><div class="navitem"><a href="/tools.html">Modern Tools</a></div><div class="navitem"><a href="/tea-notes.html">Tea Notes</a></div><div class="navitem"><a href="/about.html">About</a></div></nav></header><section aria-label="About Tea with Ree" class="intro" id="main-content"><p>Step into ideas that inspire, restore and move you.</p></section><header class="cover"><img alt="" aria-hidden="true" class="cover-bg" decoding="async" fetchpriority="high" height="1280" loading="eager" sizes="100vw" src="/homehero.webp" srcset="/homehero-900w.webp 900w, /homehero.webp 1399w" width="1920"/><div class="cover-scrim"></div><div class="cover-inner"><h1>A space to pause and reflect</h1></div></header><section class="feed"><div class="rule reveal"><h2 class="cat">Selected Stories</h2><span class="line"></span></div><div class="artgrid"><article class="story reveal"><a aria-label="Read: A Garden Is a Small Climate Conversation" class="story-media" href="/ecology-garden-climate-conversation.html"><img alt="Garden with a curved lawn and bright flowers, making room for small climate conversations." decoding="async" height="1280" loading="eager" sizes="(max-width: 700px) 100vw, 33vw" src="/garden-climate-approved.webp?v=3" srcset="/garden-climate-approved-480w.webp?v=3 480w, /garden-climate-approved-900w.webp?v=3 900w, /garden-climate-approved.webp?v=3 1920w" width="1920"/></a><div class="story-title-row"><h3><a href="/ecology-garden-climate-conversation.html">A Garden Is a Small Climate Conversation</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div></article><article class="story reveal"><a aria-label="Read: In Praise of Small Joys" class="story-media" href="/ecology-in-praise-of-small-joys.html"><img alt="Child holding a duckling close, finding joy in a small encounter." decoding="async" height="2400" loading="lazy" sizes="(max-width: 700px) 100vw, 33vw" src="/small-joys-approved.webp?v=4" srcset="/small-joys-approved-480w.webp?v=4 480w, /small-joys-approved-900w.webp?v=4 900w, /small-joys-approved.webp?v=4 1600w" width="1600"/></a><div class="story-title-row"><h3><a href="/ecology-in-praise-of-small-joys.html">In Praise of Small Joys</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div></article><article class="story reveal"><a aria-label="Read: What Blue and Blaze Have Taught Me About Time" class="story-media" href="/ecology-blue-and-blaze.html"><img alt="Two dogs sitting beside their food bowls, sharing the slower rhythm of home." decoding="async" height="1536" loading="lazy" sizes="(max-width: 700px) 100vw, 33vw" src="/blue-and-blaze-approved.webp?v=4" srcset="/blue-and-blaze-approved-480w.webp?v=4 480w, /blue-and-blaze-approved-900w.webp?v=4 900w, /blue-and-blaze-approved.webp?v=4 2048w" width="2048"/></a><div class="story-title-row"><h3><a href="/ecology-blue-and-blaze.html">What Blue and Blaze Have Taught Me About Time</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div></article></div></section><section class="first-pour reveal" id="subscribe">
+</head><body class="home-page"><a class="skip-link" href="#main-content">Skip to content</a><header id="nav"><button aria-controls="site-menu" aria-expanded="false" aria-label="Menu, open navigation" class="menu-toggle" type="button"><span aria-hidden="true" class="menu-icon"><i></i><i></i></span><span class="menu-label">Menu</span></button><div class="masthead"><a class="brand" href="/">Tea with Ree</a></div><nav class="navrow" id="site-menu"><div class="navitem"><a aria-current="page" href="/">Home</a></div><div class="navitem"><a href="/ecology.html">Ecology</a></div><div class="navitem"><a href="/inner-work.html">Inner Work</a></div><div class="navitem"><a href="/wellbeing.html">Wellbeing</a></div><div class="navitem"><a href="/tools.html">Modern Tools</a></div><div class="navitem"><a href="/tea-notes.html">Tea Notes</a></div><div class="navitem"><a href="/about.html">About</a></div></nav></header><section aria-label="About Tea with Ree" class="intro" id="main-content"><p>Step into ideas that inspire, restore and move you.</p></section><header class="cover"><img alt="" aria-hidden="true" class="cover-bg" decoding="async" fetchpriority="high" height="1280" loading="eager" sizes="100vw" src="/homehero.webp" srcset="/homehero-900w.webp 900w, /homehero.webp 1399w" width="1920"/><div class="cover-scrim"></div><div class="cover-inner"><h1>A space to pause and reflect</h1></div></header><section class="feed"><div class="rule reveal"><h2 class="cat">Selected Stories</h2><span class="line"></span></div><div class="artgrid"><article class="story reveal"><a aria-label="Read: A Garden Is a Small Climate Conversation" class="story-media" href="/ecology-garden-climate-conversation.html"><img alt="Garden with a curved lawn and bright flowers, making room for small climate conversations." decoding="async" height="1280" loading="eager" sizes="(max-width: 700px) 100vw, 33vw" src="/garden-climate-approved.webp?v=3" srcset="/garden-climate-approved-480w.webp?v=3 480w, /garden-climate-approved-900w.webp?v=3 900w, /garden-climate-approved.webp?v=3 1920w" width="1920"/></a><div class="story-title-row"><h3><a href="/ecology-garden-climate-conversation.html">A Garden Is a Small Climate Conversation</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div><p>A garden does not have to be large to change the way we look at the world. A few pots on a balcony can teach attention.</p></article><article class="story reveal"><a aria-label="Read: In Praise of Small Joys" class="story-media" href="/ecology-in-praise-of-small-joys.html"><img alt="Child holding a duckling close, finding joy in a small encounter." decoding="async" height="2400" loading="lazy" sizes="(max-width: 700px) 100vw, 33vw" src="/small-joys-approved.webp?v=4" srcset="/small-joys-approved-480w.webp?v=4 480w, /small-joys-approved-900w.webp?v=4 900w, /small-joys-approved.webp?v=4 1600w" width="1600"/></a><div class="story-title-row"><h3><a href="/ecology-in-praise-of-small-joys.html">In Praise of Small Joys</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div><p>A child I know cupped a duckling in his hands last week and pressed his forehead to its head. I have not stopped thinking about it.</p></article><article class="story reveal"><a aria-label="Read: What Blue and Blaze Have Taught Me About Time" class="story-media" href="/ecology-blue-and-blaze.html"><img alt="Two dogs sitting beside their food bowls, sharing the slower rhythm of home." decoding="async" height="1536" loading="lazy" sizes="(max-width: 700px) 100vw, 33vw" src="/blue-and-blaze-approved.webp?v=4" srcset="/blue-and-blaze-approved-480w.webp?v=4 480w, /blue-and-blaze-approved-900w.webp?v=4 900w, /blue-and-blaze-approved.webp?v=4 2048w" width="2048"/></a><div class="story-title-row"><h3><a href="/ecology-blue-and-blaze.html">What Blue and Blaze Have Taught Me About Time</a></h3><details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button data-share-copy="" type="button">Copy link</button><button data-share-native="" type="button">Share</button></div></details></div><p>I used to think time belonged to the calendar. Now I think it belongs to whoever is waiting by the kitchen bowl.</p></article></div></section><section class="first-pour reveal" id="subscribe">
 <div class="fp-inner">
 <p class="fp-eyebrow">The First Pour</p>
 <div class="fp-stage">
