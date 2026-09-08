@@ -1312,67 +1312,119 @@ footer {
   }
 }
 
+/* ---- The First Pour: a dark, living newsletter panel ---- */
+.first-pour {
+  background: #17130f;
+  color: #f3ede4;
+  padding: clamp(3rem, 7vw, 5rem) 1.5rem;
+  text-align: center;
+}
+.fp-inner { max-width: 560px; margin: 0 auto; }
+.fp-eyebrow {
+  margin: 0 0 1.6rem;
+  font-family: Manrope, sans-serif;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  color: rgba(243, 237, 228, .68);
+}
+.fp-stage {
+  position: relative;
+  width: min(420px, 88%);
+  margin: 0 auto;
+}
+.fp-cup { width: 100%; display: block; border-radius: 2px; }
+.fp-scrim {
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  background: linear-gradient(to top, rgba(23,19,15,0) 45%, rgba(23,19,15,.6) 100%);
+  pointer-events: none;
+}
+.fp-steam {
+  position: absolute;
+  bottom: 34%;
+  width: 9px;
+  height: 74px;
+  border-radius: 999px;
+  background: linear-gradient(to top, rgba(246,241,234,0), rgba(246,241,234,.5));
+  filter: blur(7px);
+  opacity: 0;
+  pointer-events: none;
+}
+.fp-steam-1 { left: 42%; animation: fp-rise 6s ease-in-out infinite; }
+.fp-steam-2 { left: 50%; animation: fp-rise 7s ease-in-out .9s infinite; }
+.fp-steam-3 { left: 58%; animation: fp-rise 6.5s ease-in-out 1.7s infinite; }
+.fp-words {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 9%;
+  margin: 0;
+  text-align: center;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 5.6vw, 2.9rem);
+  line-height: 1.05;
+  color: #f7f2ea;
+  text-shadow: 0 2px 20px rgba(0,0,0,.55);
+  animation: fp-form 9s ease-in-out infinite;
+}
+.fp-words em { font-style: italic; }
+@keyframes fp-rise {
+  0%   { opacity: 0;   transform: translateY(10px) scaleY(.6); }
+  25%  { opacity: .5;  }
+  70%  { opacity: .38; }
+  100% { opacity: 0;   transform: translateY(-58px) scaleY(1.25); }
+}
+@keyframes fp-form {
+  0%   { opacity: 0; filter: blur(14px); transform: translateY(16px) scale(.97); letter-spacing: .07em; }
+  18%  { opacity: 1; filter: blur(0);    transform: translateY(0) scale(1);       letter-spacing: .005em; }
+  74%  { opacity: 1; filter: blur(0);    transform: translateY(0); }
+  100% { opacity: 0; filter: blur(12px); transform: translateY(-16px) scale(1.02); letter-spacing: .03em; }
+}
 .first-pour .first-pour-form {
-  display: flex !important;
-  flex-direction: row !important;
+  display: flex;
+  flex-direction: row;
   align-items: stretch;
   gap: 8px;
   width: 100%;
-  max-width: 270px;
-  margin: 0 auto;
+  max-width: 420px;
+  margin: 1.6rem auto 0;
 }
-
 .first-pour .first-pour-form input {
   flex: 1 1 auto;
   min-width: 0;
-  width: auto !important;
   height: 52px;
   box-sizing: border-box;
-  border: 1px solid rgba(36, 32, 29, .28) !important;
-  border-radius: 10px !important;
-  padding: 0 12px !important;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(243,237,228,.3);
+  border-radius: 2px;
+  padding: 0 14px;
+  color: #f3ede4;
+  font-family: Manrope, sans-serif;
+  font-size: .95rem;
 }
-
+.first-pour .first-pour-form input::placeholder { color: rgba(243,237,228,.5); }
 .first-pour .first-pour-form button {
   flex: 0 0 auto;
-  width: auto !important;
   height: 52px;
-  padding: 0 13px !important;
+  padding: 0 20px;
+  background: #f3ede4;
+  color: #17130f;
+  border: 0;
+  border-radius: 2px;
+  font-family: Manrope, sans-serif;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
   white-space: nowrap;
-  border-radius: 10px !important;
+  cursor: pointer;
+  transition: background .25s ease;
 }
-
-.first-pour {
-  position: relative;
-}
-.first-pour .pour-wrap {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 270px;
-  margin: 0 auto 20px;
-}
-.first-pour .pour-wrap .first-pour-image {
-  margin: 0 !important;
-}
-/* A single, gentle wisp rising from the cup. */
-.first-pour .pour-steam {
-  position: absolute;
-  left: 50%;
-  top: 12%;
-  width: 6px;
-  height: 40px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.5);
-  filter: blur(6px);
-  transform: translateX(-50%);
-  animation: tea-steam 4.5s ease-in-out infinite;
-  pointer-events: none;
-}
-@keyframes tea-steam {
-  0%, 100% { transform: translate(-50%, 5px) scale(.85); opacity: .18; }
-  45% { transform: translate(-50%, -8px) scale(1); opacity: .62; }
-}
+.first-pour .first-pour-form button:hover { background: #fff; }
 
 .tn-conversation {
   max-width: 78rem;
@@ -1457,22 +1509,62 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .first-pour .first-pour-form {
-    max-width: 100%;
-  }
-  .first-pour .first-pour-form button {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    font-size: 13px !important;
-  }
-  .tn-conversation {
-    margin-top: 1.5rem;
-  }
+  .first-pour { padding: 3rem 1.2rem; }
+  .fp-stage { width: 92%; }
+  .fp-words { font-size: clamp(1.6rem, 8vw, 2.3rem); top: 8%; }
+  .first-pour .first-pour-form { max-width: 100%; }
+  .first-pour .first-pour-form button { padding: 0 14px; font-size: .64rem; }
+  .tn-conversation { margin-top: 1.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .first-pour .pour-steam {
-    animation: none;
-    opacity: .35;
+  .fp-words { animation: none; opacity: 1; filter: none; transform: none; }
+  .fp-steam { animation: none; opacity: 0; }
+}
+
+
+/* =========================================================
+   TEA WITH REE — SECOND PASS
+   Header spacing, sticky-header gap, About layout.
+   ========================================================= */
+
+/* The header is sticky now, so the old fixed-header top gap is dead space. */
+.secpage,
+.art,
+.aboutpage,
+.tn-page {
+  padding-top: 3rem;
+}
+
+/* Header: tighter, and the menu row held to the centre. */
+@media (min-width: 701px) {
+  #nav { padding: .45rem 1.5rem .5rem; }
+  .masthead { margin-bottom: .1rem; }
+  #site-menu { width: 100%; justify-content: center; gap: .5rem .95rem; }
+  .navitem > a { letter-spacing: .1em; }
+}
+
+/* About: left aligned, portrait and words side by side, no empty margins. */
+@media (min-width: 701px) {
+  .aboutpage {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "head head"
+      "portrait words"
+      "back back";
+    column-gap: 2.75rem;
+    align-items: start;
+    max-width: 860px;
+    text-align: left;
   }
+  .about-head { grid-area: head; margin-bottom: 1.75rem; }
+  .aboutpage .about-portrait { grid-area: portrait; margin: 0; max-width: 300px; }
+  .about-words { grid-area: words; }
+  .about-words p:first-of-type { max-width: none; }
+  .aboutpage .home-return { grid-area: back; margin-top: 1.75rem; }
+}
+
+@media (max-width: 700px) {
+  .secpage, .art, .aboutpage, .tn-page { padding-top: 2rem; }
 }
