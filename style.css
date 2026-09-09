@@ -173,6 +173,12 @@ p {
   color: var(--accent);
 }
 
+.art .kicker {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 /* —— Navigation —— */
 #nav {
   position: fixed;
@@ -496,19 +502,28 @@ p {
   gap: 0.5rem;
 }
 
-.story h3 {
-  font-size: clamp(1.3rem, 2vw, 1.7rem);
+.story h3,
+.story-title-row h2,
+.tools-story-title-row h2 {
+  font-size: clamp(1.2rem, 1.7vw, 1.5rem);
   font-weight: 500;
-  line-height: 1.08;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
   margin: 0 0 0.3rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
-.story h3 a {
+.story h3 a,
+.story-title-row h2 a,
+.tools-story-title-row h2 a {
   color: var(--ink);
   transition: opacity 0.25s ease;
 }
 
-.story h3 a:hover {
+.story h3 a:hover,
+.story-title-row h2 a:hover,
+.tools-story-title-row h2 a:hover {
   opacity: 0.5;
 }
 
@@ -749,12 +764,14 @@ footer {
   font-size: clamp(2rem, 5vw, 3.2rem);
   line-height: 1.08;
   margin-bottom: 0.6rem;
+  text-align: center;
 }
 
 .art .meta {
   font-size: 0.85rem;
   color: var(--ink-muted);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .art figure {
@@ -1314,7 +1331,7 @@ footer {
 
 /* ---- The First Pour: light newsletter with a living steam video ---- */
 .first-pour {
-  background: #faf7f2;
+  background: transparent;
   color: var(--ink);
   padding: clamp(3rem, 6vw, 4.5rem) 1.5rem;
   text-align: center;
@@ -1354,6 +1371,7 @@ footer {
   background: linear-gradient(to top, rgba(20,15,11,.58) 0%, rgba(20,15,11,.12) 34%, rgba(20,15,11,0) 62%);
 }
 .fp-words {
+  display: none;
   position: absolute;
   left: 6%;
   right: 6%;
@@ -1399,10 +1417,10 @@ footer {
   border: 0;
   border-radius: 2px;
   font-family: Manrope, sans-serif;
-  font-size: .68rem;
+  font-size: .82rem;
   font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  letter-spacing: .02em;
+  text-transform: none;
   white-space: nowrap;
   cursor: pointer;
   transition: background .25s ease;
@@ -1520,31 +1538,16 @@ footer {
 
 /* Header: tighter, and the menu row held to the centre. */
 @media (min-width: 701px) {
-  #nav { padding: .45rem 1.5rem .5rem; }
-  .masthead { margin-bottom: .1rem; }
-  #site-menu { width: 100%; justify-content: center; gap: .5rem .95rem; }
+  #nav { padding: .4rem 1.5rem .45rem; }
+  .masthead { margin-bottom: .05rem; }
+  #site-menu { width: 100%; justify-content: center; gap: .3rem .75rem; }
   .navitem > a { letter-spacing: .1em; }
 }
 
-/* About: left aligned, portrait and words side by side, no empty margins. */
+/* About: portrait centred, single column. */
 @media (min-width: 701px) {
-  .aboutpage {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-areas:
-      "head head"
-      "portrait words"
-      "back back";
-    column-gap: 2.75rem;
-    align-items: start;
-    max-width: 860px;
-    text-align: left;
-  }
-  .about-head { grid-area: head; margin-bottom: 1.75rem; }
-  .aboutpage .about-portrait { grid-area: portrait; margin: 0; max-width: 300px; }
-  .about-words { grid-area: words; }
-  .about-words p:first-of-type { max-width: none; }
-  .aboutpage .home-return { grid-area: back; margin-top: 1.75rem; }
+  .about-head { margin-bottom: 1.5rem; text-align: center; }
+  .aboutpage .about-portrait { margin: 0 auto 1.5rem; max-width: 380px; }
 }
 
 @media (max-width: 700px) {
