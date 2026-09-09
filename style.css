@@ -1182,7 +1182,7 @@ footer {
     right: 0;
     flex-direction: column;
     gap: 0;
-    padding: 0.5rem 1rem 1rem;
+    padding: 0.35rem 1rem 0.6rem;
     background: rgba(255, 255, 255, 0.98);
     border-bottom: 1px solid var(--line);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
@@ -1199,8 +1199,8 @@ footer {
   .navitem > a {
     display: flex;
     align-items: center;
-    min-height: 48px;
-    padding: 0.3rem 0;
+    min-height: 40px;
+    padding: 0.2rem 0;
     font-size: 0.75rem;
   }
   
@@ -1544,8 +1544,8 @@ footer {
 @media (min-width: 701px) {
   #nav { padding: .4rem 1.5rem .45rem; }
   .masthead { margin-bottom: .05rem; }
-  #site-menu { width: 100%; justify-content: center; gap: .3rem .75rem; }
-  .navitem > a { letter-spacing: .1em; }
+  #site-menu { width: 100%; justify-content: center; gap: .25rem .5rem; }
+  .navitem > a { letter-spacing: .1em; padding: .25rem 0; }
 }
 
 /* About: portrait centred, single column. */
