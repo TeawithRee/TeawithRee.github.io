@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,64 +10,67 @@
   <link href="/style.css?v=20260908-b" rel="stylesheet"/>
   
   <style>
-    /* Global non-italic rule */
+    /* Enforce strict non-italic luxury typography globally */
     body, p, blockquote, em, i, .lead, h1, h2, h3, .fp-words {
       font-style: normal !important;
     }
 
-    /* Left-aligned article body with consistent margins */
-    .about-content {
+    /* Left-aligned editorial container with natural margins */
+    main {
       max-width: 680px;
-      margin: 3rem auto;
+      margin: 2.5rem auto;
       padding: 0 1.5rem;
-      text-align: left;
+      text-align: left !important;
     }
 
-    .about-content h1 {
-      font-size: 1.75rem;
-      font-weight: 400;
-      line-height: 1.4;
-      margin-bottom: 2rem;
-      color: #1a1a1a;
-      text-align: left;
-    }
-
-    .about-content p {
+    main p {
       font-size: 1.125rem;
       line-height: 1.8;
       color: #2c2c2c;
       margin-bottom: 1.75rem;
-      text-align: left;
+      text-align: left !important;
     }
 
+    /* Opening kicker line styling */
+    .about-kicker {
+      font-size: 1.125rem;
+      color: #2c2c2c;
+      margin-bottom: 1.75rem;
+      text-align: left !important;
+    }
+
+    /* Responsive image container */
     .about-photo {
       width: 100%;
       height: auto;
       display: block;
       margin: 2rem 0 2.5rem 0;
+      border-radius: 2px;
     }
 
-    /* Hide sub-menu dropdowns */
+    /* Hide sub-menu dropdown elements */
     .dropdown, .ddtoggle { display: none !important; }
 
-    /* Transparent newsletter background */
+    /* Borderless, transparent newsletter section */
     .first-pour, .fp-inner, section#subscribe { 
       background: transparent !important; 
       background-color: transparent !important;
       box-shadow: none !important;
       border: none !important;
       padding: 0.5rem 0 !important; 
-      margin: 2rem auto !important; 
+      margin: 2.5rem auto !important; 
     }
 
-    /* Slower, ultra-gentle text animation (8 seconds) */
+    /* Calm, ultra-slow 12-second breathing animation */
     .fp-words {
-      animation: slowBreathe 8s ease-in-out infinite alternate;
-      letter-spacing: 0.06em;
+      animation: slowBreathe 12s ease-in-out infinite alternate !important;
+      letter-spacing: 0.08em;
+      font-style: normal !important;
     }
 
     @keyframes slowBreathe {
-      0% { opacity: 0.35; transform: translateY(1px); }
+      0% { opacity: 0.25; transform: translateY(1px); }
+      50% { opacity: 0.7; }
       100% { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -93,10 +95,14 @@
     </nav>
   </header>
 
-  <main id="main-content" class="about-content">
-    <h1>Kindness was the beginning. Growth is the path.</h1>
+  <main id="main-content">
+    <p class="about-kicker">Kindness was the beginning. Growth is the path.</p>
 
-    <img class="about-photo" src="/rehana.jpg" alt="Rehana Rutti"/>
+    <img class="about-photo" 
+         src="/rehana-about-personal-900w.webp" 
+         srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
+         sizes="(max-width: 700px) 100vw, 680px" 
+         alt="Rehana Rutti"/>
 
     <p>I believe change begins in the small moments: a story that shifts perspective, a conversation that opens a door, a cup of tea that slows the pace long enough to notice what matters.</p>
 
