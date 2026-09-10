@@ -95,7 +95,7 @@
     margin: 0 0 1.5rem 0 !important;
   }
 
-  /* 4. VERTICAL SINGLE-COLUMN STACK (RESET/RENEW/BECOMING) WITH REDUCED GAPS */
+  /* 4. VERTICAL SINGLE-COLUMN STACK (RESET/RENEW/BECOMING) - REMOVED DOUBLE LINES */
   .tn-programme-grid {
     display: block !important;
     width: 100% !important;
@@ -106,15 +106,8 @@
   .tn-programme {
     width: 100% !important;
     text-align: left !important;
-    border-bottom: 1px solid #eaeaea !important;
-    padding-bottom: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
-  }
-
-  /* Removes the divider line under Becoming so it doesn't double up */
-  .tn-programme:last-child {
-    border-bottom: none !important;
-    padding-bottom: 0 !important;
+    /* Removed custom border-bottom and padding here to stop doubling up */
+    margin-bottom: 2rem !important;
   }
 
   .tn-programme h2 {
@@ -125,13 +118,12 @@
     text-align: left !important;
   }
 
-  /* 5. BOTTOM CONVERSATION SECTION LOCKED TO LEFT WITH NORMAL CASE */
+  /* 5. BOTTOM CONVERSATION SECTION LOCKED TO LEFT */
   .tn-conversation {
     display: block !important;
     text-align: left !important;
     margin: 0 !important;
-    padding: 1.5rem 0 0 0 !important;
-    border-top: 1px solid #eaeaea !important;
+    padding: 2rem 0 0 0 !important;
   }
 
   .tn-eyebrow {
@@ -142,7 +134,7 @@
     font-weight: 600 !important;
     text-align: left !important;
     margin: 0 0 0.5rem 0 !important;
-    text-transform: none !important;
+    text-transform: none !important; /* NO CAPS */
   }
 
   .tn-conversation h2 {
@@ -158,7 +150,7 @@
     text-decoration: none !important;
     font-size: 0.75rem !important;
     letter-spacing: 0.08em !important;
-    text-transform: none !important;
+    text-transform: none !important; /* NO CAPS */
     font-weight: 500 !important;
     margin: 0.5rem 0 2rem 0 !important;
     text-align: left !important;
