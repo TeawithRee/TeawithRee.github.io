@@ -106,8 +106,14 @@
   .tn-programme {
     width: 100% !important;
     text-align: left !important;
-    /* Removed custom border-bottom and padding here to stop doubling up */
     margin-bottom: 2rem !important;
+  }
+
+  /* Removes the extra gap and line under Becoming */
+  .tn-programme:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 1.5rem !important; /* Shrinks the gap above the conversation section */
   }
 
   .tn-programme h2 {
@@ -123,7 +129,7 @@
     display: block !important;
     text-align: left !important;
     margin: 0 !important;
-    padding: 2rem 0 0 0 !important;
+    padding: 0 !important; /* Zeroed out padding to close the huge gap */
   }
 
   .tn-eyebrow {
