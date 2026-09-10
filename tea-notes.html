@@ -22,7 +22,7 @@
 <meta content="Tea Notes | Start a conversation with Rehana Rutti" name="twitter:title"/>
 
 <style>
-  /* Strict non-italic typography rule */
+  /* Strict global non-italic typography */
   body, p, blockquote, em, i, .lead, h1, h2, h3, a, button {
     font-style: normal !important;
   }
@@ -30,94 +30,122 @@
   /* Disable navigation dropdowns */
   .dropdown, .ddtoggle { display: none !important; }
 
-  /* Main container width and alignment */
-  main.tn-page {
-    max-width: 680px;
-    margin: 2.5rem auto 1rem auto;
-    padding: 0 1.5rem;
-    text-align: left !important;
+  /* FULL-WIDTH CENTERED KICKER HEADER */
+  section.section-hero {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin: 2.5rem auto 1.5rem auto !important;
   }
 
-  /* Hide raw page header h1 to display clean kicker */
+  .section-hero-copy {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
   .section-hero-copy h1 { display: none !important; }
 
-  /* CENTERED TOP KICKER */
   .section-hero-copy p {
-    font-size: 1.05rem;
-    color: #2c2c2c;
-    margin-bottom: 1.75rem !important;
+    font-size: 1.05rem !important;
+    color: #2c2c2c !important;
     text-align: center !important;
+    margin: 0 auto !important;
+    display: block !important;
   }
 
-  /* CENTERED TULIP IMAGE */
+  /* CONSTRAINED HERO IMAGE */
   figure.tn-visual {
+    display: block !important;
+    text-align: center !important;
     margin: 1.5rem auto 2.5rem auto !important;
-    text-align: center;
+    width: 100% !important;
   }
 
   figure.tn-visual img {
     display: block !important;
+    max-width: 480px !important;
     width: 100% !important;
-    max-width: 100% !important;
     height: auto !important;
     margin: 0 auto !important;
     border-radius: 4px;
   }
 
-  /* LEFT-ALIGNED BODY TEXT IN SITE CHARCOAL */
+  /* MAIN READING CONTAINER ALIGNED UNDER ECOLOGY TAB */
+  main.tn-page {
+    max-width: 680px !important;
+    margin: 0 auto 1rem auto !important;
+    padding: 0 1.5rem !important;
+    text-align: left !important;
+  }
+
+  /* FORCE SINGLE COLUMN LAYOUT (REMOVES 3-COLUMN GRID BLOCKS) */
+  .tn-programme-grid {
+    display: block !important;
+    grid-template-columns: none !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .tn-programme {
+    width: 100% !important;
+    margin-bottom: 2.5rem !important;
+    text-align: left !important;
+  }
+
+  /* LEFT-ALIGNED BODY TEXT IN CHARCOAL */
   .tn-intro p, .tn-programme p, .tn-conversation p {
     text-align: left !important;
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: 1.05rem !important;
+    line-height: 1.8 !important;
     color: #2c2c2c !important;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem !important;
   }
 
   /* SECTION HEADINGS */
   .tn-programme h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #1a1a1a;
-    margin: 2.5rem 0 0.75rem 0;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    color: #1a1a1a !important;
+    margin: 2.5rem 0 0.75rem 0 !important;
     text-align: left !important;
   }
 
   /* BOTTOM CONVERSATION SECTION */
   .tn-conversation-inner {
     text-align: left !important;
-    margin-top: 3.5rem;
+    margin-top: 3.5rem !important;
   }
 
-  .tn-conversation-inner h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #1a1a1a;
-    margin-bottom: 1rem;
-  }
-
-  /* CENTERED GOLD EYEBROW */
   .tn-eyebrow {
-    font-size: 0.85rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
     color: #b88e4c !important;
-    font-weight: 600;
-    text-align: center !important;
-    margin-bottom: 1.5rem !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .tn-conversation h2 {
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    color: #1a1a1a !important;
+    text-align: left !important;
+    margin-bottom: 1rem !important;
   }
 
   .tn-conversation-button {
-    display: inline-block;
-    padding: 0.85rem 1.75rem;
-    border: 1px solid #1a1a1a;
-    border-radius: 50px;
+    display: inline-block !important;
+    padding: 0.85rem 1.75rem !important;
+    border: 1px solid #1a1a1a !important;
+    border-radius: 50px !important;
     color: #1a1a1a !important;
-    text-decoration: none;
-    font-size: 0.75rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 1.5rem 0 2.5rem 0;
+    text-decoration: none !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    margin: 1.5rem 0 2.5rem 0 !important;
   }
 
   /* LEFT-ALIGNED BACK LINK */
@@ -142,7 +170,53 @@
 <div class="masthead"><a class="brand" href="/">Tea with Ree</a></div>
 <nav class="navrow" id="site-menu"><div class="navitem"><a aria-current="page" href="/">Home</a></div><div class="navitem"><a href="/ecology.html">Ecology</a><span class="ddtoggle" onclick="tg(this,event)">+</span><div class="dropdown"><div class="ddgroup"><span class="ddlabel">Rescue &amp; Care</span><a href="/ecology-rescue-stories.html">Rescue Stories That Restore Hope</a><a href="/ecology-shelter-to-sanctuary.html">From Shelter to Sanctuary: One Dog's Journey</a></div><div class="ddgroup"><span class="ddlabel">Planet &amp; Practice</span><a href="/ecology-oceans-in-focus.html">Oceans in Focus: A Visual Essay</a><a href="/ecology-eco-tips.html">Eco-Tips for Everyday Living</a><a href="/ecology-in-praise-of-small-joys.html">In Praise of Small Joys</a></div></div></div><div class="navitem"><a href="/inner-work.html">Inner Work</a><span class="ddtoggle" onclick="tg(this,event)">+</span><div class="dropdown"><div class="ddgroup"><span class="ddlabel">Reflection</span><a href="/inner-work-the-path-less-travelled.html">The Path Less Travelled</a><a href="/inner-work-discipline-of-noticing.html">The Discipline of Noticing Small Joys</a><a href="/inner-work-the-day-the-light-stepped-aside.html">The Day the Light Stepped Aside</a><a href="/inner-work-a-softer-monday.html">A Softer Monday</a></div><div class="ddgroup"><span class="ddlabel">Practice</span><a href="/inner-work-journaling-prompts.html">Journaling Prompts for Stillness</a><a href="/inner-work-morning-meditations.html">Three-Minute Morning Meditations</a><a href="/inner-work-confidence-after-40.html">Confidence After 40: A Quiet Revolution</a></div></div></div><div class="navitem"><a href="/wellbeing.html">Wellbeing</a><span class="ddtoggle" onclick="tg(this,event)">+</span><div class="dropdown"><div class="ddgroup"><span class="ddlabel">Body</span><a href="/wellbeing-wellness-trackers.html">Do Wellness Trackers Really Work?</a><a href="/wellbeing-inside-the-sauna.html">Inside the Sauna</a><a href="/wellbeing-movement-as-medicine.html">Movement as Medicine</a></div><div class="ddgroup"><span class="ddlabel">Energy Healing</span><a href="/wellbeing-reiki-conversations.html">Conversations with a Reiki Practitioner</a></div></div></div><div class="navitem"><a href="/tools.html">Modern Tools</a><span class="ddtoggle" onclick="tg(this,event)">+</span><div class="dropdown"><div class="ddgroup"><span class="ddlabel">AI &amp; Ethics</span><a href="/tools-ai-has-to-say-so-now.html">The Machines Have to Say So Now</a><a href="/tools-ai-creative-companion.html">AI as a Creative Companion</a></div><div class="ddgroup"><span class="ddlabel">Systems &amp; Habits</span><a href="/tools-digital-rituals.html">The Rise of Digital Rituals</a><a href="/tools-second-brain.html">Building a Second Brain</a><a href="/tools-abstract-tech.html">Abstract Tech: Visual Language of the Future</a></div></div></div><div class="navitem"><a href="/tea-notes.html">Tea Notes</a></div><div class="navitem"><a href="/about.html">About</a></div></nav>
 </header>
-<main class="tn-page" id="main-content"><section aria-label="Tea Notes" class="section-hero section-hero--no-image"><div class="section-hero-copy"><h1>Tea Notes</h1><p>Some things are easier to understand when you say them out loud.</p></div></section><figure class="tn-visual"><img alt="Cup of tea, red journal, green diary and tulips on a dark table, making space to say things aloud." decoding="async" fetchpriority="high" height="794" loading="eager" sizes="(max-width: 700px) 100vw, 384px" src="/tea-notes-tulips.webp" srcset="/tea-notes-tulips-480w.webp 480w, /tea-notes-tulips.webp 1080w" width="1080"/></figure><div class="tn-intro"><p>A private coaching conversation for the things you’re thinking about, sitting with, or ready to change. Bring the question.</p><p>We’ll start there.</p></div><section class="tn-programmes" aria-labelledby="programme-heading" id="programmes"><div class="tn-programme-grid"><article class="tn-programme"><h2>Reset</h2><p>A reset can be as simple as stopping for a moment and being honest about how things are going. We can look at what is taking up too much space, what you have been carrying and what might help you feel a little clearer.</p></article><article class="tn-programme"><h2>Renew</h2><p>Renewal is about finding your way back to the things that give you energy. That might mean making a change, returning to something you have missed, or giving yourself permission to want something different.</p></article><article class="tn-programme"><h2>Becoming</h2><p>Becoming is about the person you are growing into. You may not have the whole picture yet. That is perfectly all right. We can explore the questions, the possibilities and the next small step together.</p></article></div></section><section class="tn-conversation" aria-labelledby="conversation-heading"><div class="tn-conversation-inner"><p class="tn-eyebrow">Begin with a conversation</p><h2 id="conversation-heading">A free 30-minute session</h2><p>Sometimes the best place to begin is simply to talk. Bring the question, the change you are considering, or the thing you have not quite found the words for yet.</p><a class="tn-conversation-button" href="mailto:teawithree7@gmail.com">Book a 30-minute conversation</a></div></section><p class="home-return"><a class="back section-home" href="/">BACK TO MENU</a></p></main>
+
+<section aria-label="Tea Notes" class="section-hero section-hero--no-image">
+  <div class="section-hero-copy">
+    <h1>Tea Notes</h1>
+    <p>Some things are easier to understand when you say them out loud.</p>
+  </div>
+</section>
+
+<figure class="tn-visual">
+  <img alt="Cup of tea, red journal, green diary and tulips on a dark table, making space to say things aloud." decoding="async" fetchpriority="high" height="794" loading="eager" sizes="(max-width: 700px) 100vw, 384px" src="/tea-notes-tulips.webp" srcset="/tea-notes-tulips-480w.webp 480w, /tea-notes-tulips.webp 1080w" width="1080"/>
+</figure>
+
+<main class="tn-page" id="main-content">
+  <div class="tn-intro">
+    <p>A private coaching conversation for the things you’re thinking about, sitting with, or ready to change. Bring the question.</p>
+    <p>We’ll start there.</p>
+  </div>
+
+  <section class="tn-programmes" aria-labelledby="programme-heading" id="programmes">
+    <div class="tn-programme-grid">
+      <article class="tn-programme">
+        <h2>Reset</h2>
+        <p>A reset can be as simple as stopping for a moment and being honest about how things are going. We can look at what is taking up too much space, what you have been carrying and what might help you feel a little clearer.</p>
+      </article>
+      <article class="tn-programme">
+        <h2>Renew</h2>
+        <p>Renewal is about finding your way back to the things that give you energy. That might mean making a change, returning to something you have missed, or giving yourself permission to want something different.</p>
+      </article>
+      <article class="tn-programme">
+        <h2>Becoming</h2>
+        <p>Becoming is about the person you are growing into. You may not have the whole picture yet. That is perfectly all right. We can explore the questions, the possibilities and the next small step together.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tn-conversation" aria-labelledby="conversation-heading">
+    <div class="tn-conversation-inner">
+      <p class="tn-eyebrow">Begin with a conversation</p>
+      <h2 id="conversation-heading">A free 30-minute session</h2>
+      <p>Sometimes the best place to begin is simply to talk. Bring the question, the change you are considering, or the thing you have not quite found the words for yet.</p>
+      <a class="tn-conversation-button" href="mailto:teawithree7@gmail.com">Book a 30-minute conversation</a>
+    </div>
+  </section>
+
+  <p class="home-return"><a class="back section-home" href="/">BACK TO MENU</a></p>
+</main>
+
 <footer><div class="socials"><a aria-label="Instagram" href="https://www.instagram.com/teawith_ree" style="background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1 0-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.4 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .4 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1 0 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.4-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.4-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.3-8.3a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"></path></svg></a><a aria-label="TikTok" href="https://www.tiktok.com/@TeawithRee" style="background:#010101"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M16.6 5.8c-.9-.6-1.5-1.5-1.7-2.6 0-.2-.1-.4-.1-.7h-2.8v11.6c0 1.4-1.1 2.4-2.5 2.4a2.5 2.5 0 01-2.5-2.5c0-1.4 1.2-2.5 2.6-2.4v-2.9c-3 0-5.4 2.5-5.4 5.4a5.4 5.4 0 005.4 5.4c3 0 5.4-2.4 5.4-5.4V8.6c1.1.8 2.4 1.2 3.8 1.2V6.9c-.8 0-1.6-.3-2.2-.8l-.3-.3z"></path></svg></a><a aria-label="Facebook" href="https://www.facebook.com/Rehana.Rutti" style="background:#1877F2"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.5V12h2.8l-.5 2.9h-2.3v7A10 10 0 0022 12z"></path></svg></a><a aria-label="LinkedIn" href="https://www.linkedin.com/in/rehanarutti/" style="background:#0A66C2"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5V8.5h3V19zM6.5 7.2a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM19 19h-3v-5.6c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3s0-9.1 0-10.5h3v1.5c.4-.6 1.1-1.5 2.8-1.5 2 0 3.5 1.3 3.5 4.2V19z"></path></svg></a></div><a class="fcontact" href="mailto:teawithree7@gmail.com">teawithree7@gmail.com</a><div class="copy">© 2026 Tea with Ree · Rehana Rutti. All rights reserved.</div><div class="credit">Photography by Pexels.</div></footer>
 <script>
 (function(){
