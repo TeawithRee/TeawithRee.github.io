@@ -30,16 +30,28 @@
   /* Disable navigation dropdowns */
   .dropdown, .ddtoggle { display: none !important; }
 
+  /* MAIN READING CONTAINER ALIGNED UNDER ECOLOGY TAB */
+  main.tn-page {
+    max-width: 680px !important;
+    margin: 0 auto 2rem auto !important;
+    padding: 0 1.5rem !important;
+    display: block !important;
+    text-align: left !important;
+  }
+
   /* 1. CENTERED TOP KICKER HEADER */
   section.section-hero {
+    display: block !important;
     width: 100% !important;
     text-align: center !important;
     margin: 3rem auto 1.5rem auto !important;
   }
 
   .section-hero-copy {
+    display: block !important;
     text-align: center !important;
     width: 100% !important;
+    margin: 0 auto !important;
   }
 
   .section-hero-copy h1 { display: none !important; }
@@ -52,15 +64,7 @@
     display: block !important;
   }
 
-  /* MAIN READING CONTAINER ALIGNED UNDER ECOLOGY TAB */
-  main.tn-page {
-    max-width: 680px !important;
-    margin: 0 auto 2rem auto !important;
-    padding: 0 1.5rem !important;
-    text-align: left !important;
-  }
-
-  /* 2. TULIP HERO IMAGE */
+  /* 2. CENTERED TULIP HERO IMAGE */
   figure.tn-visual {
     display: block !important;
     text-align: center !important;
@@ -78,59 +82,71 @@
   }
 
   /* 3. LEFT-ALIGNED BODY TEXT & CHARCOAL COLOR */
-  .tn-intro p, .tn-programme p, .tn-conversation p {
+  .tn-intro, .tn-programme, .tn-conversation-inner {
+    display: block !important;
+    text-align: left !important;
+  }
+
+  .tn-intro p, .tn-programme p, .tn-conversation-inner p {
     text-align: left !important;
     font-size: 1.05rem !important;
     line-height: 1.8 !important;
     color: #2c2c2c !important;
-    margin-bottom: 1.5rem !important;
+    margin: 0 0 1.5rem 0 !important;
   }
 
-  /* 4. VERTICAL SINGLE-COLUMN STACK WITH DIVIDER LINES */
+  /* 4. VERTICAL SINGLE-COLUMN STACK (RESET/RENEW/BECOMING) WITH REDUCED GAPS */
   .tn-programme-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0 !important;
+    display: block !important;
     width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .tn-programme {
     width: 100% !important;
     text-align: left !important;
     border-bottom: 1px solid #eaeaea !important;
-    padding-bottom: 2rem !important;
-    margin-bottom: 2rem !important;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Removes the divider line under Becoming so it doesn't double up */
+  .tn-programme:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
   }
 
   .tn-programme h2 {
     font-size: 1.5rem !important;
     font-weight: 400 !important;
     color: #1a1a1a !important;
-    margin: 0 0 1rem 0 !important;
+    margin: 0 0 0.5rem 0 !important;
     text-align: left !important;
   }
 
-  /* 5. BOTTOM CONVERSATION SECTION (MATCHING SCREENSHOT) */
+  /* 5. BOTTOM CONVERSATION SECTION LOCKED TO LEFT WITH NORMAL CASE */
   .tn-conversation {
+    display: block !important;
     text-align: left !important;
-    margin-top: 1rem !important;
-    border-bottom: 1px solid #eaeaea !important;
-    padding-bottom: 2rem !important;
-    margin-bottom: 2rem !important;
-  }
-
-  .tn-conversation-inner {
-    text-align: left !important;
+    margin: 0 !important;
+    padding: 1.5rem 0 0 0 !important;
+    border-top: 1px solid #eaeaea !important;
   }
 
   .tn-eyebrow {
+    display: block !important;
     font-size: 0.85rem !important;
     letter-spacing: 0.12em !important;
-    text-transform: uppercase !important;
     color: #b88e4c !important;
     font-weight: 600 !important;
     text-align: left !important;
-    margin-bottom: 1.5rem !important;
+    margin: 0 0 0.5rem 0 !important;
+    text-transform: none !important;
+  }
+
+  .tn-conversation h2 {
+    display: none !important; /* Hides duplicate h2 title if it exists */
   }
 
   .tn-conversation-button {
@@ -142,9 +158,10 @@
     text-decoration: none !important;
     font-size: 0.75rem !important;
     letter-spacing: 0.08em !important;
-    text-transform: uppercase !important;
+    text-transform: none !important;
     font-weight: 500 !important;
-    margin: 1.5rem 0 0.5rem 0 !important;
+    margin: 0.5rem 0 2rem 0 !important;
+    text-align: left !important;
     transition: all 0.2s ease !important;
   }
 
@@ -155,7 +172,10 @@
 
   /* 6. BACK TO MENU LINK */
   .home-return {
-    margin: 1.5rem 0 2rem 0 !important;
+    display: block !important;
+    margin: 0 0 2rem 0 !important;
+    padding-top: 1.5rem !important;
+    border-top: 1px solid #eaeaea !important;
     text-align: left !important;
   }
 
@@ -213,9 +233,9 @@
 
   <section class="tn-conversation" aria-labelledby="conversation-heading">
     <div class="tn-conversation-inner">
-      <p class="tn-eyebrow">BEGIN WITH A CONVERSATION</p>
+      <p class="tn-eyebrow">Begin with a conversation</p>
       <p>Sometimes the best place to begin is simply to talk. Bring the question, the change you are considering, or the thing you have not quite found the words for yet.</p>
-      <a class="tn-conversation-button" href="mailto:teawithree7@gmail.com">BOOK A FREE 30-MINUTE SESSION</a>
+      <a class="tn-conversation-button" href="mailto:teawithree7@gmail.com">Book a free 30-minute session</a>
     </div>
   </section>
 
