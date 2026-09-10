@@ -704,24 +704,28 @@ footer {
 .secpage {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8.5rem 1.5rem 2rem;
+  padding: clamp(6rem, 10vw, 9rem) 1.5rem 4rem;
 }
 
 .secpage-head {
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
 .secpage-head h1 {
-  font-size: clamp(1.4rem, 2.3vw, 1.9rem);
-  margin-bottom: 0.5rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
 }
 
 .secpage-head p {
-  color: var(--ink-muted);
-  max-width: 520px;
+  color: var(--ink-secondary);
+  max-width: 600px;
   margin: 0;
-  font-size: 0.95rem;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.6;
 }
 
 /* Collapse an empty heading wrapper if one is left behind */
@@ -1065,12 +1069,12 @@ footer {
 
 .seccard {
   display: block;
-  border-radius: var(--radius);
+  border-radius: 2px;
   overflow: hidden;
   background: var(--bg);
   border: 1px solid var(--line);
-  border-top: 2px solid var(--accent);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border-top: 1px solid var(--accent);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
 }
 
 .seccard:hover {
@@ -1098,8 +1102,11 @@ footer {
 }
 
 .seccard-text h2 {
-  font-size: 1.6rem;
-  margin-bottom: 0.4rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
 }
 
 .seccard-text p {
@@ -1741,4 +1748,69 @@ footer {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+
+/* —— Section Footer Coaching Route —— */
+.sec-footer-route {
+  max-width: 1200px;
+  margin: 4rem auto 2rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.sec-footer-route a {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  padding: 0 1.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-family: Manrope, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  transition: all 0.25s ease;
+}
+.sec-footer-route a:hover {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+@media (min-width: 701px) {
+  .secpage-head,
+  .section-hero,
+  .section-hero--no-image {
+    text-align: center;
+  }
+
+  .secpage-head h1,
+  .section-hero-copy h1 {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0.75rem;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  .secpage-head p,
+  .section-hero-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-hero-copy {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
