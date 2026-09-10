@@ -10,7 +10,7 @@
   <link href="/style.css?v=20260908-b" rel="stylesheet"/>
   
   <!-- Preload hero image for instant rendering -->
-  <link rel="preload" as="image" href="/rehana-about-personal-900w.webp" imagesrcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" imagesizes="(max-width: 700px) 100vw, 680px" fetchpriority="high"/>
+  <link rel="preload" as="image" href="/rehana-about-personal-900w.webp" imagesrcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" imagesizes="(max-width: 700px) 100vw, 360px" fetchpriority="high"/>
 
   <style>
     /* Strict global non-italic typography */
@@ -37,14 +37,15 @@
       text-align: center !important;
     }
 
-    /* IMAGE MATCHING TEXT CONTAINER WIDTH */
+    /* CENTERED PORTRAIT CONSTRAINED BY HEIGHT */
     main#main-content img.about-image {
       display: block !important;
-      width: 100% !important;
+      max-height: 360px !important;
+      width: auto !important;
       max-width: 100% !important;
-      height: auto !important;
       margin: 1.5rem auto 2rem auto !important;
       border-radius: 2px;
+      object-fit: contain;
     }
 
     /* LEFT-ALIGNED BODY TEXT */
@@ -121,7 +122,7 @@
     <img class="about-image" 
          src="/rehana-about-personal-900w.webp" 
          srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
-         sizes="(max-width: 700px) 100vw, 680px" 
+         sizes="(max-width: 700px) 100vw, 360px" 
          fetchpriority="high"
          loading="eager"
          decoding="async"
