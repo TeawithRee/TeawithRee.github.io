@@ -194,8 +194,8 @@ fetch('/stories.json',{cache:'no-cache'})
       var t=String(s.title||'').replace(/"/g,'&quot;');
       return '<article class="story reveal">'
         +'<a aria-label="Read: '+t+'" class="story-media" href="'+s.url+'">'
-        +'<div role="img" aria-label="'+String(s.alt||t).replace(/"/g,'&quot;')+'" '
-        +'style="background-image:url(\''+s.image+'\')"></div></a>'
+        +'<img src="'+s.image+'" alt="'+String(s.alt||t).replace(/"/g,'&quot;')+'" '
+        +'loading="lazy" decoding="async" width="900" height="600"> </a>'
         +'<div class="story-title-row"><h2><a href="'+s.url+'">'+s.title+'</a></h2>'
         +'<details class="share-menu card-share"><summary aria-label="Share">⋮</summary><div class="share-panel"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native>Share</button></div></details></div>'
         +'<p>'+(s.desc||'')+'</p></article>';
@@ -222,4 +222,4 @@ fetch('/stories.json',{cache:'no-cache'})
   menu.querySelectorAll('a').forEach(function(link){link.addEventListener('click',close);});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
-</script><script>(function(){function wire(){document.querySelectorAll('.home-page .card-share').forEach(function(menu){var card=menu.closest('.story'),link=card&&card.querySelector('h3 a');if(!link||menu.dataset.wired)return;menu.dataset.wired='1';var url=new URL(link.getAttribute('href'),location.origin).href;var copy=menu.querySelector('[data-share-copy]'),native=menu.querySelector('[data-share-native]');if(copy)copy.addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(url);copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy link'},1400)});if(native)native.addEventListener('click',function(){if(navigator.share)navigator.share({title:link.textContent,url:url})})})}wire();new MutationObserver(wire).observe(document.querySelector('.artgrid'),{childList:true});})();</script></body></html>
+</script><script>(function(){function wire(){document.querySelectorAll('.home-page .card-share').forEach(function(menu){var card=menu.closest('.story'),link=card&&card.querySelector('.story-title-row h2 a');if(!link||menu.dataset.wired)return;menu.dataset.wired='1';var url=new URL(link.getAttribute('href'),location.origin).href;var copy=menu.querySelector('[data-share-copy]'),native=menu.querySelector('[data-share-native]');if(copy)copy.addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(url);copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy link'},1400)});if(native)native.addEventListener('click',function(){if(navigator.share)navigator.share({title:link.textContent,url:url})})})}wire();new MutationObserver(wire).observe(document.querySelector('.artgrid'),{childList:true});})();</script></body></html>
