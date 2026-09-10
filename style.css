@@ -1560,3 +1560,17 @@ footer {
 .aboutpage .about-head,
 .aboutpage .about-portrait { text-align: center; }
 .aboutpage .about-words { text-align: left; margin-left: auto; margin-right: auto; }
+
+
+/* =========================================================
+   NAVIGATION SPACING OVERRIDE FIX
+   ========================================================= */
+@media (min-width: 701px) {
+  #site-menu, .navrow {
+    gap: 2rem !important; 
+  }
+
+  .navitem > a {
+    padding: 0.4rem 0.5rem !important; 
+  }
+}
