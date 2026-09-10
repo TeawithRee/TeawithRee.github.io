@@ -18,7 +18,8 @@
       "desc": "A garden does not have to be large to change the way we look at the world. A few pots on a balcony can teach us about heat, water, soil and patience.",
       "section": "Ecology",
       "homepageEligible": true,
-      "approved": true
+      "approved": true,
+      "pathway": "renew"
     },
     {
       "url": "/ecology-in-praise-of-small-joys.html",
@@ -29,7 +30,8 @@
       "desc": "A child I know cupped a duckling in his hands last week and pressed his forehead to its head. I have not stopped thinking about his face.",
       "section": "Ecology",
       "homepageEligible": true,
-      "approved": true
+      "approved": true,
+      "pathway": "reset"
     },
     {
       "url": "/ecology-blue-and-blaze.html",
@@ -40,10 +42,11 @@
       "desc": "I used to think time belonged to the calendar. Now I think it belongs to whoever is waiting by the kitchen door.",
       "section": "Ecology",
       "homepageEligible": true,
-      "approved": true
+      "approved": true,
+      "pathway": "becoming"
     }
   ],
-       "library": [
+  "library": [
     {
       "url": "/ecology-blue-and-blaze-care.html",
       "title": "When Love for One Dog Becomes Care for Many",
@@ -814,5 +817,25 @@
       "homepageEligible": true,
       "approved": true
     }
-  ]
+  ],
+  "taxonomy": {
+    "pathways": [
+      {
+        "slug": "reset",
+        "label": "Reset",
+        "description": "Make space for clarity and an honest next step."
+      },
+      {
+        "slug": "renew",
+        "label": "Renew",
+        "description": "Return to the people, practices and possibilities that restore energy."
+      },
+      {
+        "slug": "becoming",
+        "label": "Becoming",
+        "description": "Explore the person and life you are growing into."
+      }
+    ],
+    "usage": "Assign one primary pathway to every rewritten article; keep section as the editorial category."
+  }
 }
