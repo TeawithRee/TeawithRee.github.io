@@ -10,7 +10,7 @@
   <link href="/style.css?v=20260908-b" rel="stylesheet"/>
   
   <!-- Preload hero image for instant rendering -->
-  <link rel="preload" as="image" href="/rehana-about-personal-900w.webp" imagesrcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" imagesizes="(max-width: 700px) 100vw, 380px" fetchpriority="high"/>
+  <link rel="preload" as="image" href="/rehana-about-personal-900w.webp" imagesrcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" imagesizes="(max-width: 700px) 100vw, 680px" fetchpriority="high"/>
 
   <style>
     /* Strict global non-italic typography */
@@ -21,7 +21,7 @@
     /* Disable dropdown menus */
     .dropdown, .ddtoggle { display: none !important; }
 
-    /* Exact article container measure and alignment */
+    /* Exact article container measure and layout */
     main#main-content {
       max-width: 680px;
       margin: 2.5rem auto 1rem auto;
@@ -29,6 +29,25 @@
       text-align: left !important;
     }
 
+    /* CENTERED KICKER */
+    main#main-content p.about-kicker {
+      font-size: 1.05rem;
+      color: #2c2c2c;
+      margin-bottom: 1.75rem !important;
+      text-align: center !important;
+    }
+
+    /* IMAGE MATCHING TEXT CONTAINER WIDTH */
+    main#main-content img.about-image {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 1.5rem auto 2rem auto !important;
+      border-radius: 2px;
+    }
+
+    /* LEFT-ALIGNED BODY TEXT */
     main#main-content p {
       text-align: left !important;
       font-size: 1.05rem;
@@ -37,39 +56,22 @@
       margin-bottom: 1.75rem;
     }
 
-    .about-kicker {
-      font-size: 1.05rem;
-      color: #2c2c2c;
-      margin-bottom: 1.5rem !important;
+    /* LEFT-ALIGNED BACK LINK WITH NO ARROW */
+    main#main-content .back-link {
+      margin: 3rem 0 2rem 0 !important;
       text-align: left !important;
     }
 
-    /* Shrunk portrait image to match article card sizing */
-    .about-image {
-      display: block;
-      width: 100%;
-      max-width: 380px;
-      height: auto;
-      margin: 1.5rem 0 2rem 0;
-      border-radius: 2px;
+    main#main-content .back-link a {
+      text-decoration: none !important;
+      color: #1a1a1a !important;
+      letter-spacing: 0.05em !important;
+      font-size: 0.75rem !important;
+      text-transform: uppercase !important;
+      font-weight: 600 !important;
     }
 
-    /* Exact BACK TO MENU match, returned to neutral dark color */
-    .back-link {
-      margin: 3rem 0 2rem 0;
-      text-align: left !important;
-    }
-
-    .back-link a {
-      text-decoration: none;
-      color: #1a1a1a; /* Standard dark neutral color for the About page */
-      letter-spacing: 0.05em;
-      font-size: 0.75rem; 
-      text-transform: uppercase;
-      font-weight: 600; 
-    }
-
-    /* Seamless, borderless newsletter section */
+    /* Seamless borderless newsletter section */
     .first-pour, .fp-inner, section#subscribe { 
       background: transparent !important; 
       background-color: transparent !important;
@@ -79,7 +81,7 @@
       margin: 2rem auto !important; 
     }
 
-    /* Extended 20-second breathing animation */
+    /* 20-second slow breathing animation */
     .fp-words {
       animation: slowBreathe 20s ease-in-out infinite alternate !important;
       letter-spacing: 0.08em;
@@ -119,7 +121,7 @@
     <img class="about-image" 
          src="/rehana-about-personal-900w.webp" 
          srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
-         sizes="(max-width: 700px) 100vw, 380px" 
+         sizes="(max-width: 700px) 100vw, 680px" 
          fetchpriority="high"
          loading="eager"
          decoding="async"
