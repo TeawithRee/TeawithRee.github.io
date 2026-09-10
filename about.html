@@ -1,39 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>About | Tea with Ree</title>
-  <meta name="description" content="Tea with Ree is a personal space to pause and reflect, with slow, thoughtful writing on wellbeing, nature and inner work by Rehana Rutti."/>
-  <meta name="author" content="Rehana Rutti"/>
-  <link rel="canonical" href="https://teawithree.com/about.html"/>
-  <link rel="stylesheet" href="/style.css?v=20260908-b"/>
+  <meta content="Tea with Ree is a personal space to pause and reflect, with slow, thoughtful writing on wellbeing, nature and inner work by Rehana Rutti." name="description"/>
+  <meta content="Rehana Rutti" name="author"/>
+  <link href="https://teawithree.com/about.html" rel="canonical"/>
+  <link href="/style.css?v=20260908-b" rel="stylesheet"/>
   
   <style>
-    /* Enforce non-italic luxury typography globally */
+    /* Global non-italic rule */
     body, p, blockquote, em, i, .lead, h1, h2, h3, .fp-words {
       font-style: normal !important;
     }
 
-    /* Left-aligned editorial reading container */
-    .about-container {
+    /* Left-aligned article body with consistent margins */
+    .about-content {
       max-width: 680px;
-      margin: 4rem auto 2rem auto;
+      margin: 3rem auto;
       padding: 0 1.5rem;
       text-align: left;
     }
 
-    .about-heading {
-      font-size: 1.85rem;
+    .about-content h1 {
+      font-size: 1.75rem;
       font-weight: 400;
-      line-height: 1.35;
-      letter-spacing: 0.02em;
+      line-height: 1.4;
       margin-bottom: 2rem;
       color: #1a1a1a;
       text-align: left;
     }
 
-    .about-container p {
+    .about-content p {
       font-size: 1.125rem;
       line-height: 1.8;
       color: #2c2c2c;
@@ -41,40 +41,34 @@
       text-align: left;
     }
 
-    .about-image-wrapper {
-      max-width: 100%;
-      margin: 2rem 0 2.5rem 0;
-    }
-
-    .about-image-wrapper img {
+    .about-photo {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 2px;
+      margin: 2rem 0 2.5rem 0;
     }
 
     /* Hide sub-menu dropdowns */
     .dropdown, .ddtoggle { display: none !important; }
 
-    /* Transparent newsletter background matching homepage */
+    /* Transparent newsletter background */
     .first-pour, .fp-inner, section#subscribe { 
       background: transparent !important; 
       background-color: transparent !important;
       box-shadow: none !important;
       border: none !important;
       padding: 0.5rem 0 !important; 
-      margin: 3rem auto 1rem auto !important; 
+      margin: 2rem auto !important; 
     }
 
-    /* Slow, serene presence for newsletter overlay text */
+    /* Slower, ultra-gentle text animation (8 seconds) */
     .fp-words {
-      animation: slowBreathe 4s ease-in-out infinite alternate;
-      font-style: normal !important;
-      letter-spacing: 0.08em;
+      animation: slowBreathe 8s ease-in-out infinite alternate;
+      letter-spacing: 0.06em;
     }
 
     @keyframes slowBreathe {
-      0% { opacity: 0.5; transform: translateY(1px); }
+      0% { opacity: 0.35; transform: translateY(1px); }
       100% { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -99,12 +93,10 @@
     </nav>
   </header>
 
-  <main id="main-content" class="about-container">
-    <h1 class="about-heading">Kindness was the beginning. Growth is the path.</h1>
+  <main id="main-content" class="about-content">
+    <h1>Kindness was the beginning. Growth is the path.</h1>
 
-    <div class="about-image-wrapper">
-      <img src="/homehero.jpg" alt="Rehana Rutti"/>
-    </div>
+    <img class="about-photo" src="/rehana.jpg" alt="Rehana Rutti"/>
 
     <p>I believe change begins in the small moments: a story that shifts perspective, a conversation that opens a door, a cup of tea that slows the pace long enough to notice what matters.</p>
 
