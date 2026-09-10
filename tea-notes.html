@@ -21,20 +21,27 @@
     /* Main container: Left aligns text under Ecology tab on desktop */
     main#main-content {
       max-width: 680px;
-      margin: 3rem auto 2rem auto;
+      margin: 2.5rem auto 2rem auto;
       padding: 0 1.5rem;
       text-align: left !important;
     }
 
-    /* CENTERED KICKER */
-    main#main-content .tea-kicker {
-      font-size: 0.85rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #b88e4c; /* Gold color matching your screenshot */
-      font-weight: 600;
+    /* CENTERED TOP KICKER */
+    main#main-content p.tea-kicker {
+      font-size: 1.05rem;
+      color: #2c2c2c;
+      margin-bottom: 1.75rem !important;
       text-align: center !important;
-      margin-bottom: 2rem !important;
+    }
+
+    /* HERO IMAGE */
+    main#main-content img.tea-hero {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto 2.5rem auto !important;
+      border-radius: 4px;
     }
 
     /* LEFT-ALIGNED BODY TEXT */
@@ -43,13 +50,33 @@
       font-size: 1.05rem;
       line-height: 1.8;
       color: #2c2c2c !important;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* SUBHEADINGS */
+    main#main-content h2.section-title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #1a1a1a;
+      margin: 2.5rem 0 1rem 0;
+      text-align: left !important;
+    }
+
+    /* CENTERED GOLD KICKER (Bottom section) */
+    main#main-content p.gold-kicker {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b88e4c;
+      font-weight: 600;
+      text-align: left !important;
+      margin: 4rem 0 2rem 0 !important;
     }
 
     /* LEFT-ALIGNED BOOKING BUTTON */
     .btn-wrap {
       text-align: left !important;
-      margin: 0 0 3rem 0;
+      margin: 1.5rem 0 3rem 0;
     }
 
     .btn-wrap a.book-btn {
@@ -71,14 +98,15 @@
       color: #ffffff;
     }
 
-    /* THIN DIVIDER LINE matching screenshot */
-    .rule-line {
-      border: none;
-      border-top: 1px solid #eaeaea;
-      margin: 0 0 2rem 0;
+    /* GUARANTEED VISIBLE THIN DIVIDER LINE */
+    .custom-line {
+      width: 100%;
+      height: 1px;
+      background-color: #eaeaea;
+      margin: 3rem 0;
     }
 
-    /* LEFT-ALIGNED BACK LINK WITH NO ARROW */
+    /* LEFT-ALIGNED BACK LINK */
     .back-link {
       text-align: left !important;
       margin-bottom: 2rem;
@@ -86,7 +114,7 @@
 
     .back-link a {
       text-decoration: none;
-      color: #b88e4c; /* Gold color matching your screenshot */
+      color: #b88e4c;
       font-size: 0.75rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -115,7 +143,23 @@
   </header>
 
   <main id="main-content">
-    <p class="tea-kicker">BEGIN WITH A CONVERSATION</p>
+    <!-- TOP SECTION -->
+    <p class="tea-kicker">Some things are easier to understand when you say them out loud.</p>
+
+    <!-- Paste your exact image file path here -->
+    <img class="tea-hero" src="/tea-notes-hero.jpg" alt="Tea Notes"/>
+
+    <p class="tea-body">A private coaching conversation for the things you’re thinking about, sitting with, or ready to change. Bring the question.</p>
+    <p class="tea-body">We’ll start there.</p>
+
+    <h2 class="section-title">Reset</h2>
+    <p class="tea-body">A reset can be as simple as stopping for a moment and being honest about how things are going. We can look at what is taking up too much space, what you have been carrying and what might help you feel a little clearer.</p>
+
+    <!-- FIRST DIVIDER LINE -->
+    <div class="custom-line"></div>
+
+    <!-- BOTTOM SECTION -->
+    <p class="gold-kicker">BEGIN WITH A CONVERSATION</p>
 
     <p class="tea-body">Sometimes the best place to begin is simply to talk. Bring the question, the change you are considering, or the thing you have not quite found the words for yet.</p>
 
@@ -123,7 +167,8 @@
       <a class="book-btn" href="mailto:teawithree7@gmail.com">BOOK A FREE 30-MINUTE SESSION</a>
     </div>
 
-    <hr class="rule-line"/>
+    <!-- SECOND DIVIDER LINE -->
+    <div class="custom-line"></div>
 
     <div class="back-link">
       <a href="#nav">BACK TO MENU</a>
@@ -132,7 +177,7 @@
 
   <footer>
     <div class="socials">
-      <a aria-label="Instagram" href="https://www.instagram.com/teawith_ree" style="background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1 .4 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1 0 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.4-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.4-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.3-8.3a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"></path></svg></a>
+      <a aria-label="Instagram" href="https://www.instagram.com/teawith_ree" style="background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1 0-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.4 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .4 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1 0 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.4-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.4-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.3-8.3a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"></path></svg></a>
       <a aria-label="TikTok" href="https://www.tiktok.com/@TeawithRee" style="background:#010101"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M16.6 5.8c-.9-.6-1.5-1.5-1.7-2.6 0-.2-.1-.4-.1-.7h-2.8v11.6c0 1.4-1.1 2.4-2.5 2.4a2.5 2.5 0 01-2.5-2.5c0-1.4 1.2-2.5 2.6-2.4v-2.9c-3 0-5.4 2.5-5.4 5.4a5.4 5.4 0 005.4 5.4c3 0 5.4-2.4 5.4-5.4V8.6c1.1.8 2.4 1.2 3.8 1.2V6.9c-.8 0-1.6-.3-2.2-.8l-.3-.3z"></path></svg></a>
       <a aria-label="Facebook" href="https://www.facebook.com/Rehana.Rutti" style="background:#1877F2"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.5V12h2.8l-.5 2.9h-2.3v7A10 10 0 0022 12z"></path></svg></a>
       <a aria-label="LinkedIn" href="https://www.linkedin.com/in/rehanarutti/" style="background:#0A66C2"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5V8.5h3V19zM6.5 7.2a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM19 19h-3v-5.6c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3s0-9.1 0-10.5h3v1.5c.4-.6 1.1-1.5 2.8-1.5 2 0 3.5 1.3 3.5 4.2V19z"></path></svg></a>
