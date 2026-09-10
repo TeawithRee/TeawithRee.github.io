@@ -1574,3 +1574,33 @@ footer {
     padding: 0.4rem 0.5rem !important; 
   }
 }
+
+/* =========================================================
+   LUXURY TEXT & NEWSLETTER SPEED FIXES
+   ========================================================= */
+
+/* Make the first paragraph of the About page luxurious and editorial */
+.aboutpage .about-words p:first-of-type {
+    font-family: "Cormorant Garamond", Georgia, serif !important;
+    font-size: 1.6rem !important;
+    font-style: italic !important;
+    text-align: center !important;
+    line-height: 1.45 !important;
+    max-width: 600px !important;
+    margin: 0 auto 2rem auto !important;
+    color: var(--ink) !important;
+}
+
+/* Center the rest of the About text to match the portrait */
+.aboutpage .about-words p {
+    text-align: center !important;
+    max-width: 650px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Slow down the Newsletter / Reveal animations */
+.fp-words, .reveal {
+    transition-duration: 2.5s !important; /* Increased from 0.8s */
+    animation-duration: 2.5s !important; 
+}
