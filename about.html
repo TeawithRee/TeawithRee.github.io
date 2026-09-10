@@ -10,64 +10,67 @@
   <link href="https://teawithree.com/about.html" rel="canonical"/>
   <link href="/style.css?v=20260908-b" rel="stylesheet"/>
   
+  <!-- Preload hero image for instant rendering -->
+  <link rel="preload" as="image" href="/rehana-about-personal-900w.webp" imagesrcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" imagesizes="(max-width: 700px) 100vw, 680px" fetchpriority="high"/>
+
   <style>
-    /* Global non-italic rule */
+    /* Strict global non-italic typography */
     body, p, blockquote, em, i, .lead, h1, h2, h3, .fp-words {
       font-style: normal !important;
     }
 
-    /* Disable navigation dropdowns */
+    /* Disable dropdown menus */
     .dropdown, .ddtoggle { display: none !important; }
 
-    /* Constrain main reading container to standard article page width */
+    /* Exact article container measure and alignment */
     main#main-content {
-      max-width: 600px !important;
-      margin: 3rem auto !important;
-      padding: 0 1.5rem !important;
-      text-align: left;
+      max-width: 680px;
+      margin: 2.5rem auto 1rem auto;
+      padding: 0 1.5rem;
+      text-align: left !important;
     }
 
-    /* Centered kicker text */
-    .about-kicker {
-      text-align: center !important;
-      font-size: 1.1rem;
-      margin-bottom: 2rem !important;
+    main#main-content p {
+      text-align: left !important;
+      font-size: 1.05rem;
+      line-height: 1.8;
       color: #2c2c2c;
+      margin-bottom: 1.75rem;
     }
 
-    /* Centered portrait sizing */
+    .about-kicker {
+      font-size: 1.05rem;
+      color: #2c2c2c;
+      margin-bottom: 1.5rem !important;
+      text-align: left !important;
+    }
+
+    /* Fast-loading portrait image constrained to text column */
     .about-image {
-      display: block !important;
-      max-width: 440px !important;
-      width: 100% !important;
-      height: auto !important;
-      margin: 0 auto 2.5rem auto !important;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 1.5rem 0 2rem 0;
       border-radius: 2px;
     }
 
-    /* Body text measure matching article pages */
-    main#main-content p {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      margin-bottom: 1.75rem;
-      color: #2c2c2c;
+    /* Left-aligned navigation link matching article page layout */
+    .back-link {
+      margin: 3rem 0 2rem 0;
+      text-align: left !important;
     }
 
-    /* Centered BACK TO MENU link */
-    .back-to-menu {
-      text-align: center !important;
-      margin: 3rem 0 2rem 0 !important;
-    }
-
-    .back-to-menu a {
+    .back-link a {
       text-decoration: none;
       color: #1a1a1a;
       letter-spacing: 0.1em;
       font-size: 0.85rem;
       text-transform: uppercase;
+      font-weight: 500;
     }
 
-    /* Transparent newsletter background matching homepage */
+    /* Seamless, borderless newsletter section */
     .first-pour, .fp-inner, section#subscribe { 
       background: transparent !important; 
       background-color: transparent !important;
@@ -77,16 +80,16 @@
       margin: 2rem auto !important; 
     }
 
-    /* Ultra-slow 14-second calm breathing animation */
+    /* Extended 20-second breathing animation */
     .fp-words {
-      animation: slowBreathe 14s ease-in-out infinite alternate !important;
+      animation: slowBreathe 20s ease-in-out infinite alternate !important;
       letter-spacing: 0.08em;
       font-style: normal !important;
     }
 
     @keyframes slowBreathe {
-      0% { opacity: 0.2; transform: translateY(1px); }
-      50% { opacity: 0.65; }
+      0% { opacity: 0.15; transform: translateY(1px); }
+      50% { opacity: 0.6; }
       100% { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -117,7 +120,10 @@
     <img class="about-image" 
          src="/rehana-about-personal-900w.webp" 
          srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
-         sizes="(max-width: 700px) 100vw, 440px" 
+         sizes="(max-width: 700px) 100vw, 680px" 
+         fetchpriority="high"
+         loading="eager"
+         decoding="async"
          alt="Rehana Rutti"/>
 
     <p>I believe change begins in the small moments: a story that shifts perspective, a conversation that opens a door, a cup of tea that slows the pace long enough to notice what matters.</p>
@@ -130,8 +136,8 @@
 
     <p>Tea with Ree is where these threads come together. It is a place for stories, wellbeing, friendships and the questions that make life interesting. If you are ready to explore your own next chapter, I am here to walk alongside you.</p>
 
-    <div class="back-to-menu">
-      <a href="#nav">BACK TO MENU</a>
+    <div class="back-link">
+      <a href="#nav">&larr; BACK TO MENU</a>
     </div>
 
     <div class="rule reveal"><span class="line"></span></div>
