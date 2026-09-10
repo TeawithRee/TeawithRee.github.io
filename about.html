@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +11,63 @@
   <link href="/style.css?v=20260908-b" rel="stylesheet"/>
   
   <style>
-    /* 1. Remove all italics site-wide */
+    /* Global non-italic rule */
     body, p, blockquote, em, i, .lead, h1, h2, h3, .fp-words {
       font-style: normal !important;
     }
 
-    /* 2. Hide navigation sub-menu dropdowns */
+    /* Disable navigation dropdowns */
     .dropdown, .ddtoggle { display: none !important; }
 
-    /* 3. Transparent newsletter background matching homepage */
+    /* Constrain main reading container to standard article page width */
+    main#main-content {
+      max-width: 600px !important;
+      margin: 3rem auto !important;
+      padding: 0 1.5rem !important;
+      text-align: left;
+    }
+
+    /* Centered kicker text */
+    .about-kicker {
+      text-align: center !important;
+      font-size: 1.1rem;
+      margin-bottom: 2rem !important;
+      color: #2c2c2c;
+    }
+
+    /* Centered portrait sizing */
+    .about-image {
+      display: block !important;
+      max-width: 440px !important;
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 auto 2.5rem auto !important;
+      border-radius: 2px;
+    }
+
+    /* Body text measure matching article pages */
+    main#main-content p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1.75rem;
+      color: #2c2c2c;
+    }
+
+    /* Centered BACK TO MENU link */
+    .back-to-menu {
+      text-align: center !important;
+      margin: 3rem 0 2rem 0 !important;
+    }
+
+    .back-to-menu a {
+      text-decoration: none;
+      color: #1a1a1a;
+      letter-spacing: 0.1em;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+
+    /* Transparent newsletter background matching homepage */
     .first-pour, .fp-inner, section#subscribe { 
       background: transparent !important; 
       background-color: transparent !important;
@@ -28,7 +77,7 @@
       margin: 2rem auto !important; 
     }
 
-    /* 4. Ultra-slow 14-second calm breathing animation */
+    /* Ultra-slow 14-second calm breathing animation */
     .fp-words {
       animation: slowBreathe 14s ease-in-out infinite alternate !important;
       letter-spacing: 0.08em;
@@ -63,16 +112,13 @@
   </header>
 
   <main id="main-content">
-    
-    <p style="text-align: center;">Kindness was the beginning. Growth is the path.</p>
+    <p class="about-kicker">Kindness was the beginning. Growth is the path.</p>
 
-    <p style="text-align: center;">
-      <img src="/rehana-about-personal-900w.webp" 
-           srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
-           sizes="(max-width: 700px) 100vw, 600px" 
-           style="max-width: 100%; height: auto;"
-           alt="Rehana Rutti"/>
-    </p>
+    <img class="about-image" 
+         src="/rehana-about-personal-900w.webp" 
+         srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
+         sizes="(max-width: 700px) 100vw, 440px" 
+         alt="Rehana Rutti"/>
 
     <p>I believe change begins in the small moments: a story that shifts perspective, a conversation that opens a door, a cup of tea that slows the pace long enough to notice what matters.</p>
 
@@ -84,12 +130,11 @@
 
     <p>Tea with Ree is where these threads come together. It is a place for stories, wellbeing, friendships and the questions that make life interesting. If you are ready to explore your own next chapter, I am here to walk alongside you.</p>
 
-    <p style="text-align: center; margin-top: 3rem; margin-bottom: 3rem;">
-      <a href="#nav" style="text-decoration: none; color: inherit; letter-spacing: 0.1em; font-size: 0.85rem; text-transform: uppercase;">BACK TO MENU</a>
-    </p>
+    <div class="back-to-menu">
+      <a href="#nav">BACK TO MENU</a>
+    </div>
 
     <div class="rule reveal"><span class="line"></span></div>
-    
   </main>
 
   <section class="first-pour reveal" id="subscribe">
