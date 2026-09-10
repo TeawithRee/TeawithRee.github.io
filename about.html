@@ -10,67 +10,72 @@
   <link href="/style.css?v=20260908-b" rel="stylesheet"/>
   
   <style>
-    /* Enforce strict non-italic luxury typography globally */
+    /* Global non-italic rule */
     body, p, blockquote, em, i, .lead, h1, h2, h3, .fp-words {
       font-style: normal !important;
     }
 
-    /* Left-aligned editorial container with natural margins */
+    /* Hide navigation sub-menu dropdowns */
+    .dropdown, .ddtoggle { display: none !important; }
+
+    /* Left-aligned article container using site style.css defaults */
     main {
       max-width: 680px;
-      margin: 2.5rem auto;
-      padding: 0 1.5rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 1rem 1.5rem;
       text-align: left !important;
     }
 
-    main p {
-      font-size: 1.125rem;
-      line-height: 1.8;
-      color: #2c2c2c;
-      margin-bottom: 1.75rem;
+    main p, main div {
       text-align: left !important;
     }
 
-    /* Opening kicker line styling */
-    .about-kicker {
-      font-size: 1.125rem;
-      color: #2c2c2c;
-      margin-bottom: 1.75rem;
-      text-align: left !important;
+    .about-photo-container {
+      width: 100%;
+      margin: 1.5rem 0 2rem 0;
     }
 
-    /* Responsive image container */
-    .about-photo {
+    .about-photo-container img {
       width: 100%;
       height: auto;
       display: block;
-      margin: 2rem 0 2.5rem 0;
       border-radius: 2px;
     }
 
-    /* Hide sub-menu dropdown elements */
-    .dropdown, .ddtoggle { display: none !important; }
+    /* BACK TO MENU styling */
+    .back-to-menu {
+      margin: 2.5rem 0 1.5rem 0;
+      text-align: left !important;
+    }
 
-    /* Borderless, transparent newsletter section */
+    .back-to-menu a {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    /* Transparent newsletter background */
     .first-pour, .fp-inner, section#subscribe { 
       background: transparent !important; 
       background-color: transparent !important;
       box-shadow: none !important;
       border: none !important;
       padding: 0.5rem 0 !important; 
-      margin: 2.5rem auto !important; 
+      margin: 2rem auto !important; 
     }
 
-    /* Calm, ultra-slow 12-second breathing animation */
+    /* Ultra-slow 14-second calm breathing animation */
     .fp-words {
-      animation: slowBreathe 12s ease-in-out infinite alternate !important;
+      animation: slowBreathe 14s ease-in-out infinite alternate !important;
       letter-spacing: 0.08em;
       font-style: normal !important;
     }
 
     @keyframes slowBreathe {
-      0% { opacity: 0.25; transform: translateY(1px); }
-      50% { opacity: 0.7; }
+      0% { opacity: 0.2; transform: translateY(1px); }
+      50% { opacity: 0.65; }
       100% { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -96,13 +101,14 @@
   </header>
 
   <main id="main-content">
-    <p class="about-kicker">Kindness was the beginning. Growth is the path.</p>
+    <p>Kindness was the beginning. Growth is the path.</p>
 
-    <img class="about-photo" 
-         src="/rehana-about-personal-900w.webp" 
-         srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
-         sizes="(max-width: 700px) 100vw, 680px" 
-         alt="Rehana Rutti"/>
+    <div class="about-photo-container">
+      <img src="/rehana-about-personal-900w.webp" 
+           srcset="/rehana-about-personal-480w.webp 480w, /rehana-about-personal-900w.webp 900w" 
+           sizes="(max-width: 700px) 100vw, 680px" 
+           alt="Rehana Rutti"/>
+    </div>
 
     <p>I believe change begins in the small moments: a story that shifts perspective, a conversation that opens a door, a cup of tea that slows the pace long enough to notice what matters.</p>
 
@@ -113,6 +119,12 @@
     <p>Healing practices, writing and reflection are part of how I make sense of the world. They are also how I help others make sense of theirs. Coaching is not about fixing people, it is about creating space for clarity, courage and the next step forward.</p>
 
     <p>Tea with Ree is where these threads come together. It is a place for stories, wellbeing, friendships and the questions that make life interesting. If you are ready to explore your own next chapter, I am here to walk alongside you.</p>
+
+    <div class="back-to-menu">
+      <a href="#nav">BACK TO MENU</a>
+    </div>
+
+    <div class="rule reveal"><span class="line"></span></div>
   </main>
 
   <section class="first-pour reveal" id="subscribe">
