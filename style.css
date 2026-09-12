@@ -1910,7 +1910,7 @@ footer {
   }
 
   body.about-page main#main-content img.about-image {
-    max-height: 320px !important;
+    max-height: 360px !important;
     margin: 1.5rem auto 2.5rem !important;
   }
 }
@@ -1941,7 +1941,7 @@ footer {
   }
 
   body.about-page main#main-content img.about-image {
-    max-height: 320px !important;
+    max-height: 360px !important;
     margin: 1.5rem auto 2.5rem !important;
   }
 }
