@@ -1877,3 +1877,65 @@ footer {
     margin-right: auto;
   }
 }
+
+
+/* =========================================================
+   TEA NOTES CONSISTENCY PASS
+   Tea Notes is the reference rhythm for all non-home pages.
+   ========================================================= */
+@media (min-width: 701px) {
+  .secpage {
+    padding-top: 0 !important;
+  }
+
+  .secpage .section-hero,
+  .secpage .section-hero--no-image,
+  .secpage .secpage-head {
+    padding-top: 1.5rem !important;
+  }
+
+  body.about-page main#main-content {
+    max-width: 680px !important;
+    margin: 3rem auto 1rem !important;
+    padding: 0 1.5rem !important;
+  }
+
+  body.about-page main#main-content h1.about-kicker {
+    font-family: Manrope, sans-serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    max-width: 600px !important;
+    margin: 0 auto 1.5rem !important;
+    color: #2c2c2c !important;
+  }
+
+  body.about-page main#main-content img.about-image {
+    max-height: 320px !important;
+    margin: 1.5rem auto 2.5rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .secpage {
+    padding-top: 0 !important;
+  }
+
+  body.about-page main#main-content {
+    margin: 1.25rem auto 1rem !important;
+    padding: 0 1.5rem !important;
+  }
+
+  body.about-page main#main-content h1.about-kicker {
+    font-family: Manrope, sans-serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    margin: 0 auto 1.5rem !important;
+  }
+
+  body.about-page main#main-content img.about-image {
+    max-height: 320px !important;
+    margin: 1.5rem auto 2.5rem !important;
+  }
+}
