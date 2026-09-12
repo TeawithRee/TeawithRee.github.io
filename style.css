@@ -1891,7 +1891,8 @@ footer {
   .secpage .section-hero,
   .secpage .section-hero--no-image,
   .secpage .secpage-head {
-    padding-top: 1.5rem !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   body.about-page main#main-content {
@@ -1918,6 +1919,13 @@ footer {
 
 @media (max-width: 700px) {
   .secpage {
+    padding-top: 0 !important;
+  }
+
+  .secpage .section-hero,
+  .secpage .section-hero--no-image,
+  .secpage .secpage-head {
+    margin-top: 0 !important;
     padding-top: 0 !important;
   }
 
