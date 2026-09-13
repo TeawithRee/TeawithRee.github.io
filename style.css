@@ -2075,3 +2075,9 @@ footer {
     margin-top: 2.75rem !important;
   }
 }
+/* The first card is above the fold and must not wait for scroll-reveal. */
+.secpage .artgrid > .story:first-child.reveal {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
