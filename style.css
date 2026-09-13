@@ -1817,6 +1817,19 @@ footer {
   text-align: left;
 }
 
+.article-dots {
+  display: flex;
+  gap: 0.35rem;
+  margin: 2.4rem 0 1.1rem;
+}
+
+.article-dots span {
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 
 /* —— Section Footer Coaching Route —— */
 .sec-footer-route {
