@@ -87,6 +87,8 @@ Every indexable page should have one meaningful title, one H1, a concise meta de
 
 The complete sitemap contains every published HTML page and excludes partial templates such as `nav.html` and `first-pour-block.html`. The robots file allows public HTML, CSS, JavaScript and image resources to remain crawlable and points to the sitemap. It also explicitly allows common AI crawlers. Robots rules are a traffic and crawling instruction, not a privacy mechanism. Do not put private material in a public repository and do not use robots.txt as a substitute for noindex or access control.
 
+The homepage story feed uses `publishedAt` first and `updatedAt` second. When neither field exists, the renderer preserves the order of the `selected` array in `stories.json`. To place a new undated approved story first, add it at the beginning of that array. Do not invent a publication date merely to influence order.
+
 The site now includes `llms.txt`, `llms-full.txt` and `ai.txt`. These files provide attribution guidance, canonical URLs and an expanded content index. They do not replace normal HTML, internal links, page metadata or the XML sitemap.
 
 The current Google Search Console pathway is not connected in this session. The site files are ready for submission, but no external Google property was altered. After deployment, submit `https://teawithree.com/sitemap.xml` in Google Search Console if Rehana has access to the verified property.
@@ -125,7 +127,7 @@ After publishing, test the raw GitHub branch and the public GitHub Pages URL sep
 
 ## Current implementation record
 
-The recompression pass retained original pixel dimensions and replaced only materially smaller image encodings. The lead Inner Work image and lead Wellbeing image were visually inspected after recompression. The complete sitemap now contains 78 published HTML URLs. The source tree contains no `loading="lazy"` attributes.
+The recompression pass retained original pixel dimensions and replaced only materially smaller image encodings. The lead Inner Work image and lead Wellbeing image were visually inspected after recompression. The complete sitemap now contains 77 indexable published HTML URLs, with one moved redirect page intentionally excluded. The source tree contains no `loading="lazy"` attributes.
 
 The most recent infrastructure commits are `54cd4df` for crawler indexes and responsive image delivery, `3ff942f` for responsive first image preloads, `09074a2` for first card rendering and `8a1e218` for contextual alt text. The current working tree should be checked before the next content upload.
 
