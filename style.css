@@ -1991,3 +1991,61 @@ footer {
   text-transform: none !important;
   letter-spacing: 0.02em !important;
 }
+/* Quiet editorial sharing: an invitation, not a utility pill. */
+.card-share summary {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  align-items: baseline;
+  gap: .28rem;
+  padding: .12rem 0 .2rem;
+  border-bottom: 1px solid transparent;
+  color: var(--ink-muted);
+  font-family: Manrope, sans-serif;
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .11em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: color .25s ease, border-color .25s ease;
+}
+.card-share summary span {
+  font-family: Georgia, serif;
+  font-size: .95rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  transform: translateY(.04em);
+  transition: transform .25s ease;
+}
+.card-share summary:hover,
+.card-share[open] summary {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.card-share summary:hover span,
+.card-share[open] summary span {
+  transform: translate(.12rem, -.06rem);
+}
+.share-panel {
+  top: 1.75rem;
+  right: 0;
+  min-width: 10.5rem;
+  padding: .45rem;
+  border-color: rgba(36,32,29,.18);
+  box-shadow: 0 14px 35px rgba(36,32,29,.12);
+}
+.share-panel button {
+  padding: .62rem .7rem;
+  font-size: .72rem;
+  letter-spacing: .01em;
+}
+.share-panel button:hover,
+.share-panel button:focus-visible {
+  background: var(--bg-soft);
+  outline: none;
+}
+@media (max-width: 700px) {
+  .card-share summary { font-size: .62rem; }
+  .share-panel { min-width: 10rem; }
+}
