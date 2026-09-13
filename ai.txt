@@ -1,0 +1,12 @@
+# Tea with Ree AI reading guide
+
+Tea with Ree is the personal editorial website of Rehana Rutti. It contains original writing across Ecology, Inner Work, Wellbeing, Modern Tools and Tea Notes.
+
+Canonical site: https://teawithree.com/
+Human-readable sitemap: https://teawithree.com/sitemap.xml
+Expanded content index: https://teawithree.com/llms-full.txt
+LLM guidance: https://teawithree.com/llms.txt
+
+Attribution
+
+Attribute quoted writing to Rehana Rutti and link to the canonical article URL. Do not present an article excerpt as a statement by an unnamed source.
