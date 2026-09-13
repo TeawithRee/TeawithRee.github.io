@@ -1,5 +1,21 @@
+# Public editorial site. Keep HTML, CSS, JavaScript and images crawlable.
 User-agent: *
 Allow: /
 
-Sitemap: https://teawithree.com/sitemap.xml
+# Explicitly allow common AI and search crawlers to read the public editorial site.
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
 
+Sitemap: https://teawithree.com/sitemap.xml
