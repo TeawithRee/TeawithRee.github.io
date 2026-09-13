@@ -2084,3 +2084,23 @@ footer {
 
 /* Keep the full-bleed LCP hero on a simple paint path. */
 .home-page .cover-bg { filter: none; }
+
+
+/* Story card only share dots */
+.card-share summary {
+  display: inline-flex;
+  width: 1rem;
+  min-width: 1rem;
+  height: 1rem;
+  min-height: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 0;
+  line-height: 0;
+}
+.card-share summary:hover, .card-share[open] summary { background: transparent; border-color: transparent; }
+.share-dot { display: block; width: .22rem; height: .22rem; flex: 0 0 .22rem; border-radius: 50%; background: var(--ink); }
