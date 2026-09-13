@@ -2049,3 +2049,29 @@ footer {
   .card-share summary { font-size: .62rem; }
   .share-panel { min-width: 10rem; }
 }
+/* About mobile: borrow Tea Notes' breathing room and reading rhythm. */
+@media (max-width: 700px) {
+  body.about-page main#main-content {
+    margin-top: 2.75rem !important;
+    margin-bottom: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  body.about-page main#main-content h1.about-kicker {
+    max-width: 31rem !important;
+    margin-bottom: 1.75rem !important;
+    font-size: 1.02rem !important;
+    line-height: 1.65 !important;
+  }
+  body.about-page main#main-content img.about-image {
+    margin-top: 1.75rem !important;
+    margin-bottom: 2.75rem !important;
+  }
+  body.about-page main#main-content > p {
+    font-size: 1.05rem !important;
+    line-height: 1.8 !important;
+  }
+  body.about-page main#main-content .back-link {
+    margin-top: 2.75rem !important;
+  }
+}
