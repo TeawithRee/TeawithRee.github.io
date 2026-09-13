@@ -175,7 +175,7 @@ p {
 
 .art .kicker {
   display: block;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.5rem;
 }
 
@@ -784,20 +784,19 @@ footer {
   max-width: 720px;
   margin: 0 auto;
   padding: 8.5rem 1.5rem 2rem;
+  text-align: left;
 }
-
 .art h1 {
   font-size: clamp(2rem, 5vw, 3.2rem);
   line-height: 1.08;
   margin-bottom: 0.6rem;
-  text-align: center;
+  text-align: left;
 }
-
 .art .meta {
   font-size: 0.85rem;
   color: var(--ink-muted);
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .art figure {
@@ -1757,7 +1756,7 @@ footer {
   font-weight: 400;
   line-height: 1.12;
   letter-spacing: 0;
-  margin: 0 auto 0.85rem;
+  margin: 0 0 0.85rem;
   max-width: 18ch;
   text-wrap: balance;
 }
