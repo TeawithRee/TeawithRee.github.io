@@ -2104,3 +2104,18 @@ footer {
 }
 .card-share summary:hover, .card-share[open] summary { background: transparent; border-color: transparent; }
 .share-dot { display: block; width: .22rem; height: .22rem; flex: 0 0 .22rem; border-radius: 50%; background: var(--ink); }
+
+
+/* Homepage below-fold rendering reserve */
+@media (min-width: 701px) {
+  .home-page .feed {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 760px;
+  }
+}
+@media (max-width: 700px) {
+  .home-page .feed {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 1120px;
+  }
+}
