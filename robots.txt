@@ -1,4 +1,5 @@
 # Public editorial site. Keep HTML, CSS, JavaScript and images crawlable.
+# The standard sitemap URL below is used by Google and Bing.
 User-agent: *
 Allow: /
 

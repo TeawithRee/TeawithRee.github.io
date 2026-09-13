@@ -2081,3 +2081,6 @@ footer {
   transform: none;
   animation: none;
 }
+
+/* Keep the full-bleed LCP hero on a simple paint path. */
+.home-page .cover-bg { filter: none; }

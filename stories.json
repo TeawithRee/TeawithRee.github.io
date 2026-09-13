@@ -6,7 +6,12 @@
     "note": "The selected array is the live homepage set. Add an approved story here when it is ready; rejected homepage stories remain library-only.",
     "sortBy": "publishedAt",
     "sortDirection": "desc",
-    "missingDateOrder": "preserve"
+    "missingDateOrder": "preserve",
+    "sortFallback": "preserve-json-order",
+    "dateFields": [
+      "publishedAt",
+      "updatedAt"
+    ]
   },
   "selected": [
     {
