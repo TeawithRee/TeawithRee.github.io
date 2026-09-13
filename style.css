@@ -1765,7 +1765,7 @@ footer {
 }
 @media (min-width: 701px) {
   .art h1 {
-    font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+    font-size: clamp(1.3rem, 2.4vw, 1.55rem);
     white-space: nowrap;
     text-wrap: nowrap;
   }
