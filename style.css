@@ -2086,21 +2086,26 @@ footer {
 .home-page .cover-bg { filter: none; }
 
 
-/* Story card only share dots */
+/* Story card share controls: keep the action legible on touch and desktop. */
+.card-share summary::before {
+  content: "Share";
+}
+.card-share summary .share-dot { display: none; }
 .card-share summary {
   display: inline-flex;
-  width: 1rem;
-  min-width: 1rem;
-  height: 1rem;
-  min-height: 1rem;
+  width: auto;
+  min-width: 3.8rem;
+  min-height: 2rem;
   align-items: center;
   justify-content: center;
   gap: .45rem;
-  padding: 0;
+  padding: .25rem .5rem;
   border: 0;
   background: transparent;
-  font-size: 0;
-  line-height: 0;
+  font-size: .66rem;
+  line-height: 1.2;
+  letter-spacing: .08em;
+  text-transform: uppercase;
 }
 .card-share summary:hover, .card-share[open] summary { background: transparent; border-color: transparent; }
 .share-dot { display: block; width: .22rem; height: .22rem; flex: 0 0 .22rem; border-radius: 50%; background: var(--ink); }
