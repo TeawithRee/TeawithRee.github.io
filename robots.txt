@@ -19,4 +19,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://teawithree.com/sitemap.xml
+Sitemap: https://www.teawithree.com/sitemap.xml
