@@ -2096,7 +2096,8 @@ footer {
   min-height: 1.5rem;
   align-items: center;
   justify-content: center;
-  gap: .18rem;
+  flex-direction: column;
+  gap: .16rem;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -2111,9 +2112,9 @@ footer {
 .card-share[open] summary { background: transparent; border-color: transparent; color: var(--ink); }
 .card-share summary .share-dot {
   display: block;
-  width: .2rem;
-  height: .2rem;
-  flex: 0 0 .2rem;
+  width: .16rem;
+  height: .16rem;
+  flex: 0 0 .16rem;
   border-radius: 50%;
   background: currentColor;
 }
