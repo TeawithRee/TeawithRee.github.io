@@ -2086,29 +2086,37 @@ footer {
 .home-page .cover-bg { filter: none; }
 
 
-/* Story card share controls: keep the action legible on touch and desktop. */
-.card-share summary::before {
-  content: "Share";
-}
-.card-share summary .share-dot { display: none; }
+/* Story card share controls: two small, discreet dots. */
+.card-share summary::before { content: none; }
 .card-share summary {
   display: inline-flex;
-  width: auto;
-  min-width: 3.8rem;
-  min-height: 2rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  min-height: 1.5rem;
   align-items: center;
   justify-content: center;
-  gap: .45rem;
-  padding: .25rem .5rem;
+  gap: .18rem;
+  padding: 0;
   border: 0;
+  border-radius: 0;
   background: transparent;
-  font-size: .66rem;
-  line-height: 1.2;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-size: 0;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: none;
 }
-.card-share summary:hover, .card-share[open] summary { background: transparent; border-color: transparent; }
-.share-dot { display: block; width: .22rem; height: .22rem; flex: 0 0 .22rem; border-radius: 50%; background: var(--ink); }
+.card-share summary:hover,
+.card-share[open] summary { background: transparent; border-color: transparent; color: var(--ink); }
+.card-share summary .share-dot {
+  display: block;
+  width: .2rem;
+  height: .2rem;
+  flex: 0 0 .2rem;
+  border-radius: 50%;
+  background: currentColor;
+}
 
 
 /* Homepage below-fold rendering reserve */
