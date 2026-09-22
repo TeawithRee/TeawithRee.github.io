@@ -191,16 +191,22 @@ fetch('/stories.json',{cache:'no-cache'})
   .then(function(data){
     var grid=document.querySelector('.artgrid');
     if(!grid||!data.selected||!data.selected.length) return;
-    var selected=data.selected.map(function(story,index){return {story:story,index:index};}); selected.sort(function(a,b){var ad=Date.parse(a.story.publishedAt||a.story.updatedAt||'');var bd=Date.parse(b.story.publishedAt||b.story.updatedAt||'');if(!isNaN(ad)&&!isNaN(bd)&&bd!==ad)return bd-ad;if(!isNaN(ad)&&isNaN(bd))return -1;if(isNaN(ad)&&!isNaN(bd))return 1;return a.index-b.index;}); selected=selected.map(function(entry){return entry.story;}); grid.innerHTML=selected.map(function(s){
-      var t=String(s.title||'').replace(/"/g,'&quot;');
-      var pathway=String(s.pathway||'').replace(/"/g,'&quot;');
+    function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+    grid.innerHTML=data.selected.slice(0,3).map(function(s){
+      var url=esc(s.url), title=esc(s.title), image=esc(s.image);
+      var alt=esc(s.alt||('Visual companion to “'+String(s.title||'')+'”.'));
+      var base=String(s.image||'').replace(/\.(jpe?g|png|webp)$/i,'');
+      var src=image, srcset='';
+      if(base&&base!==s.image){
+        src=esc(base+'-720w.webp');
+        srcset=' srcset="'+esc(base+'-480w.webp')+' 480w, '+esc(base+'-720w.webp')+' 720w, '+esc(base+'-900w.webp')+' 900w" sizes="(max-width: 700px) 100vw, 33vw"';
+      }
       return '<article class="story reveal">'
-        +'<a aria-label="Read: '+t+'" class="story-media" href="'+s.url+'">'
-        +'<img src="'+s.image+'" alt="Visual companion to “'+s.title+'”."/g,'&quot;')+'" '
-        +'loading="eager" decoding="async" width="900" height="600"> </a>'
+        +'<a aria-label="Read: '+title+'" class="story-media" href="'+url+'">'
+        +'<img src="'+src+'"'+srcset+' alt="'+alt+'" loading="lazy" decoding="async" width="900" height="600"> </a>'
         +'<div class="story-title-row"><div>'
-        +(pathway?'<p class="story-pathway">'+pathway+'</p>':'')
-        +'<h2><a href="'+s.url+'">'+s.title+'</a></h2></div>'
+        +(s.pathway?'<p class="story-pathway">'+esc(s.pathway)+'</p>':'')
+        +'<h2><a href="'+url+'">'+title+'</a></h2></div>'
         +'</div>'
         +'<p>'+(s.desc||'')+'</p></article>';
     }).join('');
