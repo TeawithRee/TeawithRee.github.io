@@ -2133,3 +2133,76 @@ footer {
     contain-intrinsic-size: 0 1120px;
   }
 }
+
+
+/* =========================================================
+   MOBILE HEADER: ONE LINE AT ANY TEXT SIZE
+   Firefox on Android (and phones set to "large text") draw text
+   bigger than other browsers. This keeps "Tea with Ree" and the
+   Menu button side by side on one row, never cuts off the name,
+   and keeps breathing space at both edges of the screen.
+   ========================================================= */
+@media (max-width: 700px) {
+  #nav {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+  .masthead {
+    flex: 0 0 auto;
+  }
+  .brand {
+    display: block;
+    white-space: nowrap;
+    line-height: 1.15;
+  }
+  .menu-toggle {
+    flex: 0 1 auto;
+    min-width: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+  .menu-icon {
+    flex: 0 0 auto;
+  }
+  body > .section-hero,
+  body > .section-hero--no-image,
+  body > .intro {
+    padding-left: max(1.25rem, env(safe-area-inset-left));
+    padding-right: max(1.25rem, env(safe-area-inset-right));
+  }
+  h1, h2 {
+    overflow-wrap: break-word;
+  }
+}
+
+
+/* =========================================================
+   SMALL LAYOUT TIDY-UPS
+   1. On phones and tablets (when the Menu button shows), the name
+      sits on the left and Menu on the right, on every page.
+      Desktop keeps the name centred everywhere, as before.
+   2. On tablets the homepage shows its three Selected Stories side
+      by side, instead of two plus one left alone underneath.
+   ========================================================= */
+@media (max-width: 820px) {
+  body #nav .masthead {
+    text-align: left !important;
+    margin: 0 !important;
+    width: auto !important;
+  }
+  body #nav .masthead .brand {
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 701px) {
+  .home-page .artgrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
