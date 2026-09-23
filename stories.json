@@ -53,6 +53,50 @@
   ],
   "library": [
     {
+      "url": "/modern-tools-a-face-is-a-design-decision.html",
+      "title": "A Face Is a Design Decision",
+      "image": "/modern-tools-a-face-is-a-design-decision.webp",
+      "alt": "A humanoid robot standing in an empty room, its almost-human face quietly doing the work of persuasion.",
+      "caption": "The face is doing a job.",
+      "desc": "Warmth is cheap to produce and easy to fake. On the difference between how a tool feels to deal with and whether it can be relied on.",
+      "section": "Modern Tools",
+      "homepageEligible": true,
+      "approved": true
+    },
+    {
+      "url": "/wellbeing-in-the-wrong-element.html",
+      "title": "In the Wrong Element",
+      "image": "/wellbeing-in-the-wrong-element.webp",
+      "alt": "A rockhopper penguin standing upright on bare rock, capable but a long way from the water that suits it.",
+      "caption": "Capable, and a long way from the water.",
+      "desc": "A penguin on rock looks like a creature managing. On how much of what we call weakness is really the wrong surroundings.",
+      "section": "Wellbeing",
+      "homepageEligible": true,
+      "approved": true
+    },
+    {
+      "url": "/inner-work-whose-hands-hold-the-shears.html",
+      "title": "Whose Hands Hold the Shears",
+      "image": "/inner-work-whose-hands-hold-the-shears.webp",
+      "alt": "A gardener under a wide straw hat tending trees shaped by decades of somebody else’s decisions.",
+      "caption": "A shape decided by hands that were not the tree’s.",
+      "desc": "We’re all cultivated by the people around us. On telling the difference between a shape you chose and one you were trained into.",
+      "section": "Inner Work",
+      "homepageEligible": true,
+      "approved": true
+    },
+    {
+      "url": "/ecology-where-the-earth-breathes.html",
+      "title": "Where the Earth Breathes",
+      "image": "/ecology-where-the-earth-breathes.webp",
+      "alt": "Steam lifting off sulphur-stained rock into pale water, a planet still busy with its own making.",
+      "caption": "A planet still busy with its own making.",
+      "desc": "Steam, sulphur and ground that offers us nothing. On a planet that has never once been settled, and doesn’t need our approval.",
+      "section": "Ecology",
+      "homepageEligible": true,
+      "approved": true
+    },
+    {
       "url": "/wellbeing-palms-together.html",
       "title": "Palms Together",
       "image": "/wellbeing-palms-together.webp",

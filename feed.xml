@@ -223,5 +223,33 @@
     <description>The Difference Between Company and Connection | Tea with Ree</description>
     <pubDate>2026-09-13T00:00:00Z</pubDate>
   </item>
-  </channel>
+    <item>
+    <title>Where the Earth Breathes | Tea with Ree</title>
+    <link>https://www.teawithree.com/ecology-where-the-earth-breathes.html</link>
+    <guid isPermaLink="true">https://www.teawithree.com/ecology-where-the-earth-breathes.html</guid>
+    <description>The planet never finished making itself. On steam, sulphur and the strange comfort of ground that was never arranged for us.</description>
+    <pubDate>2026-09-23T00:00:00Z</pubDate>
+  </item>
+  <item>
+    <title>Whose Hands Hold the Shears | Tea with Ree</title>
+    <link>https://www.teawithree.com/inner-work-whose-hands-hold-the-shears.html</link>
+    <guid isPermaLink="true">https://www.teawithree.com/inner-work-whose-hands-hold-the-shears.html</guid>
+    <description>Trees kept in courtyards are beautiful, and entirely someone else’s idea. On noticing which of your shapes you actually chose.</description>
+    <pubDate>2026-09-23T00:00:00Z</pubDate>
+  </item>
+  <item>
+    <title>In the Wrong Element | Tea with Ree</title>
+    <link>https://www.teawithree.com/wellbeing-in-the-wrong-element.html</link>
+    <guid isPermaLink="true">https://www.teawithree.com/wellbeing-in-the-wrong-element.html</guid>
+    <description>Before deciding you’re failing, check where you’re standing. On capability that depends entirely on the element you’re in.</description>
+    <pubDate>2026-09-23T00:00:00Z</pubDate>
+  </item>
+  <item>
+    <title>A Face Is a Design Decision | Tea with Ree</title>
+    <link>https://www.teawithree.com/modern-tools-a-face-is-a-design-decision.html</link>
+    <guid isPermaLink="true">https://www.teawithree.com/modern-tools-a-face-is-a-design-decision.html</guid>
+    <description>We trust things that resemble us, and that resemblance is built on purpose. On warmth as an interface choice rather than evidence.</description>
+    <pubDate>2026-09-23T00:00:00Z</pubDate>
+  </item>
+</channel>
 </rss>
