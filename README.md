@@ -35,11 +35,11 @@ appears at the top of the story. Never a different one.
 **The picture accompanies the story.** It is never described in the article,
 and it may have no direct bearing on the words. It carries the feeling.
 
-**Every picture carries its own label.** The `alt` text is one short sentence:
-a few words naming what is in the frame, followed by the feeling. For example,
-a windswept beach might read "A windswept beach, my thoughts are messy." Never
-"image of" or "photo of". No two pages share a label. This is what Google
-Images and screen readers read.
+**Every picture carries its own label.** The `alt` text is one short, unique
+sentence conveying the feeling, idea or meaning the picture brings to its
+story. It does not need to describe the literal contents of the frame. Never
+use "image of" or "photo of". Screen readers use the alt text to share the
+intended sense of the picture with people who cannot see it.
 
 **Every picture declares its size.** `width` and `height` on the tag, matching
 the file. Without them the page jumps around while it loads, which costs real
