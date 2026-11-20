@@ -32,14 +32,14 @@ These are the rules the site is held to. Anything that breaks one is a bug.
 **One picture per story.** The picture on a section page is the same file that
 appears at the top of the story. Never a different one.
 
-**The picture accompanies the story.** It is never described in the article,
-and it may have no direct bearing on the words. It carries the feeling.
+**The picture accompanies the story.** It is never described in the article
+and may have no direct bearing on the words. It carries the feeling.
 
-**Every picture carries its own label.** The `alt` text is one short, unique
-sentence conveying the feeling, idea or meaning the picture brings to its
-story. It does not need to describe the literal contents of the frame. Never
-use "image of" or "photo of". Screen readers use the alt text to share the
-intended sense of the picture with people who cannot see it.
+**Alt text expresses the feeling, not what is in the frame.** For example, a
+windswept beach becomes "My thoughts are messy." Never use "Visual companion
+to", the article title, "image of" or "photo of" in alt text.
+
+**Every alt text is unique across the site.**
 
 **Every picture declares its size.** `width` and `height` on the tag, matching
 the file. Without them the page jumps around while it loads, which costs real
