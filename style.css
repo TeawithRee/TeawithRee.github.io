@@ -2133,3 +2133,95 @@ footer {
     contain-intrinsic-size: 0 1120px;
   }
 }
+
+
+/* Inline vertical ellipsis with a compact, icon-only article share menu. */
+.title-share-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+.article-share-trigger {
+  display: inline-flex;
+  width: 0.3em;
+  height: 0.95em;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink-muted);
+  font: inherit;
+  line-height: 1;
+  vertical-align: -0.04em;
+  cursor: pointer;
+}
+.article-share-trigger:hover,
+.article-share-trigger:focus-visible { color: var(--ink); }
+.article-share-trigger:focus-visible {
+  outline: 1px solid var(--line-strong);
+  outline-offset: 1px;
+}
+.article-share-trigger svg {
+  display: block;
+  width: 100%;
+  height: 0.6em;
+  fill: currentColor;
+}
+.article-share-menu {
+  position: absolute;
+  top: calc(100% + 0.2rem);
+  right: 0;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  gap: 0.18rem;
+  margin: 0;
+  padding: 0.24rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  box-shadow: var(--shadow-hover);
+}
+.article-share-menu[hidden] { display: none; }
+.article-share-option {
+  display: inline-flex;
+  width: 2.35rem;
+  height: 2.35rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background: transparent;
+  transition: background-color 0.18s ease, transform 0.18s ease;
+}
+.article-share-option:hover,
+.article-share-option:focus-visible {
+  background: var(--bg-soft);
+  outline: 1px solid var(--line);
+}
+.article-share-option svg {
+  display: block;
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+.article-share-option--linkedin { color: #0a66c2; }
+.article-share-option--x { color: #111111; }
+.article-share-option--whatsapp { color: #168b49; }
+.article-share-option--facebook { color: #1877f2; }
+@media (max-width: 600px) {
+  .article-share-menu {
+    gap: 0.12rem;
+    padding: 0.2rem;
+  }
+  .article-share-option {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .article-share-option { transition: none; }
+}
