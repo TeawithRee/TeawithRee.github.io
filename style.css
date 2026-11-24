@@ -561,60 +561,6 @@ p {
   overflow: hidden;
 }
 
-/* —— Share Menu —— */
-.card-share {
-  position: relative;
-  flex-shrink: 0;
-  margin-top: 0.1rem;
-}
-
-.card-share summary {
-  display: grid;
-  place-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0;
-  background: transparent;
-  color: var(--ink-muted);
-  font-size: 1rem;
-  cursor: pointer;
-  list-style: none;
-}
-
-.card-share summary::-webkit-details-marker {
-  display: none;
-}
-
-.share-panel {
-  position: absolute;
-  top: 1.8rem;
-  right: 0;
-  display: grid;
-  min-width: 7.5rem;
-  padding: 0.3rem;
-  background: var(--bg);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-hover);
-  z-index: 50;
-}
-
-.share-panel button {
-  padding: 0.5rem 0.6rem;
-  border: 0;
-  background: transparent;
-  color: var(--ink);
-  text-align: left;
-  font-family: Manrope, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-
-.share-panel button:hover {
-  background: var(--bg-soft);
-}
-
 /* —— Quote Block —— */
 .quote {
   max-width: 760px;
@@ -777,7 +723,6 @@ footer {
   padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--line);
 }
-
 
 /* —— Article Pages —— */
 .art {
@@ -979,7 +924,6 @@ footer {
   text-align: left;
 }
 
-
 .story-pathway {
   margin: 0 0 0.2rem;
   color: var(--accent);
@@ -1121,7 +1065,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
+
   .seccard-grid,
   .tn-programme-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1132,28 +1076,28 @@ footer {
   #nav {
     padding: 0.5rem 1rem;
   }
-  
+
   #nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .masthead {
     order: 1;
     text-align: left;
     margin-bottom: 0;
   }
-  
+
   .menu-toggle {
     order: 2;
   }
-  
+
   #site-menu {
     order: 3;
   }
-  
+
   .menu-toggle {
     display: inline-flex;
     align-items: center;
@@ -1170,13 +1114,13 @@ footer {
     text-transform: uppercase;
     cursor: pointer;
   }
-  
+
   .menu-icon {
     display: grid;
     gap: 4px;
     width: 14px;
   }
-  
+
   .menu-icon i {
     display: block;
     width: 14px;
@@ -1184,15 +1128,15 @@ footer {
     background: currentColor;
     transition: transform 0.25s ease;
   }
-  
+
   .nav-open .menu-icon i:first-child {
     transform: translateY(2.5px) rotate(45deg);
   }
-  
+
   .nav-open .menu-icon i:last-child {
     transform: translateY(-2.5px) rotate(-45deg);
   }
-  
+
   #site-menu {
     display: none;
     position: absolute;
@@ -1206,15 +1150,15 @@ footer {
     border-bottom: 1px solid var(--line);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   }
-  
+
   .nav-open #site-menu {
     display: flex;
   }
-  
+
   .navitem {
     border-bottom: 1px solid var(--line);
   }
-  
+
   .navitem > a {
     display: flex;
     align-items: center;
@@ -1222,15 +1166,15 @@ footer {
     padding: 0.3rem 0;
     font-size: 0.75rem;
   }
-  
+
   .dropdown {
     display: none !important;
   }
-  
+
   .home-page .cover {
     aspect-ratio: 4 / 5;
   }
-  
+
   .home-page .cover-scrim {
     background: linear-gradient(
       180deg,
@@ -1239,7 +1183,7 @@ footer {
       transparent 80%
     );
   }
-  
+
   .home-page .cover-inner {
     top: 10%;
     bottom: auto;
@@ -1247,47 +1191,47 @@ footer {
     right: 5%;
     max-width: 18rem;
   }
-  
+
   .home-page .cover-inner h1 {
     font-size: clamp(1.8rem, 8vw, 2.6rem);
   }
-  
+
   .artgrid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .story-media img,
   .story-media div {
     aspect-ratio: 3 / 2;
   }
-  
+
   .seccard-grid,
   .tn-programme-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .quote {
     margin: 2.5rem auto;
     padding: 0 1rem;
   }
-  
+
   .news form {
     flex-direction: column;
     border-bottom: 0;
     gap: 0.5rem;
   }
-  
+
   .news input {
     border-bottom: 1.5px solid var(--ink);
     padding: 0.8rem 0;
   }
-  
+
   .news button {
     padding: 0.8rem;
     text-align: center;
   }
-  
+
   .about-portrait {
     max-width: 220px;
     margin: 0 auto 1.5rem;
@@ -1403,7 +1347,6 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
-
 
 /* =========================================================
    TEA WITH REE — KIMI REPAIR PASS
@@ -1654,7 +1597,6 @@ footer {
   .fp-video { animation: none; }
 }
 
-
 /* =========================================================
    TEA WITH REE — SECOND PASS
    Header spacing, sticky-header gap, About layout.
@@ -1686,24 +1628,22 @@ footer {
   .secpage, .art, .aboutpage, .tn-page { padding-top: 2rem; }
 }
 
-
 /* About page: centered presentation, with readable sentence-case body text. */
 .aboutpage { text-align: center; }
 .aboutpage .about-head,
 .aboutpage .about-portrait { text-align: center; }
 .aboutpage .about-words { text-align: left; margin-left: auto; margin-right: auto; }
 
-
 /* =========================================================
    NAVIGATION SPACING OVERRIDE FIX
    ========================================================= */
 @media (min-width: 701px) {
   #site-menu, .navrow {
-    gap: 2rem !important; 
+    gap: 2rem !important;
   }
 
   .navitem > a {
-    padding: 0.4rem 0.5rem !important; 
+    padding: 0.4rem 0.5rem !important;
   }
 }
 
@@ -1736,7 +1676,6 @@ footer {
     transition-duration: 0.8s !important;
     animation-duration: 0.8s !important;
 }
-
 
 .about-route a {
   display: inline-flex;
@@ -1831,7 +1770,6 @@ footer {
   background: var(--ink);
 }
 
-
 /* —— Section Footer Coaching Route —— */
 .sec-footer-route {
   max-width: 1200px;
@@ -1893,7 +1831,6 @@ footer {
     margin-right: auto;
   }
 }
-
 
 /* =========================================================
    TEA NOTES CONSISTENCY PASS
@@ -1964,91 +1901,12 @@ footer {
   }
 }
 
-
-/* Quiet, explicit sharing and coaching controls */
-.card-share summary {
-  width: auto;
-  min-width: 3.6rem;
-  min-height: 2rem;
-  height: auto;
-  padding: 0.25rem 0.55rem;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  font-family: Manrope, sans-serif;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-}
-.card-share summary:hover,
-.card-share[open] summary {
-  color: var(--ink);
-  background: var(--bg-soft);
-  border-color: var(--ink);
-}
 .hero-cta {
   text-transform: none !important;
   letter-spacing: 0.02em !important;
 }
-/* Quiet editorial sharing: an invitation, not a utility pill. */
-.card-share summary {
-  display: inline-flex;
-  width: auto;
-  height: auto;
-  align-items: baseline;
-  gap: .28rem;
-  padding: .12rem 0 .2rem;
-  border-bottom: 1px solid transparent;
-  color: var(--ink-muted);
-  font-family: Manrope, sans-serif;
-  font-size: .66rem;
-  font-weight: 600;
-  letter-spacing: .11em;
-  line-height: 1.2;
-  text-transform: uppercase;
-  transition: color .25s ease, border-color .25s ease;
-}
-.card-share summary span {
-  font-family: Georgia, serif;
-  font-size: .95rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 0;
-  transform: translateY(.04em);
-  transition: transform .25s ease;
-}
-.card-share summary:hover,
-.card-share[open] summary {
-  color: var(--ink);
-  border-color: var(--ink);
-}
-.card-share summary:hover span,
-.card-share[open] summary span {
-  transform: translate(.12rem, -.06rem);
-}
-.share-panel {
-  top: 1.75rem;
-  right: 0;
-  min-width: 10.5rem;
-  padding: .45rem;
-  border-color: rgba(36,32,29,.18);
-  box-shadow: 0 14px 35px rgba(36,32,29,.12);
-}
-.share-panel button {
-  padding: .62rem .7rem;
-  font-size: .72rem;
-  letter-spacing: .01em;
-}
-.share-panel button:hover,
-.share-panel button:focus-visible {
-  background: var(--bg-soft);
-  outline: none;
-}
-@media (max-width: 700px) {
-  .card-share summary { font-size: .62rem; }
-  .share-panel { min-width: 10rem; }
-}
+
+
 /* About mobile: borrow Tea Notes' breathing room and reading rhythm. */
 @media (max-width: 700px) {
   body.about-page main#main-content {
@@ -2085,41 +1943,6 @@ footer {
 /* Keep the full-bleed LCP hero on a simple paint path. */
 .home-page .cover-bg { filter: none; }
 
-
-/* Story card share controls: two small, discreet dots. */
-.card-share summary::before { content: none; }
-.card-share summary {
-  display: inline-flex;
-  width: 1.5rem;
-  min-width: 1.5rem;
-  height: 1.5rem;
-  min-height: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: .16rem;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: var(--ink-muted);
-  font-size: 0;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: none;
-}
-.card-share summary:hover,
-.card-share[open] summary { background: transparent; border-color: transparent; color: var(--ink); }
-.card-share summary .share-dot {
-  display: block;
-  width: .16rem;
-  height: .16rem;
-  flex: 0 0 .16rem;
-  border-radius: 50%;
-  background: currentColor;
-}
-
-
 /* Homepage below-fold rendering reserve */
 @media (min-width: 701px) {
   .home-page .feed {
@@ -2133,7 +1956,6 @@ footer {
     contain-intrinsic-size: 0 1120px;
   }
 }
-
 
 /* Inline vertical ellipsis with a compact, icon-only article share menu. */
 .title-share-wrap {
