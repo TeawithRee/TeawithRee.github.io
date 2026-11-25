@@ -616,6 +616,9 @@ footer {
   background: var(--bg) !important;
   transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
+.socials a[aria-label="Instagram"] {
+  background: linear-gradient(135deg, #111111 0%, #777777 100%) !important;
+}
 
 .socials a:hover {
   transform: translateY(-2px);
@@ -2032,10 +2035,10 @@ main.art h1:has(.title-share-wrap) {
   height: 1.15rem;
   fill: currentColor;
 }
-.article-share-option--linkedin { color: #0a66c2; }
-.article-share-option--x { color: #111111; }
-.article-share-option--whatsapp { color: #168b49; }
-.article-share-option--facebook { color: #1877f2; }
+.article-share-option--linkedin,
+.article-share-option--x,
+.article-share-option--whatsapp,
+.article-share-option--facebook { color: var(--ink); }
 @media (max-width: 600px) {
   .article-share-menu {
     gap: 0.12rem;
