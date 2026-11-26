@@ -135,6 +135,8 @@ The feed should always hold the same stories as the `library` in
 - [ ] Canonical, Open Graph and structured data use the www address
 - [ ] The section page card links to the right article
 - [ ] `stories.json` still opens without errors and ends with a new line
+- [ ] Home page stories have `width`, `height` and `sizes`, and each listed size file exists
+- [ ] The fallback cards in `index.html` match the three `selected` stories
 - [ ] The story is in `sitemap.xml` and `feed.xml`
 - [ ] Add the new files to the repository. Never replace the whole repository
 
@@ -160,9 +162,25 @@ the last one. A full entry looks like this:
   "section": "Ecology",
   "homepageEligible": true,
   "approved": true,
-  "pathway": "renew"
+  "pathway": "renew",
+  "width": 1920,
+  "height": 1280,
+  "sizes": [480, 720, 900]
 }
 ```
+
+**`width`, `height` and `sizes` are required.** `width` and `height` are the
+real size of the full picture. `sizes` lists only the smaller files that
+actually exist for that picture. A picture 736 pixels wide has only a `-480w`
+file, so it gets `"sizes": [480]`. The home page asks only for the files listed
+here. If you list a size that does not exist, the picture shows up broken.
+
+**Update the three fallback cards in `index.html` too.** They sit inside
+`<div class="artgrid">` and must show the same three stories, in the same order,
+as `selected`. When they match, the home page loads each picture once. When they
+don't, it loads the old stories first and then swaps them, which is slow.
+
+**Always three stories on the home page.** Never ask whether to show more.
 
 Commit, and the home page updates itself. If that file ever has a typo the page
 quietly falls back to the cards written inside `index.html`, so it cannot break.

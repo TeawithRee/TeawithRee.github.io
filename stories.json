@@ -24,7 +24,13 @@
       "section": "Ecology",
       "homepageEligible": true,
       "approved": true,
-      "pathway": "reset"
+      "pathway": "reset",
+      "width": 1280,
+      "height": 853,
+      "sizes": [
+        480,
+        900
+      ]
     },
     {
       "url": "/modern-tools-planning-a-podcast-with-ai-tools.html",
@@ -36,7 +42,12 @@
       "section": "Modern Tools",
       "homepageEligible": true,
       "approved": true,
-      "pathway": "becoming"
+      "pathway": "becoming",
+      "width": 736,
+      "height": 1000,
+      "sizes": [
+        480
+      ]
     },
     {
       "url": "/inner-work-listening-to-our-roots.html",
@@ -48,7 +59,12 @@
       "section": "Inner Work",
       "homepageEligible": true,
       "approved": true,
-      "pathway": "renew"
+      "pathway": "renew",
+      "width": 736,
+      "height": 1104,
+      "sizes": [
+        480
+      ]
     }
   ],
   "library": [
