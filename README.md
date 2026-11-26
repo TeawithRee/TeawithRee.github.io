@@ -58,6 +58,12 @@ dates as technical metadata for search engines and feed readers.
 **Lines are not decoration.** Space separates sections, not rules across the
 page.
 
+**Old addresses forward to new ones.** Small "Page moved" files (for example
+`teanotes.html`, `ecologyblueandblaze.html`, `toolssecondbrain.html`) send
+visitors and Google from old article addresses to the current ones. They are
+not unused files. Never delete them in a clean-up. When an article's address
+changes, add one of these files at the old address.
+
 ---
 
 ## Publishing a new article, step by step
