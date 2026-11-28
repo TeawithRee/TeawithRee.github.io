@@ -617,7 +617,7 @@ footer {
   transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 .socials a[aria-label="Instagram"] {
-  background: linear-gradient(135deg, #111111 0%, #777777 100%) !important;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) !important;
 }
 
 .socials a:hover {
